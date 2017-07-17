@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('formulario', function(){
+	return view('Welcome');
+});
