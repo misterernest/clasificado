@@ -35,7 +35,7 @@ class VehiclesController extends Controller
 
         // Validar que sea el usuario administrador
 
-        $vehicles = Vehicle::all();
-        return view('pages.list', ['vehicles', $vehicles]);
+        //$vehicles = Vehicle::all();
+        //return view('pages.list', ['vehicles', $vehicles]);
    }
 }
