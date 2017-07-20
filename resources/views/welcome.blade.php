@@ -1,45 +1,153 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Laravel</title>
-
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-
-        <style>
-            html, body {
-                height: 100%;
-            }
-
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
-
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
-
-            .title {
-                font-size: 96px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5</div>
-            </div>
-        </div>
-    </body>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Autos de lujo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<meta name="description" content="Autos de lujo en Colombia, vende tu autos de lujo, alquila tu auto de lujo, permuta tu auto de lujo, compra tu auto de lujo" />
+	<meta name="keywords" content="autos, carros, vehiculos, lujo, autos de lujo, carros de lujo, vehiculos de lujo, vende tu auto de lujo, alquila tu auto de lujo, compra tu auto de lujo, permuta tu auto de lujo" />
+	<meta name="author" content="ANT" />
+	<link rel="shortcut icon" href="images/favicon.png">
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style-ant.css" />
+	<link rel="stylesheet" type="text/css" href="css/ant-animation.css">
+	<link rel="stylesheet" type="text/css" href="css/style-gallery.css" />
+	<link rel="stylesheet" type="text/css" href="css/ant-category.css" />
+	<link rel="stylesheet" type="text/css" href="css/ant-hori-transition.css" />
+	<script src="js/prefixfree.min.js" type="text/javascript"></script>
+</head>
+<body>
+	<header>
+		<div class="logo-autoslujo">
+			<img src="images/logo.png" alt="autos de lujo">
+		</div>
+		<nav>
+            <a href="#">VENTA</a> 
+            <a href="##">PERMUTA</a>
+            <a href="###">ALQUILER</a>
+            <a href="####">COMPRA</a>
+            <a href="####">CONTACTENOS</a>
+        </nav>
+        <div class="container-slide">
+			<div class="img-slide">
+	            <div class="img-slide-1">
+	            </div>
+	            <div class="img-slide-2">
+	            </div>
+	            <div class="img-slide-3">
+	            </div>
+	            <div class="capa-slide">
+	            </div>
+			</div>
+	        <div class="txt-slide">
+	            <div class="txt-slide-1"><a href="">Es hora de manejar tu auto de lujo</a></div>
+	            <div class="txt-slide-2"><a href="">Compra y Venta de autos de lujo</a></div>
+	            <div class="txt-slide-3"><a href="">Financiamiento & Aseguramiento</a></div>
+	        </div>
+		</div>
+	</header>
+	<section>
+		<article class="ant-art3">
+			<div>
+				<img src="images/logos-aseguradoras/1.png" alt="">
+				<img src="images/logos-aseguradoras/2.png" alt="">
+				<img src="images/logos-aseguradoras/3.png" alt="">
+				<img src="images/logos-aseguradoras/4.png" alt="">
+				<img src="images/logos-aseguradoras/5.png" alt="">
+			</div>			
+		</article>
+		<article class="ant-cat-art1">
+			<div class="ant-cat-img1">
+				<a href="#">
+					<img src="images/category/1.png" alt="">
+					<span>vende</span>
+				</a>
+			</div>
+			<div class="ant-cat-img2">
+				<a href="##">
+					<img src="images/category/2.png" alt="">	
+					<span>compra</span>	
+				</a>
+				
+			</div>
+			<div class="ant-cat-img3">
+				<a href="###">
+					<img src="images/category/3.png" alt="">	
+					<span>alquila</span>
+				</a>
+			</div>
+			<div class="ant-cat-img4">
+				<a href="####">
+					<img src="images/category/4.png" alt="">	
+					<span>permuta</span>	
+				</a>
+				
+			</div>
+		</article>
+		<article class="ant-art2">
+			<div>
+				<div class="logo-bancos">
+					<img src="images/iconos-fina-aseg/1.png" alt="">
+				</div>
+				<div>
+					<h2>LOREM IPSUM DOLOR</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, explicabo eius? Deserunt aliquam eveniet dignissimos a, asperiores fugit quos porro earum nobis quidem qui, voluptas impedit, deleniti omnis ullam repellat!</p>	
+				</div>
+			</div>
+			<div>
+				<div class="logo-bancos">
+					<img src="images/iconos-fina-aseg/2.png" alt="">
+				</div>
+				<div>
+					<h2>LOREM IPSUM DOLOR</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, explicabo eius? Deserunt aliquam eveniet dignissimos a, asperiores fugit quos porro earum nobis quidem qui, voluptas impedit, deleniti omnis ullam repellat!</p>	
+				</div>
+			</div>
+		</article>
+		<article class="content-gallery">
+			<div id="hs_container" class="hs_container">
+				<div class="hs_area hs_area1">
+					<img class="hs_visible" src="images/galeria/area1/1.jpg" alt=""/>
+					<img src="images/galeria/area1/2.jpg" alt=""/>
+					<img src="images/galeria/area1/3.jpg" alt=""/>
+				</div>
+				<div class="hs_area hs_area2">
+					<img class="hs_visible" src="images/galeria/area2/1.jpg" alt=""/>
+					<img src="images/galeria/area2/2.jpg" alt=""/>
+					<img src="images/galeria/area2/3.jpg" alt=""/>
+				</div>
+				<div class="hs_area hs_area3">
+					<img class="hs_visible" src="images/galeria/area3/1.jpg" alt=""/>
+					<img src="images/galeria/area3/2.jpg" alt=""/>
+					<img src="images/galeria/area3/3.jpg" alt=""/>
+				</div>
+				
+			</div>
+		</article>
+		<!--javascript gallery-->
+			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+			<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+			<script type="text/javascript" src="js/animation-gallery.js"></script>
+		<article class="ant-art-slide">
+			<div>
+				<img src="images/logos-autos/1.png" alt="">
+				<img src="images/logos-autos/2.png" alt="">
+				<img src="images/logos-autos/3.png" alt="">
+				<img src="images/logos-autos/4.png" alt="">
+				<img src="images/logos-autos/5.png" alt="">
+				<img src="images/logos-autos/6.png" alt="">
+				<img src="images/logos-autos/7.png" alt="">
+				<img src="images/logos-autos/8.png" alt="">
+				<img src="images/logos-autos/9.png" alt="">
+				<img src="images/logos-autos/10.png" alt="">
+				<img src="images/logos-autos/11.png" alt="">
+				<img src="images/logos-autos/12.png" alt="">
+				<img src="images/logos-autos/13.png" alt="">
+			</div>			
+		</article>
+	</section>
+	<footer>
+		<span></span>
+	</footer>
+</body>
 </html>

@@ -1,0 +1,87 @@
+/*# sourceURL=css/ant-hori-transition.css */
+/*@ sourceURL=css/ant-hori-transition.css */
+/*# sourceURL=css/ant-hori-transition.css */
+/*@ sourceURL=css/ant-hori-transition.css */
+/*# sourceURL=css/ant-hori-transition.css */
+/*@ sourceURL=css/ant-hori-transition.css */
+.ant-art-slide{
+	margin: 2rem 0;
+	width: 100%;
+	overflow: hidden;
+	height: 10rem;
+}
+.ant-art-slide div{
+	width: 100%;
+	height: inherit;
+	position: relative;
+}
+.ant-art-slide img{
+	position: absolute;
+	left: -10rem;
+	width: 10%;
+	animation-name: animationImage;
+	animation-duration: 26s;
+	animation-iteration-count:infinite; 
+	animation-timing-function:linear;
+}
+.ant-art-slide img:nth-child(1){
+	animation-delay:0s;
+}
+.ant-art-slide img:nth-child(2){
+	animation-delay:2s;
+}
+.ant-art-slide img:nth-child(3){
+	animation-delay:4s;
+}
+.ant-art-slide img:nth-child(4){
+	animation-delay:6s;
+}
+.ant-art-slide img:nth-child(5){
+	animation-delay:8s;
+}
+.ant-art-slide img:nth-child(6){
+	animation-delay:10s;
+}
+.ant-art-slide img:nth-child(7){
+	animation-delay:12s;
+}
+.ant-art-slide img:nth-child(8){
+	animation-delay:14s;
+}
+.ant-art-slide img:nth-child(9){
+	animation-delay:16s;
+}
+.ant-art-slide img:nth-child(10){
+	animation-delay:18s;
+}
+.ant-art-slide img:nth-child(11){
+	animation-delay:20s;
+}
+.ant-art-slide img:nth-child(12){
+	animation-delay:22s;
+}
+.ant-art-slide img:nth-child(13){
+	animation-delay:24s;
+}
+
+@keyframes animationImage{
+	0% {
+		left: -10rem;
+	}
+	77%{
+		opacity: 1;
+		left: 110%;
+	}
+	78%{
+		opacity: 0;
+		left: 110%rem;
+	}
+	99%{
+		opacity: 0;
+		left: 110%rem;
+	}
+	100%{
+		opacity: 0;
+		left -10rem;
+	}
+}
