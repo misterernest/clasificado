@@ -18,7 +18,40 @@ class VehiclesController extends Controller
 
   public function postStore(Request $request) 
   {
-    // Lógica para validar datos del formulario
+    $rules = [
+      'name_user'   =>  'required|string',
+      'photo_main'  =>  'required|max:300000',
+      'photo_2'     =>  'max:300000',
+      'photo_3'     =>  'max:300000',
+      'photo_4'     =>  'max:300000',
+      'photo_5'     =>  'max:300000',
+      'photo_6'     =>  'max:300000',
+      'photo_7'     =>  'max:300000',
+      'cellphone'   =>  'numeric',
+      'email'       =>  'required',
+      'type_car'    =>  'in:Sedan,Deportivo,Camioneta,Clasico',
+      'transmision' =>  'in:Automática,Manual,Mixta,Secuencial,Steptronic,Tiptronic',
+      'combustible' =>  'in:Diesel,Electrico,Gas,Secuencial,Gasolina,Hibrido',
+      'brakes'      =>  'in:ABS,Disco',
+    ];
+
+    $messages = [
+      'name_user.required'  =>  'El nombre es requerido', 
+      'max'                 =>  'La imagen no debe pesar menos de 3mb',
+      'cellphone.numeric'   =>  'El número de teléfono debe ser numérico', 
+      'email.required'   =>  'El email es requerido', 
+      'type_car.in'   =>  'Debes elegir un tipo de carro correcto', 
+      'transmision.in'   =>  'Debes elegir una transmisión correcta', 
+      'combustible.in'   =>  'Debes elegir un tipo de combustible correcto', 
+      'brakes.in'   =>  'Debes elegir un tipo de freno correcto', 
+    ];
+
+    $val = \Validator::make($request->all(), $rules, $messages);
+
+    if ($v->fails()) 
+    {
+      return redirect()->back()->withInput()->withErrors($v->errors());
+    }
 
     // Validar que se envie al menos 1 imagen
     if (count($request->file()) == 0) 
