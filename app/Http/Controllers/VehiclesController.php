@@ -18,9 +18,7 @@ class VehiclesController extends Controller
 
   public function postStore(Request $request) 
   {
-
     // Validar datos del for
-
     $nameFields = ['photo_main', 'photo_2', 'photo_3', 'photo_4', 'photo_5', 'photo_6', 'photo_7',  'photo_8',];
 
     dd(\Input::file());
