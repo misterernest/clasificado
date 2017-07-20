@@ -7,26 +7,24 @@
 <body>
 	<form method="POST" action="{{url('vehicles/store')}}" enctype="multipart/form-data">
 	 	{{ csrf_field() }}
-		<input type="text" id="name_user" name="name_user" placeholder="Nombre" required="true"/>
+		<input type="text" id="name_user" name="name_user" placeholder="Nombre" required="false"/>
 		<input type="" id="" name="email" placeholder="Correo electronico" />
-		<input type="" id="" name="cellphone" placeholder="Telefono celular" required="true" />
-		<input type="" id="" name="brand" placeholder="Marca" required="true"/>
-		<input type="" id="" name="year" placeholder="Modelo" required="true"/>		
+		<input type="" id="" name="cellphone" placeholder="Telefono celular" required="false" />
+		<input type="" id="" name="brand" placeholder="Marca" required="false"/>
+		<input type="" id="" name="year" placeholder="Modelo" required="false"/>		
 		<input type="" id="" name="country_origin" placeholder="Pais de origen" />
 		<input type="" id="" name="color" placeholder="Color" />
 		<input type="" id="" name="placa" placeholder="Placa" />
 		<input type="" id="" name="ref_car" placeholder="Serie del carro" />
 		<select name="">
-		   <option value="1"></option> 
-		   <option value=""></option> 
-		   <option value=""></option>
-		   <option value=""></option> 
-		   <option value=""></option> 
-		   <option value=""></option> 
+		   <option value="sedan"></option> 
+		   <option value="Deportivo"></option> 
+		   <option value="Camioneta"></option>
+		   <option value="Clasico"></option> 
 		</select>
-		<input type="" id="" name="value" placeholder="$ Costo" required="true" />
+		<input type="" id="" name="value" placeholder="$ Costo" required="false" />
 		<input type="" id="" name="negociable" placeholder="negociable" />
-		<input type="" id="" name="actual_city" placeholder="Ciudad" required="true"/>
+		<input type="" id="" name="actual_city" placeholder="Ciudad" required="false"/>
 		<input type="" id="" name="actual_region" placeholder="Departamento" />
 		<input type="" id="" name="neighborhood" placeholder="Barrio" />
 		<input type="" id="" name="motor" placeholder="Motor" />
