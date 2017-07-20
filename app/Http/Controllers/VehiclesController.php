@@ -18,10 +18,11 @@ class VehiclesController extends Controller
 
   public function postStore(Request $request) 
   {
-
     // Validar datos del for
+    $nameFields = ['photo_main', 'photo_2', 'photo_3', 'photo_4', 'photo_5', 'photo_6', 'photo_7',  'photo_8',];
 
-    // Se guardan las imagenes del formulario en un arreglo
+    dd(\Input::file());
+
     $images = [
       $request->file('photo_main'),
       $request->file('photo_2'),
@@ -33,8 +34,8 @@ class VehiclesController extends Controller
       $request->file('photo_8')];
 
     // Se obtiene le nombre del archivo
-    $name = $images[0]->getClientOriginalName();
-    \Storage::disk('local')->put($name, \File::get($images[0]));
+    // $name = $images[0]->getClientOriginalName();
+    // \Storage::disk('local')->put($name, \File::get($images[0]));
 
     return "Archivo guardado";
 
