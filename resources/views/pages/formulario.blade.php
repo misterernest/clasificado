@@ -25,6 +25,7 @@
 		<input type="" id="" name="value" placeholder="$ Costo" " />
 		<input type="" id="" name="negociable" placeholder="negociable" />
 		<input type="" id="" name="actual_city" placeholder="Ciudad" "/>
+
 		<input type="" id="" name="actual_region" placeholder="Departamento" />
 		<input type="" id="" name="neighborhood" placeholder="Barrio" />
 		<input type="" id="" name="motor" placeholder="Motor" />
