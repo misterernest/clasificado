@@ -17,7 +17,7 @@
 		<input type="" id="" name="placa" placeholder="Placa" />
 		<input type="" id="" name="ref_car" placeholder="Serie del carro" />
 		<select name="">
-		   <option value=""></option> 
+		   <option value="1"></option> 
 		   <option value=""></option> 
 		   <option value=""></option>
 		   <option value=""></option> 
