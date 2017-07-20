@@ -5,6 +5,11 @@
 	<title>Autos de lujos</title>
 </head>
 <body>
+
+	@if (Session::has('error-messages'))
+		{{ Session::get('error-messages') }}
+	@endif
+
 	<form method="POST" action="{{url('vehicles/store')}}" enctype="multipart/form-data">
 	 	{{ csrf_field() }}
 		<input type="text" id="name_user" name="name_user" placeholder="Nombre" "/>
