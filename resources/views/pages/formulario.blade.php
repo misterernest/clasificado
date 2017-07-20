@@ -5,7 +5,7 @@
 	<title>Autos de lujos</title>
 </head>
 <body>
-	<form method="POST" action="{{url('vehicles/store')}}">
+	<form method="POST" action="{{url('vehicles/store')}}" enctype="multipart/form-data">
 	 	{{ csrf_field() }}
 		<input type="text" id="name_user" name="name_user" placeholder="Nombre" required="true"/>
 		<input type="" id="" name="email" placeholder="Correo electronico" />
@@ -44,14 +44,14 @@
 		<input type="" id="" name="accesories" placeholder="accesorios" />
 		<input type="" id="" name="which_accesories" placeholder="Cuales" />
 		<input type="" id="" name="financiacion" placeholder="Financiamiento" />
-		<input type="" id="" name="photo_main" />
-		<input type="" id="" name="photo_2"  />
-		<input type="" id="" name="photo_3"  />
-		<input type="" id="" name="photo_4"  />
-		<input type="" id="" name="photo_5"  />
-		<input type="" id="" name="photo_6"  />
-		<input type="" id="" name="photo_7"  />
-		<input type="" id="" name="photo_8"  />
+		<input type="file" id="" name="photo_main" />
+		<input type="file" id="" name="photo_2"  />
+		<input type="file" id="" name="photo_3"  />
+		<input type="file" id="" name="photo_4"  />
+		<input type="file" id="" name="photo_5"  />
+		<input type="file" id="" name="photo_6"  />
+		<input type="file" id="" name="photo_7"  />
+		<input type="file" id="" name="photo_8"  />
 		<input type="" id="" name="alarm" placeholder="Alarma" />
 		<input type="" id="" name="insurance_policy" placeholder="Poliza de seguro" />
 		<input type="" id="" name="armored" placeholder="Blindado" />
