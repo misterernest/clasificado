@@ -28,10 +28,14 @@ class VehiclesController extends Controller
 
     $nameFields = ['photo_main', 'photo_2', 'photo_3', 'photo_4', 'photo_5', 'photo_6', 'photo_7',  'photo_8',];
 
+    $dataForm = $request->except($nameFields);
+
     $isUploadImage = false;
-    $path = "images_upload/";  
+    $publicPath = "images_upload/";  
     $dir = "images_" . uniqid();
     $i = 0;
+
+    $imagePaths = [];
 
     while ($i < count($nameFields))
     {
@@ -51,9 +55,10 @@ class VehiclesController extends Controller
             
             if ($image->isValid()) 
             {
-              echo "Bien<br>";
-              // $image->move($path . $dir, $fileName);
-              // $request->$nameFields[$i] = $path . $dir . '/' . $fileName;
+              $image->move($publicPath . $dir, $fileName);
+              $routeImage = $publicPath . $dir . '/' . $fileName;
+              array_push($imagePaths, $routeImage);
+              $dataForm[$nameFields[$i]] = $routeImage;
             }
 
             break;
@@ -69,17 +74,28 @@ class VehiclesController extends Controller
       $i++;
     }
 
-    // if ($isUploadImage) 
-    // {
-    //  if (Vehicle::create($request->all())) 
-    //   {
-    //     return ["success" => 1];
-    //   } 
-    //   else 
-    //   {
-    //     return ["success" => 0];
-    //   }
-    // }
+    if ($isUploadImage) 
+    {
+      // Se valida que el registro se inserte correctamente
+      if (Vehicle::create($dataForm)) 
+      {
+        return ["success" => 1];
+      }
+      // Sino se inserta el registro en la base de datos se eliminan las imagenes que se habían almacenado 
+      else 
+      {
+        foreach ($imagePaths as $value) 
+        {
+          \File::delete($value);
+        }
+
+        if (file_exists($publicPath . $dir)) 
+        {
+          rmdir($publicPath . $dir);
+        }
+        return redirect('/vehicles')->with('error-messages', 'Hubo un error guardando la información en la base de datos ');
+      }
+    }
 
     // Se obtiene le nombre del archivo
     // $name = $images[0]->getClientOriginalName();
