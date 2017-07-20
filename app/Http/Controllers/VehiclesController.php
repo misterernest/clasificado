@@ -11,28 +11,44 @@ use App\Http\Controllers\Controller;
 class VehiclesController extends Controller
 {
 
-   public function getIndex() 
-   {
-      return view('pages.formulario');
-   }
+  public function getIndex() 
+  {
+    return view('pages.formulario');
+  }
 
-   public function postStore(Request $request) 
-   {
-      // Validar datos del form
+  public function postStore(Request $request) 
+  {
 
-      // Logica de las imagenes
-      // $request["photo" . $i] = "";
+    // Validar datos del for
 
-      if (Vehicle::create($request->all())) {
-          return ["success" => 1];
-      } else {
-          return ["success" => 0];
-      }
-   }
+    // Se guardan las imagenes del formulario en un arreglo
+    $images = [
+      $request->file('photo_main'),
+      $request->file('photo_2'),
+      $request->file('photo_3'),
+      $request->file('photo_4'),
+      $request->file('photo_5'),
+      $request->file('photo_6'),
+      $request->file('photo_7'),
+      $request->file('photo_8')];
 
-   public function getAllvehicles() 
-   {
-      $vehicles = Vehicle::all();
-      return view('pages.list', ['vehicles' => $vehicles]);
-   }
+    // Se obtiene le nombre del archivo
+    $name = $images[0]->getClientOriginalName();
+    \Storage::disk('local')->put($name, \File::get($images[0]));
+
+    return "Archivo guardado";
+
+
+    // if (Vehicle::create($request->all())) {
+    //   return ["success" => 1];
+    // } else {
+    //   return ["success" => 0];
+    // }
+  }
+
+  public function getAllvehicles() 
+  {
+    $vehicles = Vehicle::all();
+    return view('pages.list', ['vehicles' => $vehicles]);
+  }
 }
