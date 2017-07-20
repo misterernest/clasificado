@@ -1,0 +1,46 @@
+/*# sourceURL=css/ant-category.css */
+/*@ sourceURL=css/ant-category.css */
+/*# sourceURL=css/ant-category.css */
+/*@ sourceURL=css/ant-category.css */
+[class^=ant-cat-img] img{
+	width: 100%;
+}
+[class^=ant-cat-img]{
+	margin-top: 0.2rem;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	height: 21.5rem;	
+	width: 50%;
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
+	-webkit-flex-shrink: 1;
+	    -ms-flex-negative: 1;
+	        flex-shrink: 1;
+}
+[class^=ant-cat-img]>a>span{
+	color: #fff;
+	display: block;
+	position: relative;
+	bottom: 60%;
+	height: 30%;
+	background-color: rgba(0,0,0,0.5);
+	text-align: center;
+	font-size: 500%;
+	font-family: roboto;
+	width: 100%;
+	-webkit-transition: color 0.5s ease;
+	-o-transition: color 0.5s ease;
+	transition: color 0.5s ease;
+}
+[class^=ant-cat-img]>a>span:hover{
+	color: #ffbf00;
+}
