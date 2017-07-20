@@ -10,7 +10,7 @@
 		<input type="text" id="name_user" name="name_user" placeholder="Nombre" required="false"/>
 		<input type="" id="" name="email" placeholder="Correo electronico" />
 		<input type="" id="" name="cellphone" placeholder="Telefono celular" required="false" />
-		<input type="" id="" name="brand" placeholder="Marca" required="false"/>
+		<input type="" id="" name="brand" placeholder="Marca" required/>
 		<input type="" id="" name="year" placeholder="Modelo" required="false"/>		
 		<input type="" id="" name="country_origin" placeholder="Pais de origen" />
 		<input type="" id="" name="color" placeholder="Color" />
