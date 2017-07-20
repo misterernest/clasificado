@@ -1,6 +1,5 @@
 @forelse ($vehicles as $vehicle)
 	
-
 	Nombre: {!! $vehicle->name_user !!} - Email: {!! $vehicle->email !!}
 
 @empty

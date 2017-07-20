@@ -13,28 +13,26 @@ class VehiclesController extends Controller
 
    public function getIndex() 
    {
-        return view('pages.formulario');
+      return view('pages.formulario');
    }
 
    public function postStore(Request $request) 
    {
-        // Validar datos del form
+      // Validar datos del form
 
-        // Logica de las imagenes
-        // $request["photo" . $i] = "";
+      // Logica de las imagenes
+      // $request["photo" . $i] = "";
 
-        if (Vehicle::create($request->all())) {
-            return ["success" => 1];
-        } else {
-            return ["success" => 0];
-        }
+      if (Vehicle::create($request->all())) {
+          return ["success" => 1];
+      } else {
+          return ["success" => 0];
+      }
    }
 
    public function getAllvehicles() 
    {
-        // Validar que sea el usuario administrador
-
-        $vehicles = Vehicle::all();
-        return view('pages.list', ['vehicles' => $vehicles]);
+      $vehicles = Vehicle::all();
+      return view('pages.list', ['vehicles' => $vehicles]);
    }
 }
