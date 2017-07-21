@@ -55,7 +55,7 @@
                 <img src="images/logos-aseguradoras/5.png" alt="">
             </div>          
         </article>
-        <article class="ant-cat-art1">
+        <article class="ant-cat-art1" id="art3">
             <div class="ant-cat-img1" id="section1">
                 <img src="images/category/1.png" id="section1" alt="">
                 <span>vende</span>

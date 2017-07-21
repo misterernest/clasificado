@@ -1,5 +1,10 @@
-$(document).ready(function(){
+doc = $(document) ;
+doc.ready(function(){
 	$("#section1").click(function(){
-		alert("Hola mundo");
+		side = $("#art3");
+		side.remove().delay(1000).fadeOut( "slow", function() {
+    		// Animation complete.
+  		});
 	});	
 });
+newArt3 = 

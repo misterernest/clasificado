@@ -16,3 +16,7 @@ Route::get('/', function () {
 });
 
 Route::controller('/vehicles', 'VehiclesController');
+
+Route::get('/test', function(){
+	return view('test');
+});
