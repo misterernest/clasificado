@@ -19,14 +19,15 @@ class VehiclesController extends Controller
   public function postStore(Request $request) 
   {
     $rules = [
-      'name_user'   =>  'required|string',
-      'photo_main'  =>  'required|max:300000',
-      'photo_2'     =>  'max:300000',
-      'photo_3'     =>  'max:300000',
-      'photo_4'     =>  'max:300000',
-      'photo_5'     =>  'max:300000',
-      'photo_6'     =>  'max:300000',
-      'photo_7'     =>  'max:300000',
+      'name_user'   =>  'required',
+      'photo_main'  =>  'required|max:3072',
+      'photo_2'     =>  'max:3072',
+      'photo_3'     =>  'max:3072',
+      'photo_4'     =>  'max:3072',
+      'photo_5'     =>  'max:3072',
+      'photo_6'     =>  'max:3072',
+      'photo_7'     =>  'max:3072',
+      'photo_8'     =>  'max:3072',
       'cellphone'   =>  'numeric',
       'email'       =>  'required',
       'type_car'    =>  'in:Sedan,Deportivo,Camioneta,Clasico',
@@ -36,32 +37,46 @@ class VehiclesController extends Controller
     ];
 
     $messages = [
-      'name_user.required'  =>  'El nombre es requerido', 
-      'max'                 =>  'La imagen no debe pesar menos de 3mb',
-      'cellphone.numeric'   =>  'El número de teléfono debe ser numérico', 
-      'email.required'   =>  'El email es requerido', 
-      'type_car.in'   =>  'Debes elegir un tipo de carro correcto', 
-      'transmision.in'   =>  'Debes elegir una transmisión correcta', 
-      'combustible.in'   =>  'Debes elegir un tipo de combustible correcto', 
-      'brakes.in'   =>  'Debes elegir un tipo de freno correcto', 
+      'name_user.required'    =>  'El campo :attribute requerido.', 
+      'photo_main.required'   =>  'Se requiere una imagen principal.', 
+      'max'                   =>  'La :attribute no debe pesar más de 3 MegaBytes.',
+      'cellphone.numeric'     =>  'El número de teléfono debe ser numérico.', 
+      'email.required'        =>  'El email es requerido.', 
+      'type_car.in'           =>  'Debes elegir un tipo de carro correcto.', 
+      'transmision.in'        =>  'Debes elegir una transmisión correcta.', 
+      'combustible.in'        =>  'Debes elegir un tipo de combustible correcto.', 
+      'brakes.in'             =>  'Debes elegir un tipo de freno correcto.', 
     ];
 
-    $val = \Validator::make($request->all(), $rules, $messages);
+    $attributes = [
+      'name_user'   =>  'Nombre', 
+      'photo_main'  =>  'Imagen principal', 
+      'photo_2'     =>  '2° imagen', 
+      'photo_3'     =>  '3° imagen', 
+      'photo_4'     =>  '4° imagen', 
+      'photo_5'     =>  '5° imagen', 
+      'photo_6'     =>  '6° imagen', 
+      'photo_7'     =>  '7° imagen', 
+      'photo_8'     =>  '8° imagen', 
+    ];
 
-    if ($v->fails()) 
+    $val = \Validator::make($request->all(), $rules, $messages, $attributes);
+
+    if ($val->fails()) 
     {
-      return redirect()->back()->withInput()->withErrors($v->errors());
+      return redirect()->back()->withInput()->withErrors($val->errors());
     }
 
     // Validar que se envie al menos 1 imagen
     if (count($request->file()) == 0) 
     {
-      return redirect('/vehicles')->with('error-messages', 'Debes subir al menos una imagen');
+      return redirect()->back()->with('error-messages', 'Debes subir al menos una imagen')->withInput();
     }
 
-    $nameFields = ['photo_main', 'photo_2', 'photo_3', 'photo_4', 'photo_5', 'photo_6', 'photo_7',  'photo_8',];
+    $nameFileFields = ['photo_main', 'photo_2', 'photo_3', 'photo_4', 
+      'photo_5', 'photo_6', 'photo_7',  'photo_8',];
 
-    $dataForm = $request->except($nameFields);
+    $dataForm = $request->except($nameFileFields);
 
     $isUploadImage = false;
     $publicPath = "images_upload/";  
@@ -70,12 +85,12 @@ class VehiclesController extends Controller
 
     $imagePaths = [];
 
-    while ($i < count($nameFields))
+    while ($i < count($nameFileFields))
     {
-      if ($request->hasFile($nameFields[$i])) 
+      if ($request->hasFile($nameFileFields[$i])) 
       {
         
-        $image = $request->file($nameFields[$i]);
+        $image = $request->file($nameFileFields[$i]);
         // Se debe tener activa la extensión de php_fileinfo en el php.ini
         $mime = $image->getMimeType();
         $extension = strtolower($image->getClientOriginalExtension());
@@ -91,13 +106,13 @@ class VehiclesController extends Controller
               $image->move($publicPath . $dir, $fileName);
               $routeImage = $publicPath . $dir . '/' . $fileName;
               array_push($imagePaths, $routeImage);
-              $dataForm[$nameFields[$i]] = $routeImage;
+              $dataForm[$nameFileFields[$i]] = $routeImage;
             }
 
             break;
           
           default:
-            return redirect('/vehicles')->with('error-messages', 'El archivo ' . $image->getClientOriginalName() . ' no es imagen' );
+            return redirect()->back()->with('error-messages', 'El archivo ' . $image->getClientOriginalName() . ' no es imagen' );
             break;
         }
       
@@ -107,38 +122,31 @@ class VehiclesController extends Controller
       $i++;
     }
 
+    // Si se subieron las imagenes correctamente entonces se procede a guardar el registro
     if ($isUploadImage) 
     {
       // Se valida que el registro se inserte correctamente
       if (Vehicle::create($dataForm)) 
       {
-        return ["success" => 1];
+        return redirect()->back()->with('success-messages', 'Clasificado ingresado exitosamente');
       }
       // Sino se inserta el registro en la base de datos se eliminan las imagenes que se habían almacenado 
       else 
       {
+        // Se eliminan cada una de las imagenes
         foreach ($imagePaths as $value) 
         {
           \File::delete($value);
         }
 
+        // Se elimina la carpeta
         if (file_exists($publicPath . $dir)) 
         {
           rmdir($publicPath . $dir);
         }
-        return redirect('/vehicles')->with('error-messages', 'Hubo un error guardando la información en la base de datos ');
+        return redirect()->back()->with('error-messages', 'Hubo un error guardando la información en la base de datos.<br/>Intentalo de nuevo.');
       }
     }
-
-    // Se obtiene le nombre del archivo
-    // $name = $images[0]->getClientOriginalName();
-    // \Storage::disk('local')->put($name, \File::get($images[0]));
-
-    // if (Vehicle::create($request->all())) {
-    //   return ["success" => 1];
-    // } else {
-    //   return ["success" => 0];
-    // }
   }
 
   public function getAllvehicles() 
