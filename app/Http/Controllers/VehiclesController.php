@@ -29,9 +29,10 @@ class VehiclesController extends Controller
       'photo_7'     =>  'max:3072',
       'photo_8'     =>  'max:3072',
       'cellphone'   =>  'numeric',
-      'email'       =>  'required',
+      'email'       =>  'required:email',
       'type_car'    =>  'in:Sedan,Deportivo,Camioneta,Clasico',
-      'transmision' =>  'in:Automática,Manual,Mixta,Secuencial,Steptronic,Tiptronic',
+      'opcion'      =>  'in:Comprar,Alquilar,Vender,Permutar',
+      'transmission'=>  'in:Automática,Manual,Mixta,Secuencial,Steptronic,Tiptronic',
       'combustible' =>  'in:Diesel,Electrico,Gas,Secuencial,Gasolina,Hibrido',
       'brakes'      =>  'in:ABS,Disco',
     ];
@@ -43,7 +44,8 @@ class VehiclesController extends Controller
       'cellphone.numeric'     =>  'El número de teléfono debe ser numérico.', 
       'email.required'        =>  'El email es requerido.', 
       'type_car.in'           =>  'Debes elegir un tipo de carro correcto.', 
-      'transmision.in'        =>  'Debes elegir una transmisión correcta.', 
+      'opcion.in'             =>  'Debes elegir un tipo de Opción correcto.', 
+      'transmission.in'       =>  'Debes elegir una transmisión correcta.', 
       'combustible.in'        =>  'Debes elegir un tipo de combustible correcto.', 
       'brakes.in'             =>  'Debes elegir un tipo de freno correcto.', 
     ];
@@ -151,21 +153,31 @@ class VehiclesController extends Controller
 
   public function getAllvehicles() 
   {
-    $vehicles = Vehicle::all();
-    return view('pages.list', ['vehicles' => $vehicles]);
+    if (\Auth::guest()) {
+      return redirect('/');
+    } else {
+      $vehicles = Vehicle::all();
+      return view('pages.list', ['vehicles' => $vehicles]);
+    }
+    
   }
 
-  public function detail($id) 
+  public function getDetail($id) 
   {
-    $vehicle = Vehicle::find($id);
+    if (\Auth::guest()) {
+      return redirect('/');
+    } else {
 
-    if ($vehicle != null) 
-    {
-      return view('pages.detail', ['vehicle' => $vehicle]);
-    } 
-    else 
-    {
-      return redirect()->back()->with('error-messages', 'El vehiculo no existe');
+      $vehicle = Vehicle::find($id);
+
+      if ($vehicle != null) 
+      {
+        return view('pages.detail', ['vehicle' => $vehicle]);
+      } 
+      else 
+      {
+        return redirect()->back()->with('error-messages', 'El vehiculo no existe');
+      }
     }
   }
 }

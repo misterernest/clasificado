@@ -1,3 +1,7 @@
+@if (Session::has('error-messages'))
+	{{ Session::get('error-messages') }}
+@endif
+
 @forelse ($vehicles as $vehicle)
 	
 	Nombre: {!! $vehicle->name_user !!}

@@ -15,8 +15,25 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::controller('/vehicles', 'VehiclesController');
+Route::get('auth/login', [
+	'uses'	=>	'Auth\AuthController@getLogin',
+	'as'	=>	'login'
+]);
 
-Route::get('/test', function(){
+Route::post('auth/login', [
+	'uses'	=>	'Auth\AuthController@postLogin', 
+	'as'	=>	'login'
+]);
+
+Route::get('auth/logout', [
+	'uses'	=>	'Auth\AuthController@getLogout', 
+	'as'	=>	'logout'
+]);
+
+Route::post('login', 'Auth\AuthController@postLogin');
+
+Route::controller('vehicles', 'VehiclesController');
+
+Route::get('test', function(){
 	return view('test');
 });
