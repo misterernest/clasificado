@@ -1,38 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Autos de lujo</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-	<meta name="description" content="Autos de lujo en Colombia, vende tu autos de lujo, alquila tu auto de lujo, permuta tu auto de lujo, compra tu auto de lujo" />
-	<meta name="keywords" content="autos, carros, vehiculos, lujo, autos de lujo, carros de lujo, vehiculos de lujo, vende tu auto de lujo, alquila tu auto de lujo, compra tu auto de lujo, permuta tu auto de lujo" />
-	<meta name="author" content="ANT" />
-	<link rel="shortcut icon" href="images/favicon.png">
-	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/style-ant.css" />
-	<link rel="stylesheet" type="text/css" href="css/ant-animation.css">
-	<link rel="stylesheet" type="text/css" href="css/style-gallery.css" />
-	<link rel="stylesheet" type="text/css" href="css/ant-category.css" />
-	<link rel="stylesheet" type="text/css" href="css/ant-hori-transition.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" type="text/css" href="css/tucan-gallery4.css" />
+    <link rel="stylesheet" type="text/css" href="css/style-ant.css" />
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/prefixfree.min.js" type="text/javascript"></script>
+    <script src="js/section.js" type="text/javascript"></script>
 </head>
 <body>
-        <article class="ant-cat-art1" id="art3">
-            <div class="ant-cat-img1" id="section1">
-                <img src="images/category/1.png" id="section1" alt="">
-                <span>vende</span>
+    <section>
+        <article>
+            <div class="tg4-div-content">
+                <div class="tg4-div-img1">
+                    <img src="images/category/1.png" alt="">
+                    <span>VENDE</span>
+                </div>
+                <div class="tg4-div-img2">
+                    <img src="images/category/2.png" alt="">
+                    <span>COMPRA</span>
+                </div>
+                <div class="tg4-div-img3">
+                    <img src="images/category/3.png" alt="">
+                    <span>ALQUILA</span>
+                </div>
+                <div class="tg4-div-img4">
+                    <img src="images/category/4.png" alt="">
+                    <span>PERMUTA</span>
+                </div>
             </div>
-            <div class="ant-cat-img2">
-                <img src="images/category/2.png" id="section1" alt="">  
-                <span>compra</span> 
-            </div>
-            <div class="ant-cat-img3">
-                <img src="images/category/3.png" id="section1" alt="">  
-                <span>alquila</span>
-            </div>
-            <div class="ant-cat-img4">
-                <img src="images/category/4.png" id="section1" alt="">  
-                <span>permuta</span>    
+            <div class="tg4-div-content">
+                <div class="tg4-div-img1">
+                    <img src="images/category/1.png" alt="">
+                    <span>VENDE</span>
+                </div>
+                <div class="tg4-div-img2">
+                    <h2>VENTA</h2>
+                    <p>
+                        Si estás interesado en adquirir o comprar un auto o camioneta de lujo, está es tu oportunidad de conseguirlo. Se identifica el carro de lujo según especificaciones soñadas, además se realiza toda la gestión de financiamiento y aseguramiento de los vehículos.
+ 
+                    </p>
+                    <a href="">VENDER AHORA</a>
+                </div>
             </div>
         </article>
+    </section>
 </body>
 </html>

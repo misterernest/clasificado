@@ -1,30 +1,15 @@
-/*# sourceURL=css/ant-category.css */
-/*@ sourceURL=css/ant-category.css */
-/*# sourceURL=css/ant-category.css */
 /*@ sourceURL=css/ant-category.css */
 [class^=ant-cat-img] img{
 	width: 100%;
 }
 [class^=ant-cat-img]{
 	margin-top: 0.2rem;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
+	flex-direction: row;
 	height: 21.5rem;	
 	width: 50%;
-	-webkit-box-flex: 1;
-	-webkit-flex-grow: 1;
-	    -ms-flex-positive: 1;
-	        flex-grow: 1;
-	-webkit-flex-shrink: 1;
-	    -ms-flex-negative: 1;
-	        flex-shrink: 1;
+	flex-grow: 1;
+	flex-shrink: 1;
 }
 [class^=ant-cat-img]>span{
 	color: #fff;
