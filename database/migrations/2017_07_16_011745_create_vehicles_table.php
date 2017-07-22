@@ -23,10 +23,10 @@ class CreateVehiclesTable extends Migration
             $table->string('color');
             $table->string('placa', 6);
             $table->string('ref_car');
-            $table->enum('type_car', ['Sedan', 'Deportivo', 'Camioneta', 'Clasico']);
+            $table->enum('type_car', ['Sedan', 'Deportivo', 'Camioneta', 'Clásico']);
+            $table->enum('opcion', ['Comprar', 'Alquilar', 'Vender', 'Permutar']);
             $table->integer('value');
-            $table->boolean('negociable');
-            $table->timestamps();
+            $table->boolean('negociable');            
             $table->string('actual_city');
             $table->string('actual_region');
             $table->string('neighborhood');
@@ -57,6 +57,7 @@ class CreateVehiclesTable extends Migration
             $table->string('photo_6');
             $table->string('photo_7');
             $table->string('photo_8');
+            $table->timestamps();
         });
     }
 

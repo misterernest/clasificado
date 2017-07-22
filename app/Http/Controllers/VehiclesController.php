@@ -154,4 +154,18 @@ class VehiclesController extends Controller
     $vehicles = Vehicle::all();
     return view('pages.list', ['vehicles' => $vehicles]);
   }
+
+  public function detail($id) 
+  {
+    $vehicle = Vehicle::find($id);
+
+    if ($vehicle != null) 
+    {
+      return view('pages.detail', ['vehicle' => $vehicle]);
+    } 
+    else 
+    {
+      return redirect()->back()->with('error-messages', 'El vehiculo no existe');
+    }
+  }
 }
