@@ -11,6 +11,11 @@ use App\Http\Controllers\Controller;
 class VehiclesController extends Controller
 {
 
+  public function __construct() 
+  {
+    $this->middleware('auth', ['only' => ['getAllvehicles', 'getDetail']]);
+  }
+
   public function getIndex() 
   {
     return view('pages.formulario');
@@ -153,31 +158,22 @@ class VehiclesController extends Controller
 
   public function getAllvehicles() 
   {
-    if (\Auth::guest()) {
-      return redirect('/');
-    } else {
-      $vehicles = Vehicle::all();
-      return view('pages.list', ['vehicles' => $vehicles]);
-    }
-    
+
+    $vehicles = Vehicle::all();
+    return view('pages.list', ['vehicles' => $vehicles]);    
   }
 
   public function getDetail($id) 
   {
-    if (\Auth::guest()) {
-      return redirect('/');
-    } else {
+    $vehicle = Vehicle::find($id);
 
-      $vehicle = Vehicle::find($id);
-
-      if ($vehicle != null) 
-      {
-        return view('pages.detail', ['vehicle' => $vehicle]);
-      } 
-      else 
-      {
-        return redirect()->back()->with('error-messages', 'El vehiculo no existe');
-      }
+    if ($vehicle != null) 
+    {
+      return view('pages.detail', ['vehicle' => $vehicle]);
+    } 
+    else 
+    {
+      return redirect()->back()->with('error-messages', 'El vehiculo no existe');
     }
   }
 }
