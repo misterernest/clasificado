@@ -35,7 +35,7 @@ class VehiclesController extends Controller
       'photo_8'     =>  'max:3072',
       'cellphone'   =>  'numeric',
       'email'       =>  'required:email',
-      'type_car'    =>  'in:Sedan,Deportivo,Camioneta,Clasico',
+      'type_car'    =>  'in:Sedan,Deportivo,Camioneta,Clásico',
       'opcion'      =>  'in:Comprar,Alquilar,Vender,Permutar',
       'transmission'=>  'in:Automática,Manual,Mixta,Secuencial,Steptronic,Tiptronic',
       'combustible' =>  'in:Diesel,Electrico,Gas,Secuencial,Gasolina,Hibrido',
@@ -135,6 +135,21 @@ class VehiclesController extends Controller
       // Se valida que el registro se inserte correctamente
       if (Vehicle::create($dataForm)) 
       {
+
+        // $data = ['brand' => $request->brand, 'transmission' => $request->transmission, 'value' => $request->value];
+
+        // \Mail::send('emails.alert', $data, function($message) use ($request) 
+        // {
+        //     // Remitente
+        //     $message->from(env('CONTACT_MAIL'), env('CONTACT_NAME'));
+
+        //     // Asunto
+        //     $message->subject("Autos de Lujo. Auto registrado!");
+
+        //     // Receptor
+        //     $message->to($request->email, $request->name);
+        // });
+
         return redirect()->back()->with('success-messages', 'Clasificado ingresado exitosamente');
       }
       // Sino se inserta el registro en la base de datos se eliminan las imagenes que se habían almacenado 
