@@ -30,6 +30,16 @@ Route::get('auth/logout', [
 	'as'	=>	'logout'
 ]);
 
+Route::get('contact', [
+	'uses'	=>	'MailController@index', 
+	'as'	=>	'contact'
+]);
+
+Route::post('send', [
+	'uses'	=>	'MailController@send', 
+	'as'	=>	'send'
+]);
+
 Route::post('login', 'Auth\AuthController@postLogin');
 
 Route::controller('vehicles', 'VehiclesController');
