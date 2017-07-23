@@ -1,22 +1,27 @@
 /*# sourceURL=css/tucan-gallery4.css */
 /*@ sourceURL=css/tucan-gallery4.css */
+/*# sourceURL=css/tucan-gallery4.css */
 /*@ sourceURL=css/tucan-gallery4.css */
 
-.tg4-div-content{
-	cursor: pointer;
+[class^=.tg4-div-content]{
 	width: 100%;
 	margin: 0 auto;
 	display: flex;
 	flex-flow: row wrap;
 }
-[class^=tg4-div-img]{ 
+.tg4-div-content2{
+	display: none;
+}
+[class^=tg4-div-img], .tg4-div-img5{ 
+	cursor: pointer;
 	position: relative;
 	width: 50%;
 }
-[class^=tg4-div-img]>img, [class^=tg4-div-img]>span{
+[class^=tg4-div-img]>img, [class^=tg4-div-img]>span, .tg4-div-img5>a>span, .tg4-div-img5>a>img{
 	width:99.5%;
 }
-[class^=tg4-div-img]>span{
+[class^=tg4-div-img]>span, .tg4-div-img5>a>span{
+	padding: 1rem;
 	color: #fff;
 	display: block;
 	position: absolute;
@@ -29,6 +34,38 @@
 	letter-spacing: 0.1rem;
 	transition: color 0.5s ease;
 }
-[class^=tg4-div-img]>span:hover{
+[class^=tg4-div-img]>span:hover, .tg4-div-img5>a>span{
 	color: #ffbf00;
+}
+
+.tg4-div-img6,.tg4-div-img7, .tg4-div-img8{
+	width: 33.333%;
+}
+h2{
+	font-family: anton;
+	font-size: xx-large;
+}
+.tg4-div-txt{
+	padding: 1rem 0;
+	font-family: ROBOTO;
+	background-color: #EDEDED;
+	width: 50%;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+.tg4-div-txt p{
+	
+}
+.tg4-div-txt a{
+	padding: 0.7rem;
+	background-color: #000000;
+	width: 40%;
+	text-decoration: none;
+	color: #B3B3B3;
+	align-self: flex-end;
+	margin: 5%;
+	font-family: anton;
+	text-align: center;
+	font-size: xx-large;
 }
