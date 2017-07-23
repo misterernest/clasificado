@@ -94,6 +94,7 @@
 			<input type="" id="" name="insurance_policy" placeholder="Poliza de seguro" value="{{ old('insurance_policy') }}" />
 			<input type="" id="" name="armored" placeholder="Blindado" value="{{ old('armored') }}" />
 			<input type="" id="" name="satelite" placeholder="Rastreo satelital" value="{{ old('satelite') }}" />
+			{!! Recaptcha::render() !!}
 			<input type="submit" value="Submit">
 		</form>
 	</div>

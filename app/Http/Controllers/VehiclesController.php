@@ -24,30 +24,33 @@ class VehiclesController extends Controller
   public function postStore(Request $request) 
   {
     $rules = [
-      'name_user'   =>  'required',
-      'photo_main'  =>  'required|max:3072',
-      'photo_2'     =>  'max:3072',
-      'photo_3'     =>  'max:3072',
-      'photo_4'     =>  'max:3072',
-      'photo_5'     =>  'max:3072',
-      'photo_6'     =>  'max:3072',
-      'photo_7'     =>  'max:3072',
-      'photo_8'     =>  'max:3072',
-      'cellphone'   =>  'numeric',
-      'email'       =>  'required:email',
-      'type_car'    =>  'in:Sedan,Deportivo,Camioneta,Clásico',
-      'opcion'      =>  'in:Comprar,Alquilar,Vender,Permutar',
-      'transmission'=>  'in:Automática,Manual,Mixta,Secuencial,Steptronic,Tiptronic',
-      'combustible' =>  'in:Diesel,Electrico,Gas,Secuencial,Gasolina,Hibrido',
-      'brakes'      =>  'in:ABS,Disco',
+      'name_user'             =>  'required',
+      'photo_main'            =>  'required|max:3072',
+      'g-recaptcha-response'  =>  'required',
+      'photo_2'               =>  'max:3072',
+      'photo_3'               =>  'max:3072',
+      'photo_4'               =>  'max:3072',
+      'photo_5'               =>  'max:3072',
+      'photo_6'               =>  'max:3072',
+      'photo_7'               =>  'max:3072',
+      'photo_8'               =>  'max:3072',
+      'cellphone'             =>  'numeric',
+      'email'                 =>  'required:email',
+      'type_car'              =>  'in:Sedan,Deportivo,Camioneta,Clásico',
+      'opcion'                =>  'in:Comprar,Alquilar,Vender,Permutar',
+      'transmission'          =>  'in:Automática,Manual,Mixta,Secuencial,Steptronic,Tiptronic',
+      'combustible'           =>  'in:Diesel,Electrico,Gas,Secuencial,Gasolina,Hibrido',
+      'brakes'                =>  'in:ABS,Disco',
     ];
 
     $messages = [
       'name_user.required'    =>  'El campo :attribute requerido.', 
       'photo_main.required'   =>  'Se requiere una imagen principal.', 
       'max'                   =>  'La :attribute no debe pesar más de 3 MegaBytes.',
+      'g-recaptcha-response.required'  =>  'El Captcha es obligatorio.',
       'cellphone.numeric'     =>  'El número de teléfono debe ser numérico.', 
       'email.required'        =>  'El email es requerido.', 
+      'email.email'           =>  'Debe ingresar un email valido.', 
       'type_car.in'           =>  'Debes elegir un tipo de carro correcto.', 
       'opcion.in'             =>  'Debes elegir un tipo de Opción correcto.', 
       'transmission.in'       =>  'Debes elegir una transmisión correcta.', 
@@ -69,6 +72,7 @@ class VehiclesController extends Controller
 
     $val = \Validator::make($request->all(), $rules, $messages, $attributes);
 
+    // Se valida que el formulario haya sido diligensiado exitosamente
     if ($val->fails()) 
     {
       return redirect()->back()->withInput()->withErrors($val->errors());
