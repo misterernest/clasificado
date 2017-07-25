@@ -4,18 +4,16 @@
 /*@ sourceURL=css/tucan-gallery4.css */
 
 [class^=.tg4-div-content]{
-	width: 100%;
 	margin: 0 auto;
-	display: flex;
-	flex-flow: row wrap;
 }
 .tg4-div-content2{
 	display: none;
 }
-[class^=tg4-div-img], .tg4-div-img5{ 
+[class^=tg4-div-img], .tg4-div-img5{
+	margin-bottom: 3px;
 	cursor: pointer;
 	position: relative;
-	width: 50%;
+
 }
 [class^=tg4-div-img]>img, [class^=tg4-div-img]>span, .tg4-div-img5>a>span, .tg4-div-img5>a>img{
 	width:99.5%;
@@ -46,15 +44,14 @@
 	font-family: ROBOTO;
 	background-color: #EDEDED;
 	width: 50%;
-	display: flex;
-	flex-flow: column nowrap;
 	align-items: center;
 }
 h2{
 	font-family: anton;
-	font-size: xx-large;
+	font-size: 1px;
 }
 .tg4-div-txt p{
+	font-size: 1px;
 	font-family: ROBOTO;
 }
 .tg4-div-txt a{
@@ -67,5 +64,5 @@ h2{
 	margin: 5%;
 	font-family: anton;
 	text-align: center;
-	font-size: xx-large;
+	font-size: ;
 }
