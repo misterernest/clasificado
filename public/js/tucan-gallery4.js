@@ -67,7 +67,7 @@ doc.ready(function(){
 		$("#tg4-content1").fadeOut( "slow", function() {
     		// Animation complete.
   		}).delay(200).slideUp("slow",function(){});	
-		$("#tg4-content2").slideDown("fast",function(){}).css("display", "flex");
+		$("#tg4-content2").slideDown("fast",function(){});
 		createMainDiv(array_div1);
 		changeSubDiv(div2, $("#tg4-img-img6"), $("#tg4-span-img6"));
 		changeSubDiv(div3, $("#tg4-img-img7"), $("#tg4-span-img7"));
@@ -116,5 +116,3 @@ doc.ready(function(){
 		span1.text(divChange[1]);
 	}
 });
-
-
