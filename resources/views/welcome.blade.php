@@ -27,6 +27,7 @@
             <a href="####">COMPRA</a>
             <a href="####">CONTACTENOS</a>
         </nav>
+       
         <div class="container-slide">
             <div class="img-slide">
                 <div class="img-slide-1">
@@ -39,22 +40,17 @@
                 </div>
             </div>
             <div class="txt-slide">
-                <div class="txt-slide-1"><a href="">Es hora de manejar tu auto de lujo</a></div>
-                <div class="txt-slide-2"><a href="">Compra y Venta de autos de lujo</a></div>
-                <div class="txt-slide-3"><a href="">Financiamiento & Aseguramiento</a></div>
+                <div class="txt-slide-1"><a href="">Es hora de <br> manejar tu <br>auto de lujo</a></div>
+                <div class="txt-slide-2"><a href="">Compra y Venta<br> de  <br>autos de lujo</a></div>
+                <div class="txt-slide-3"><a href="">Financiamiento <br> & <br>Aseguramiento</a></div>
             </div>
+        </div>
+         <div class="btn-servicios">
+            <a href="#">Conoce Nuestros Servicios</a>
         </div>
     </header>
     <section>
-        <article class="ant-art3">
-            <div>
-                <img src="images/logos-aseguradoras/1.png" alt="">
-                <img src="images/logos-aseguradoras/2.png" alt="">
-                <img src="images/logos-aseguradoras/3.png" alt="">
-                <img src="images/logos-aseguradoras/4.png" alt="">
-                <img src="images/logos-aseguradoras/5.png" alt="">
-            </div>          
-        </article>
+        
         <article class="ant-cat-art1" id="art3">
             <div class="ant-cat-img1" id="section1">
                 <img src="images/category/1.png" id="section1" alt="">
@@ -73,17 +69,24 @@
                 <span>permuta</span>    
             </div>
         </article>
-        <article class="ant-art2">
-            <div>
+        <div class="row">
+            <div class="col-md-6 Aseguradoras-financieras">
                 <div class="logo-bancos">
                     <img src="images/iconos-fina-aseg/1.png" alt="">
                 </div>
                 <div>
-                    <h2>LOREM IPSUM DOLOR</h2>
+                    <h2>Aseguradoras</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, explicabo eius? Deserunt aliquam eveniet dignissimos a, asperiores fugit quos porro earum nobis quidem qui, voluptas impedit, deleniti omnis ullam repellat!</p>   
                 </div>
+                <div class="logos-aseguradoras">
+                    <img src="images/logos-aseguradoras/1.png" alt="">
+                    <img src="images/logos-aseguradoras/2.png" alt="">
+                    <img src="images/logos-aseguradoras/3.png" alt="">
+                    <img src="images/logos-aseguradoras/4.png" alt="">
+                    <img src="images/logos-aseguradoras/5.png" alt="">
+                </div> 
             </div>
-            <div>
+            <div class="col-md-6 Aseguradoras-financieras">
                 <div class="logo-bancos">
                     <img src="images/iconos-fina-aseg/2.png" alt="">
                 </div>
@@ -91,8 +94,17 @@
                     <h2>LOREM IPSUM DOLOR</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, explicabo eius? Deserunt aliquam eveniet dignissimos a, asperiores fugit quos porro earum nobis quidem qui, voluptas impedit, deleniti omnis ullam repellat!</p>   
                 </div>
+                <div class="logos-aseguradoras">
+                    <img src="images/logos-aseguradoras/1.png" alt="">
+                    <img src="images/logos-aseguradoras/2.png" alt="">
+                    <img src="images/logos-aseguradoras/3.png" alt="">
+                    <img src="images/logos-aseguradoras/4.png" alt="">
+                    <img src="images/logos-aseguradoras/5.png" alt="">
+                </div>          
             </div>
+            
         </article>
+
         <article class="content-gallery">
             <div id="hs_container" class="hs_container">
                 <div class="hs_area hs_area1">
