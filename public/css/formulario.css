@@ -1,0 +1,40 @@
+
+
+.row-form {
+  padding: 10px 20px;
+}
+
+input, select{
+  margin: 10px;
+  width:90%;
+}
+
+.btn-file {
+  position: relative;
+  overflow: hidden;
+  }
+  
+.btn-file input[type=file] {
+  position: absolute;
+  display:none;
+  filter: alpha(opacity=0);
+  outline: none;
+  cursor: inherit;
+}
+
+.divisor-line {
+  border-right: 1px solid #333;
+}
+
+.btn-file {
+  font-size:30px;
+  margin:5px;
+  float: left;
+}
+
+.btn-file.photo_main{
+  font-size:80px;
+  margin:10px;
+  float: left;
+}
+
