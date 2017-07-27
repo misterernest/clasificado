@@ -169,9 +169,20 @@
 						</div>
 					</div>
 				</div>		
+				<div class="row">
+					<div class="col-xs-12 col-md-6 ">	
+						<div class="div-captcha">
+							{!! Recaptcha::render() !!}
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">	
+						<input class="form-control bt-submit" type="submit" value="Submit">
+					</div>
+				</div>
 						
-						<!-- {!! Recaptcha::render() !!} -->
-						<input class="form-control" type="submit" value="Submit">
+						
 				
 			</div>
 		</form>
