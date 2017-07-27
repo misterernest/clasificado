@@ -2,23 +2,8 @@
 /*@ sourceURL=css/style-ant.css */
 /*@ sourceURL=css/style-ant.css */
 /*Resetear style*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-a{
-	text-decoration: none;
-}
-/*End reset style*/
-/*Body*/
-body{
-	margin: 0 auto;
-	
-}
-body, header, section{
-	width: 100%;
-}
+
+
 /*Header*/
 header{
 	height: 36rem;
