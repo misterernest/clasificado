@@ -51,21 +51,21 @@
 					<div class=" col-md-6 divisor-line">
 						<div class="row row-form">
 							<div class="col-md-12"><label>Datos Generales del Vehiculo</label></div>
-							<div class="col-sm-4"><input type="" id="" name="brand" placeholder="Marca" value="{{ old('brand') }}"/></div>
-							<div class="col-sm-4"><input type="" id="" name="year" placeholder="Modelo" value="{{ old('year') }}"/></div>
-							<div class="col-sm-4"><input type="" id="" name="country_origin" placeholder="Pais de origen" value="{{ old('country_origin') }}" /></div>
-							<div class="col-sm-4"><input type="" id="" name="color" placeholder="Color" value="{{ old('color') }}" /></div>
-							<div class="col-sm-4"><input type="" id="" name="placa" placeholder="Placa" value="{{ old('placa') }}" /></div>
-							<div class="col-sm-4"><input type="" id="" name="ref_car" placeholder="Serie del carro" value="{{ old('ref_car') }}" /></div>
-							<div class="col-sm-4"><select name="type_car">
+							<div class="col-sm-4"><input class="form-control" type="" id="" name="brand" placeholder="Marca" value="{{ old('brand') }}"/></div>
+							<div class="col-sm-4"><input class="form-control" type="" id="" name="year" placeholder="Modelo" value="{{ old('year') }}"/></div>
+							<div class="col-sm-4"><input class="form-control" type="" id="" name="country_origin" placeholder="Pais de origen" value="{{ old('country_origin') }}" /></div>
+							<div class="col-sm-4"><input class="form-control" type="" id="" name="color" placeholder="Color" value="{{ old('color') }}" /></div>
+							<div class="col-sm-4"><input class="form-control" type="" id="" name="placa" placeholder="Placa" value="{{ old('placa') }}" /></div>
+							<div class="col-sm-4"><input class="form-control" type="" id="" name="ref_car" placeholder="Serie del carro" value="{{ old('ref_car') }}" /></div>
+							<div class="col-sm-4"><select  class="form-control" name="type_car">
 							   <option value="Sedan" {{ old('type_car') == 'Sedan' ? "selected='true'" : "" }}>Sedan</option> 
 							   <option value="Deportivo" {{ old('type_car') == 'Deportivo' ? "selected='true'" : "" }}>Deportivo</option> 
 							   <option value="Camioneta" {{ old('type_car') == 'Camioneta' ? "selected='true'" : "" }}>Camioneta</option>
 							   <option value="Clásico" {{ old('type_car') == 'Clásico' ? "selected='true'" : "" }}>Clásico</option> 
 							</select></div>
-							<div class="col-sm-4"><input type="" id="" name="value" placeholder="$ Costo" value="{{ old('value') }}" /></div>
-							<div class="col-sm-4"><input type="" id="" name="negociable" placeholder="negociable" value="{{ old('negociable') }}" /></div>
-							<div class="col-sm-4"><select name="opcion">
+							<div class="col-sm-4"><input class="form-control" type="" id="" name="value" placeholder="$ Costo" value="{{ old('value') }}" /></div>
+							<div class="col-sm-4"><input class="form-control" type="" id="" name="negociable" placeholder="negociable" value="{{ old('negociable') }}" /></div>
+							<div class="col-sm-4"><select  class="form-control" name="opcion">
 							   <option value="Comprar" {{ old('opcion') == 'Comprar' ? "selected='true'" : ""}}>Comprar</option> 
 							   <option value="Alquilar" {{ old('opcion') == 'Alquilar' ? "selected='true'" :"" }}>Alquilar</option>
 							   <option value="Vender" {{ old('opcion') == 'Vender' ? "selected='true'" : ""}}>Vender</option>
@@ -74,21 +74,21 @@
 							
 						</div>
 					</div>
-					<div class="col-xs-12 col-sm-9 col-md-6">
+					<div class="col-xs-12 col-md-6">
 						<div class="row row-form">
 							<div class="col-xs-12"><label>Ingresa fotos del vehículo*</label></div>
 							<div class="col-xs-12 col-md-12">
-								<span class="btn btn-default btn-file photo_main glyphicon glyphicon-camera"><input type="file" id="photo_main" name="photo_main" value="{{ old('photo_main') }}" /></span>
-								<span class="btn btn-default btn-file glyphicon glyphicon-camera"><input type="file" id="photo_2" name="photo_2" value="{{ old('photo_2') }}" /></span>
-								<span class="btn btn-default btn-file glyphicon glyphicon-camera"><input type="file" id="photo_3" name="photo_3" value="{{ old('photo_3') }}" /></span>
-								<span class="btn btn-default btn-file glyphicon glyphicon-camera"><input type="file" id="photo_4" name="photo_4" value="{{ old('photo_4') }}" /></span>
-								<span class="btn btn-default btn-file glyphicon glyphicon-camera"><input type="file" id="photo_5" name="photo_5" value="{{ old('photo_5') }}" /></span>
-								<span class="btn btn-default btn-file glyphicon glyphicon-camera"><input type="file" id="photo_6" name="photo_6" value="{{ old('photo_6') }}" /></span>
-								<span class="btn btn-default btn-file glyphicon glyphicon-camera"><input type="file" id="photo_7" name="photo_7" value="{{ old('photo_7') }}" /></span>
-								<span class="btn btn-default btn-file glyphicon glyphicon-camera"><input type="file" id="photo_8" name="photo_8" value="{{ old('photo_8') }}" /></span>
-								<span class="btn btn-default btn-file glyphicon glyphicon-camera"><input type="file" id="photo_9" name="photo_9" value="{{ old('photo_5') }}" /></span>
-								<span class="btn btn-default btn-file glyphicon glyphicon-camera"><input type="file" id="photo_10" name="photo_10" value="{{ old('photo_6') }}" /></span>
-								<span class="btn btn-default btn-file glyphicon glyphicon-camera"><input type="file" id="photo_11" name="photo_11" value="{{ old('photo_7') }}" /></span>
+								<span class="btn btn-default btn-file photo_main glyphicon glyphicon-camera"><input class="form-control" type="file" id="photo_main" name="photo_main" value="{{ old('photo_main') }}" /></span>
+								<span class="btn btn-default btn-file glyphicon glyphicon-camera"><input class="form-control" type="file" id="photo_2" name="photo_2" value="{{ old('photo_2') }}" /></span>
+								<span class="btn btn-default btn-file glyphicon glyphicon-camera"><input class="form-control" type="file" id="photo_3" name="photo_3" value="{{ old('photo_3') }}" /></span>
+								<span class="btn btn-default btn-file glyphicon glyphicon-camera"><input class="form-control" type="file" id="photo_4" name="photo_4" value="{{ old('photo_4') }}" /></span>
+								<span class="btn btn-default btn-file glyphicon glyphicon-camera"><input class="form-control" type="file" id="photo_5" name="photo_5" value="{{ old('photo_5') }}" /></span>
+								<span class="btn btn-default btn-file glyphicon glyphicon-camera"><input class="form-control" type="file" id="photo_6" name="photo_6" value="{{ old('photo_6') }}" /></span>
+								<span class="btn btn-default btn-file glyphicon glyphicon-camera"><input class="form-control" type="file" id="photo_7" name="photo_7" value="{{ old('photo_7') }}" /></span>
+								<span class="btn btn-default btn-file glyphicon glyphicon-camera"><input class="form-control" type="file" id="photo_8" name="photo_8" value="{{ old('photo_8') }}" /></span>
+								<span class="btn btn-default btn-file glyphicon glyphicon-camera"><input class="form-control" type="file" id="photo_9" name="photo_9" value="{{ old('photo_5') }}" /></span>
+								<span class="btn btn-default btn-file glyphicon glyphicon-camera"><input class="form-control" type="file" id="photo_10" name="photo_10" value="{{ old('photo_6') }}" /></span>
+								<span class="btn btn-default btn-file glyphicon glyphicon-camera"><input class="form-control" type="file" id="photo_11" name="photo_11" value="{{ old('photo_7') }}" /></span>
 							</div>
 						</div>
 					</div>
@@ -97,18 +97,18 @@
 					<div class="col-md-6 divisor-line">
 						<div class="row row-form">
 							<div class="col-sm-12"><label>Ubicacion del vehículo</label></div>
-							<div class="col-sm-4"><input type="" id="" name="actual_city" placeholder="Ciudad" value="{{ old('actual_city') }}"/></div>
-							<div class="col-sm-4"><input type="" id="" name="actual_region" placeholder="Departamento" value="{{ old('actual_region') }}"/></div>
-							<div class="col-sm-4"><input type="" id="" name="neighborhood" placeholder="Barrio" value="{{ old('neighborhood') }}" /></div>
+							<div class="col-sm-4"><input class="form-control" type="" id="" name="actual_city" placeholder="Ciudad" value="{{ old('actual_city') }}"/></div>
+							<div class="col-sm-4"><input class="form-control" type="" id="" name="actual_region" placeholder="Departamento" value="{{ old('actual_region') }}"/></div>
+							<div class="col-sm-4"><input class="form-control" type="" id="" name="neighborhood" placeholder="Barrio" value="{{ old('neighborhood') }}" /></div>
 						</div>
 					</div>
 					<div class="col-md-6 ">
 						<div class="row row-form">
 							<div class="col-md-12"><label>Seguridad del vehículo</label></div>
-							<div class="col-xs-6"><input type="" id="" name="alarm" placeholder="Alarma" value="{{ old('alarm') }}" /></div>
-							<div class="col-xs-6"><input type="" id="" name="insurance_policy" placeholder="Poliza de seguro" value="{{ old('insurance_policy') }}" /></div>
-							<div class="col-xs-6"><input type="" id="" name="armored" placeholder="Blindado" value="{{ old('armored') }}" /></div>
-							<div class="col-xs-6"><input type="" id="" name="satelite" placeholder="Rastreo satelital" value="{{ old('satelite') }}" /></div>
+							<div class="col-xs-6"><input class="form-control" type="" id="" name="alarm" placeholder="Alarma" value="{{ old('alarm') }}" /></div>
+							<div class="col-xs-6"><input class="form-control" type="" id="" name="insurance_policy" placeholder="Poliza de seguro" value="{{ old('insurance_policy') }}" /></div>
+							<div class="col-xs-6"><input class="form-control" type="" id="" name="armored" placeholder="Blindado" value="{{ old('armored') }}" /></div>
+							<div class="col-xs-6"><input class="form-control" type="" id="" name="satelite" placeholder="Rastreo satelital" value="{{ old('satelite') }}" /></div>
 						</div>
 					</div>
 				</div>
@@ -116,8 +116,8 @@
 					<div class="col-md-6 divisor-line">
 						<div class="row row-form">
 							<div class="col-md-12"><label>Datos del vehículo</label></div>
-							<div class="col-sm-4"><input type="" id="" name="motor" placeholder="Motor" value="{{ old('motor') }}" /></div>
-							<div class="col-sm-4"><select name="transmision">
+							<div class="col-sm-4"><input class="form-control" type="" id="" name="motor" placeholder="Motor" value="{{ old('motor') }}" /></div>
+							<div class="col-sm-4"><select  class="form-control" name="transmision">
 							   <option value="Automática" {{ old('transmission') == 'Automática' ? "selected='true'" : "" }}>Automática</option>
 							   <option value="Manual" {{ old('transmission') == 'Manual' ? "selected='true'" : "" }}>Manual</option>
 							   <option value="Mixta" {{ old('transmission') == 'Mixta' ? "selected='true'" : "" }}>Mixta</option>
@@ -125,27 +125,27 @@
 							   <option value="Steptronic" {{ old('transmission') == 'Steptronic' ? "selected='true'" : "" }}>Steptronic</option>
 							   <option value="Tiptronic" {{ old('transmission') == 'Tiptronic' ? "selected='true'" : "" }}>Tiptronic</option>
 							</select></div>
-							<div class="col-sm-4"><input type="" id="" name="cylinder" placeholder="Cilindraje" value="{{ old('cylinder') }}" /></div>
-							<div class="col-sm-4"><input type="" id="" name="km" placeholder="Kilometraje" value="{{ old('km') }}" /></div>
-							<div class="col-sm-4"><select name="combustible">
+							<div class="col-sm-4"><input class="form-control" type="" id="" name="cylinder" placeholder="Cilindraje" value="{{ old('cylinder') }}" /></div>
+							<div class="col-sm-4"><input class="form-control" type="" id="" name="km" placeholder="Kilometraje" value="{{ old('km') }}" /></div>
+							<div class="col-sm-4"><select  class="form-control" name="combustible">
 							   <option value="Diesel" {{ old('combustible') == 'Diesel' ? "selected='true'" : ""}}>Diesel</option>
 							   <option value="Electrico" {{ old('combustible') == 'Electrico' ? "selected='true'" : ""}}>Electrico</option>
 							   <option value="Gas" {{ old('combustible') == 'Gas' ? "selected='true'" : ""}}>Gas</option>
 							   <option value="Gasolina" {{ old('combustible') == 'Gasolina' ? "selected='true'" : ""}}>Gasolina</option>
 							   <option value="Hibrido" {{ old('combustible') == 'Hibrido' ? "selected='true'" : ""}}>Hibrido</option>
 							</select></div>
-							<div class="col-sm-4"><input type="" id="" name="number_cylinder" placeholder="N° de Cilindros" value="{{ old('number_cylinder') }}" /></div>
-							<div class="col-sm-4"><input type="" id="" name="tapiz" placeholder="Tapizados" value="{{ old('tapiz') }}" /></div>
-							<div class="col-sm-4"><select name="brakes">
+							<div class="col-sm-4"><input class="form-control" type="" id="" name="number_cylinder" placeholder="N° de Cilindros" value="{{ old('number_cylinder') }}" /></div>
+							<div class="col-sm-4"><input class="form-control" type="" id="" name="tapiz" placeholder="Tapizados" value="{{ old('tapiz') }}" /></div>
+							<div class="col-sm-4"><select  class="form-control" name="brakes">
 							   <option value="ABS" {{ old('brakes') == 'ABS' ? "selected='true'" : ""}}>ABS</option>
 							   <option value="Disco" {{ old('brakes') == 'Disco' ? "selected='true'" : ""}}>Disco</option>
 							</select></div>
-							<div class="col-sm-4"><input type="" id="" name="color_tapiz" placeholder="Color de Tapizados" value="{{ old('color_tapiz') }}" /></div>
-							<div class="col-sm-4"><input type="" id="" name="cool_air" placeholder="Aire acondicionado" value="{{ old('cool_air') }}" /></div>
-							<div class="col-sm-4"><input type="" id="" name="audio_system" placeholder="Sistema de Audio" value="{{ old('audio_system') }}" /></div>
-							<div class="col-sm-4"><input type="" id="" name="computer" placeholder="Computadora" value="{{ old('computer') }}" /></div>
-							<div class="col-sm-4"><input type="" id="" name="accesories" placeholder="accesorios" value="{{ old('accesories') }}" /></div>
-							<div class="col-sm-4"><input type="" id="" name="which_accesories" placeholder="Cuales" value="{{ old('which_accesories') }}" /></div>
+							<div class="col-sm-4"><input class="form-control" type="" id="" name="color_tapiz" placeholder="Color de Tapizados" value="{{ old('color_tapiz') }}" /></div>
+							<div class="col-sm-4"><input class="form-control" type="" id="" name="cool_air" placeholder="Aire acondicionado" value="{{ old('cool_air') }}" /></div>
+							<div class="col-sm-4"><input class="form-control" type="" id="" name="audio_system" placeholder="Sistema de Audio" value="{{ old('audio_system') }}" /></div>
+							<div class="col-sm-4"><input class="form-control" type="" id="" name="computer" placeholder="Computadora" value="{{ old('computer') }}" /></div>
+							<div class="col-sm-4"><input class="form-control" type="" id="" name="accesories" placeholder="accesorios" value="{{ old('accesories') }}" /></div>
+							<div class="col-sm-4"><input class="form-control" type="" id="" name="which_accesories" placeholder="Cuales" value="{{ old('which_accesories') }}" /></div>
 						</div>
 					</div>
 					<div class="col-md-6">
@@ -165,13 +165,13 @@
 					<div class="col-md-6 divisor-line">
 						<div class="row row-form">
 							<div class="col-md-12"><label>Negocio</label></div>		
-							<input type="" id="" name="financiacion" placeholder="Financiamiento" value="{{ old('financiacion') }}" />
+							<input class="form-control" type="" id="" name="financiacion" placeholder="Financiamiento" value="{{ old('financiacion') }}" />
 						</div>
 					</div>
 				</div>		
 						
 						<!-- {!! Recaptcha::render() !!} -->
-						<input type="submit" value="Submit">
+						<input class="form-control" type="submit" value="Submit">
 				
 			</div>
 		</form>

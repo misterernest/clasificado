@@ -1,3 +1,7 @@
+.form-control{
+  margin: 10px;
+  width:90%;
+}
 
 
 .row-form {
@@ -28,13 +32,12 @@ input, select{
 
 .btn-file {
   font-size:30px;
-  margin:5px;
+  margin:10px;
   float: left;
 }
 
 .btn-file.photo_main{
   font-size:80px;
-  margin:10px;
   float: left;
 }
 
