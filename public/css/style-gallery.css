@@ -2,8 +2,11 @@
 /*@ sourceURL=css/style-gallery.css */
 /*# sourceURL=css/style-gallery.css */
 /*@ sourceURL=css/style-gallery.css */
+/*# sourceURL=css/style-gallery.css */
+/*@ sourceURL=css/style-gallery.css */
 .content-gallery {
 	width: inherit;
+	height: 50rem;
     position: relative;
     margin: 0px auto;
     border: 1px solid #00f;
