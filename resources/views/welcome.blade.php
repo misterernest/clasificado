@@ -3,11 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Autos de lujo</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<meta name="description" content="Autos de lujo en Colombia, vende tu autos de lujo, alquila tu auto de lujo, permuta tu auto de lujo, compra tu auto de lujo" />
 	<meta name="keywords" content="autos, carros, vehiculos, lujo, autos de lujo, carros de lujo, vehiculos de lujo, vende tu auto de lujo, alquila tu auto de lujo, compra tu auto de lujo, permuta tu auto de lujo" />
 	<meta name="author" content="ANT" />
-	<link rel="shortcut icon" href="images/favicon.png">
+	
+    <link rel="shortcut icon" href="images/favicon.png">
     
     <link rel="stylesheet" type="text/css" href="css/tucan-gallery4.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" >
@@ -16,27 +18,38 @@
     <script src="js/tucan-gallery4.js" type="text/javascript"></script>
 
 	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/style-tucan.css">
 	
 	<link rel="stylesheet" type="text/css" href="css/ant-animation.css">
 	<link rel="stylesheet" type="text/css" href="css/style-gallery.css" />
 	<link rel="stylesheet" type="text/css" href="css/ant-category.css" />
 	<link rel="stylesheet" type="text/css" href="css/ant-hori-transition.css" />
-    <link rel="stylesheet" type="text/css" href="css/style-tucan1.css" />
+    <link rel="stylesheet" type="text/css" href="css/style-aseg-finan.css" />
     <script src="js/prefixfree.min.js" type="text/javascript"></script>
 </head>
 <body>
-    <header>
-        <div class="logo-autoslujo">
-            <img src="images/logo.png" alt="autos de lujo">
-        </div>
+    <header class=".container-fluid">
+        <nav class="top-nav row col-md-12">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div class="logo-autoslujo col-md-5 col-sm-3">
+                <a href="#" class="col-md-12">
+                    <img src="images/logo.png" alt="autos de lujo">
+                </a>
+                
+            </div>
+        </nav>          
         <nav>
             <a href="#">VENTA</a> 
             <a href="##">PERMUTA</a>
             <a href="###">ALQUILER</a>
             <a href="####">COMPRA</a>
             <a href="####">CONTACTENOS</a>
-        </nav>
-       
+        </nav>      
         <div class="container-slide">
             <div class="img-slide">
                 <div class="img-slide-1">
@@ -53,9 +66,6 @@
                 <div class="txt-slide-2"><a href="">Compra y Venta<br> de  <br>autos de lujo</a></div>
                 <div class="txt-slide-3"><a href="">Financiamiento <br> & <br>Aseguramiento</a></div>
             </div>
-        </div>
-         <div class="btn-servicios">
-            <a href="#">Conoce Nuestros Servicios</a>
         </div>
     </header>
     <section>   
