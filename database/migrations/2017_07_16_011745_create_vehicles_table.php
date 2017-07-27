@@ -23,6 +23,7 @@ class CreateVehiclesTable extends Migration
             $table->string('color');
             $table->string('placa', 6);
             $table->string('ref_car');
+            $table->text('description');
             $table->enum('type_car', ['Sedan', 'Deportivo', 'Camioneta', 'Clásico']);
             $table->enum('opcion', ['Comprar', 'Alquilar', 'Vender', 'Permutar']);
             $table->integer('value');

@@ -154,7 +154,7 @@
 								<div class="row">
 									<div class="col-md-12">
 										<label>Descipcion del vehiculo</label>	
-										<textarea class="form-control" rows="5" id="comment"></textarea>
+										<textarea name="description" class="form-control" rows="5" id="comment"></textarea>
 									</div>	
 								</div>
 							</div>
