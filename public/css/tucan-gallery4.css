@@ -2,6 +2,8 @@
 /*@ sourceURL=css/tucan-gallery4.css */
 /*# sourceURL=css/tucan-gallery4.css */
 /*@ sourceURL=css/tucan-gallery4.css */
+/*# sourceURL=css/tucan-gallery4.css */
+/*@ sourceURL=css/tucan-gallery4.css */
 
 [class^=.tg4-div-content]{
 	margin: 0 auto;
@@ -42,7 +44,7 @@
 .tg4-div-txt{
 	padding: 1rem 0;
 	font-family: ROBOTO;
-	background-color: #EDEDED;
+	background-color: #FFF;
 	width: 50%;
 	align-items: center;
 }
@@ -51,7 +53,7 @@ h2{
 	font-size: 1px;
 }
 .tg4-div-txt p{
-	font-size: 1px;
+	font-size: 2rem;
 	font-family: ROBOTO;
 }
 .tg4-div-txt a{

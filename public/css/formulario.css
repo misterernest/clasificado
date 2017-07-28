@@ -1,5 +1,21 @@
 /*# sourceURL=css/formulario.css */
 /*@ sourceURL=css/formulario.css */
+/*# sourceURL=css/formulario.css */
+/*@ sourceURL=css/formulario.css */
+/*# sourceURL=css/formulario.css */
+/*@ sourceURL=css/formulario.css */
+.title-form{
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 4rem;
+  font-family: Anton;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+
+}
 .form-control{
   margin: 10px;
   width:90%;

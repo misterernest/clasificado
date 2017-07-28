@@ -14,7 +14,10 @@
 </head>
 <body>
     <section>
-        <article>
+    	<article>
+    		
+    	
+        
 
 	@if (Session::has('success-messages'))
 		{{ Session::get('success-messages') }}
@@ -201,5 +204,6 @@
 		$(this).next( 'label').children('span' ).css("color", "#00CC33");
 })</script>
 })</script>
+
 </body>
 </html>
