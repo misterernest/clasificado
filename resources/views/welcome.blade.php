@@ -9,11 +9,14 @@
 	<meta name="author" content="ANT" />
 	<link rel="shortcut icon" href="images/favicon.png">
 	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" >
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
 	<link rel="stylesheet" type="text/css" href="css/style-ant.css" />
 	<link rel="stylesheet" type="text/css" href="css/ant-animation.css">
 	<link rel="stylesheet" type="text/css" href="css/style-gallery.css" />
 	<link rel="stylesheet" type="text/css" href="css/ant-category.css" />
 	<link rel="stylesheet" type="text/css" href="css/ant-hori-transition.css" />
+
 </head>
 <body>
     <header>
@@ -46,7 +49,7 @@
             </div>
         </div>
          <div class="btn-servicios">
-            <a href="#">Conoce Nuestros Servicios</a>
+            <a href="#"></a>
         </div>
     </header>
     <section>
@@ -129,9 +132,9 @@
     <script src="js/prefixfree.min.js" type="text/javascript"></script>
     <script src="js/section.js" type="text/javascript"></script>
         <!--javascript gallery-->
-            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
-            <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-            <script type="text/javascript" src="js/animation-gallery.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/animation-gallery.js"></script>
         <article class="ant-art-slide">
             <div>
                 <img src="images/logos-autos/1.png" alt="">
