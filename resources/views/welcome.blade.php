@@ -136,8 +136,8 @@
                             <img src="images/iconos-fina-aseg/1.png" alt="">
                         </div>
                         <div class="col-md-8 text-aseguradoras">
-                            <h2>LOREM IPSUM DOLOR</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, explicabo eius? Deserunt aliquam eveniet dignissimos a, asperiores fugit quos porro earum nobis quidem qui, voluptas impedit, deleniti omnis ullam repellat!</p>   
+                            <h2>ASEGURADORAS</h2>
+                            <p>Se realiza la gestión de  todas las pólizas y seguros relacionados correspondientes para los autos de lujos de acuerdo  a la normativa del sector automotriz de lujo</p>   
                         </div>
                         <div class="col-md-12 logos-aseguradoras">
                             <img src="images/logos-financiadoras/1.png" alt="">
@@ -157,8 +157,8 @@
                             <img src="images/iconos-fina-aseg/2.png" alt="">
                         </div>
                         <div class="col-md-8 text-aseguradoras">
-                            <h2>LOREM IPSUM DOLOR</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, explicabo eius? Deserunt aliquam eveniet dignissimos a, asperiores fugit quos porro earum nobis quidem qui, voluptas impedit, deleniti omnis ullam repellat!</p>   
+                            <h2>FINANCIADORA</h2>
+                            <p>Se realiza la gestión para conseguir el financiamiento y el crédito hasta el 100% del valor del vehículo, previo estudio con compañía de financiamiento.</p>   
                         </div>
                         <div class="col-md-12 logos-aseguradoras">
                             <img src="images/logos-aseguradoras/1.png" alt="">
@@ -219,27 +219,30 @@
         <aside>
             <div class="col-md-12 contacto">
                 <div class="col-md-6 contacto-descripcion">
-                    <h2>LOREM IPSUM</h2>
+                    <h2>AUTOSDELUJO.COM.CO</h2>
                     <p>
                         Son AUTOS DE LUJOS financiados, listos para manejar, con todas las garantías y seguridad, se pueden comprar, vender o permutar por mayor o menor valor y que pueden ser de servicio público o particular.
                     </p>
                 </div>
                 <div class="col-md-6 contacto-formulario">
-                    <h2>¿TIENES ALGUNA DUDA?</h2>
-                    <form class="form-inline">
-                        <label class="sr-only" for="inlineFormInput">Name</label>
-                        <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="Jane Doe">
-                        <div class="form-group">
-                            <label class="control-label" for="Motivo">Motivo de Contacto</label>
-                            <select name="Motivo" class="form-control">
-                                <option value="Consulta General">Consulta General</option>
-                                <option value="Realizar Pedido">Realizar Pedido</option>
-                                <option value="Informe un problema">Informe un problema</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                </div>
+					<form class="form-inline">
+						<div class="col-xs-12 "><h2>¿TIENES ALGUNA DUDA?</h2></div>
+						<div class="col-sm-4 ">
+							<input type="text" class="form-control input-contacto" id="inlineFormInput" placeholder="Nombre">
+						</div>
+						<div class="col-sm-4 ">
+							<input type="email" class="form-control input-contacto" id="ejemplo_email_3" placeholder="Email">
+						</div>
+						<div class="col-sm-4 ">
+							<input type="text" class="form-control input-contacto" placeholder="Asunto">
+						</div>
+						<div class="col-xs-12 mensaje-contacto">
+							<textarea class="form-control" rows="4"></textarea>
+						</div>
+						<div class="col-xs-12 enviar"><button type="submit" class="btn btn-primary">Submit</button></div>
+					</form>
+
+				</div>
             </div>
         </aside>
     </section>

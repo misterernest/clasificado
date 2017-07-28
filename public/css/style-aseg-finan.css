@@ -27,17 +27,36 @@
 	padding: 2%;
 }
 .contacto {
-	background: #cfd8dc;
+	background: #e5e5e5;
 }
 .contacto h2 {
 	text-align: center;
-	color: #455a64;
+	color: #666666;
 }
 .contacto p {
 	text-align: justify;
 	padding: 4%;
-	color: #546e7a;
+	color: #7f7f7f;
 }
 .contacto-descripcion {
 	border-right: 1px solid #fff;
+}
+.mensaje-contacto .form-control {
+	width: 95%;
+	margin-top: 20px;
+    margin-left: 2%;
+}
+.enviar .btn-primary{
+	   
+	float: right;
+    margin-top: 20px;
+    margin: 3%;
+    width: 25%;
+    border-radius: 0px;
+    background: black;
+    padding: 9px;
+}
+
+ .input-contacto {
+	margin:15px;
 }
