@@ -77,17 +77,28 @@
 						<div class="row row-form">
 							<div class="col-xs-12"><label>Ingresa fotos del vehículo*</label></div>
 							<div class="col-xs-12 col-md-12">
-								<label for="photo_main"><span class="btn btn-default btn-file photo_main glyphicon glyphicon-camera"><input class="form-control" type="file" id="photo_main" name="photo_main" value="{{ old('photo_main') }}" /></span></label>
-								<label for="photo_2"><span class="btn btn-default btn-file glyphicon glyphicon-camera"><input class="form-control" type="file" id="photo_2" name="photo_2" value="{{ old('photo_2') }}" /></span></label>
-								<label for="photo_3"><span class="btn btn-default btn-file glyphicon glyphicon-camera"><input class="form-control" type="file" id="photo_3" name="photo_3" value="{{ old('photo_3') }}" /></span></label>
-								<label for="photo_4"><span class="btn btn-default btn-file glyphicon glyphicon-camera"><input class="form-control" type="file" id="photo_4" name="photo_4" value="{{ old('photo_4') }}" /></span></label>
-								<label for="photo_5"><span class="btn btn-default btn-file glyphicon glyphicon-camera"><input class="form-control" type="file" id="photo_5" name="photo_5" value="{{ old('photo_5') }}" /></span></label>
-								<label for="photo_6"><span class="btn btn-default btn-file glyphicon glyphicon-camera"><input class="form-control" type="file" id="photo_6" name="photo_6" value="{{ old('photo_6') }}" /></span></label>
-								<label for="photo_7"><span class="btn btn-default btn-file glyphicon glyphicon-camera"><input class="form-control" type="file" id="photo_7" name="photo_7" value="{{ old('photo_7') }}" /></span></label>
-								<label for="photo_8"><span class="btn btn-default btn-file glyphicon glyphicon-camera"><input class="form-control" type="file" id="photo_8" name="photo_8" value="{{ old('photo_8') }}" /></span></label>
-								<label for="photo_9"><span class="btn btn-default btn-file glyphicon glyphicon-camera"><input class="form-control" type="file" id="photo_9" name="photo_9" value="{{ old('photo_5') }}" /></span></label>
-								<label for="photo_10"><span class="btn btn-default btn-file glyphicon glyphicon-camera"><input class="form-control" type="file" id="photo_10" name="photo_10" value="{{ old('photo_6') }}" /></span></label>
-								<label for="photo_11"><span class="btn btn-default btn-file glyphicon glyphicon-camera"><input class="form-control" type="file" id="photo_11" name="photo_11" value="{{ old('photo_7') }}" /></span></label>
+								<input class="form-control input-imagen" type="file" id="photo_main" name="photo_main" value="{{ old('photo_main') }}" />
+								<label class="custom-file-upload" for="photo_main"><span class="btn btn-default btn-file photo_main glyphicon glyphicon-camera"></span></label>
+								<input class="form-control input-imagen" type="file" id="photo_2" name="photo_2" value="{{ old('photo_2') }}" />
+								<label class="custom-file-upload" for="photo_2"><span class="btn btn-default btn-file glyphicon glyphicon-camera"></span></label>
+								<input class="form-control input-imagen" type="file" id="photo_3" name="photo_3" value="{{ old('photo_3') }}" />
+								<label class="custom-file-upload" for="photo_3"><span class="btn btn-default btn-file glyphicon glyphicon-camera"></span></label>
+								<input class="form-control input-imagen" type="file" id="photo_4" name="photo_4" value="{{ old('photo_4') }}" />
+								<label class="custom-file-upload" for="photo_4"><span class="btn btn-default btn-file glyphicon glyphicon-camera"></span></label>
+								<input class="form-control input-imagen" type="file" id="photo_5" name="photo_5" value="{{ old('photo_5') }}" />
+								<label class="custom-file-upload" for="photo_5"><span class="btn btn-default btn-file glyphicon glyphicon-camera"></span></label>
+								<input class="form-control input-imagen" type="file" id="photo_6" name="photo_6" value="{{ old('photo_6') }}" />
+								<label class="custom-file-upload" for="photo_6"><span class="btn btn-default btn-file glyphicon glyphicon-camera"></span></label>
+								<input class="form-control input-imagen" type="file" id="photo_7" name="photo_7" value="{{ old('photo_7') }}" />
+								<label class="custom-file-upload" for="photo_7"><span class="btn btn-default btn-file glyphicon glyphicon-camera"></span></label>
+								<input class="form-control input-imagen" type="file" id="photo_8" name="photo_8" value="{{ old('photo_8') }}" />
+								<label class="custom-file-upload" for="photo_8"><span class="btn btn-default btn-file glyphicon glyphicon-camera"></span></label>
+								<input class="form-control input-imagen" type="file" id="photo_9" name="photo_9" value="{{ old('photo_5') }}" />
+								<label class="custom-file-upload" for="photo_9"><span class="btn btn-default btn-file glyphicon glyphicon-camera"></span></label>
+								<input class="form-control input-imagen" type="file" id="photo_10" name="photo_10" value="{{ old('photo_6') }}" />
+								<label class="custom-file-upload" for="photo_10"><span class="btn btn-default btn-file glyphicon glyphicon-camera"></span></label>
+								<input class="form-control input-imagen" type="file" id="photo_11" name="photo_11" value="{{ old('photo_7') }}" />
+								<label class="custom-file-upload" for="photo_11"><span class="btn btn-default btn-file glyphicon glyphicon-camera"></span></label>
 							</div>
 						</div>
 					</div>
@@ -186,5 +197,9 @@
 			</div>
 		</form>
 	</div>
+	<script> $('.input-imagen').change(function() {
+		$(this).next( 'label').children('span' ).css("color", "#00CC33");
+})</script>
+})</script>
 </body>
 </html>
