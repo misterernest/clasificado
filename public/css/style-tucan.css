@@ -1,9 +1,28 @@
-/*# sourceURL=css/style-ant.css */
-/*@ sourceURL=css/style-ant.css */
-/*@ sourceURL=css/style-ant.css */
+/*# sourceURL=css/style-tucan.css */
+/*@ sourceURL=css/style-tucan.css */
+/*# sourceURL=css/style-tucan.css */
+/*@ sourceURL=css/style-tucan.css */
+/*# sourceURL=css/style-tucan.css */
+/*@ sourceURL=css/style-tucan.css */
+/*@ sourceURL=css/style-tucan.css */
+/*# sourceURL=css/style-tucan.css */
+/*@ sourceURL=css/style-tucan.css */
+/*Style-tucan*/
 /*Resetear style*/
 
-
+a:link{
+	text-decoration: none;
+}
+.social, .menu-ham{
+	margin-top: 2rem;
+}
+.social span{
+	color: #fff;
+	font-size: 5rem;
+	border-radius: 50%;
+	text-align: center;
+	margin-left: 1rem;
+}
 /*Header*/
 header{
 	height: 70rem;
@@ -14,31 +33,42 @@ header{
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 3;
-	background-color: rgba(255,0,0, 0.3);
+	height: 10rem;
+	z-index: 10000;
+	background-color: rgba(0,0,0, 0.7);
 	margin: 0;
-}
-nav{
-	margin-bottom: 4rem;
-	z-index: 2;
-    height: 9.4rem;
-    margin-left: 1.5rem;
+	text-align: center;
 }
 /*logo*/
 .logo-autoslujo{
 	position: relative;
 	z-index: 2;
-	margin: 2rem;	
+	margin: 0rem;	
+	height: 100%;
 }
-
-header nav a{
+.logo-autoslujo img{
+	width: 100%;
+}
+.second-nav{
+	width: 15%;
+	position: absolute;
+	bottom: 9rem;
+	left: 2rem;
+	z-index: 2;
+	display: flex;
+	flex-flow: column nowrap;
+	
+}
+.second-nav a{
 	color: #fff;
-	font-size: 1rem;
+	font-size: 1.6rem;
+	margin-top: 1rem;
+	padding-left: 2rem;
 	font-family: roboto;
 	border-bottom: 0.1rem solid #fff;
 	transition: color 0.5s ease;
 }
-header nav a:hover{
+.second-nav a:hover{
     color: #d2ab5d;
     border-bottom: 0.1rem solid #d2ab5d;
 }

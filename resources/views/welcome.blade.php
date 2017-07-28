@@ -24,26 +24,30 @@
 	<link rel="stylesheet" type="text/css" href="css/ant-animation.css">
 	<link rel="stylesheet" type="text/css" href="css/style-gallery.css" />
 	<link rel="stylesheet" type="text/css" href="css/ant-category.css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/ant-hori-transition.css" />
     <link rel="stylesheet" type="text/css" href="css/style-aseg-finan.css" />
     <script src="js/prefixfree.min.js" type="text/javascript"></script>
 </head>
 <body>
-    <header class=".container-fluid">
-        <nav class="top-nav row col-md-12">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            <div class="logo-autoslujo col-md-5 col-sm-3">
-                <a href="#" class="col-md-12">
+    <header class="container">
+        <nav class="row top-nav">
+            <div class="logo-autoslujo col-md-2">
+                <a href="#">
                     <img src="images/logo.png" alt="autos de lujo">
                 </a>
-                
+            </div>
+            <div class="social col-md-8">
+                <a href="https://www.facebook.com/search/top/?q=autosdelujo.com.co" target="_blank"><span class="fa fa-facebook-square" aria-hidden="true"></span></a>
+                <a href=""><span class="fa fa-instagram" aria-hidden="true"></span></a>
+            </div>
+            <div class="menu-ham col-md-2">
+                <button type="button" class="btn btn-default" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                </button>
             </div>
         </nav>          
-        <nav>
+        <nav class="second-nav">
             <a href="#">VENTA</a> 
             <a href="##">PERMUTA</a>
             <a href="###">ALQUILER</a>
@@ -67,6 +71,10 @@
                 <div class="txt-slide-3"><a href="">Financiamiento <br> & <br>Aseguramiento</a></div>
             </div>
         </div>
+        <div class="link-servicios">
+            <a href="#art3">Conoce nuestros servicios</a>
+        </div>
+        
     </header>
     <section>   
         <article class="ant-cat-art1" id="art3">
@@ -213,12 +221,7 @@
                 <div class="col-md-6 contacto-descripcion">
                     <h2>LOREM IPSUM</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Son AUTOS DE LUJOS financiados, listos para manejar, con todas las garantías y seguridad, se pueden comprar, vender o permutar por mayor o menor valor y que pueden ser de servicio público o particular.
                     </p>
                 </div>
                 <div class="col-md-6 contacto-formulario">
