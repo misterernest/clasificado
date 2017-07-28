@@ -121,6 +121,164 @@ div[class^="txt-slide-"] a{
         z-index: 0;
 }}
 .btn-servicios {
+>>>>>>> 8bc8a73e15710f4b33e0050366d799908c45b711
 	z-index: 2;
+	width: 20rem;
+	margin: 2rem;	
+}
+.logo-autoslujo>img{
+	width: inherit;
+}
+/*nav*/
+nav{
+	margin-bottom: 4rem;
+	z-index: 2;
+	width: 10rem;
+    height: 9.4rem;
+    margin-left: 1.5rem;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+}
+header nav a{
+	color: #fff;
+	font-size: 1rem;
+	font-family: roboto;
+	border-bottom: 0.1rem solid #fff;
+	-webkit-transition: color 0.5s ease;
+	-o-transition: color 0.5s ease;
+	transition: color 0.5s ease;
+}
+header nav a:hover{
+    color: #d2ab5d;
+    border-bottom: 0.1rem solid #d2ab5d;
+}
+/*Section*/
+section{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+article, article>div{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	margin-top: 0.3rem;
+}
+article>div{
+	margin: 0;
+}
+.logos-aseguradoras img {
+	display: inline-block;
+	width: 8%;
+    height: 85%;
+    margin-left: 6px;
+}
+.Aseguradoras-financieras {
+	display: inline-block;
+}
+/*
+.ant-art2{
+	margin: 1rem;
+	font-family: roboto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+}
+.ant-art2>div:first-child{
+	border-right: 1px solid rgb(127,127,127);
+}
+.ant-art2>div{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	width: 50%;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+}
+.ant-art2>div div{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column
+}
+*/
+p, h2{
+	width: 25rem;
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
 	text-align: center;
+	font-weight: normal;
+}
+.logo-bancos{
+	-webkit-align-self: center;
+	    -ms-flex-item-align: center;
+	            -ms-grid-row-align: center;
+	        align-self: center;
+	width: 10rem;
+}
+.logo-bancos>img{
+	width: 10rem;
+}
+.ant-art3, .ant-art3>div{
+	width: 100%;
+	margin: 1rem auto;
+}
+.ant-art3>div{
+	display: flex;
+	        flex-wrap: wrap;
+	        flex-direction: row;
+	        align-items: baseline;
+	        justify-content: space-around;
+}
+.ant-art3 img{
+	width: 10rem;
 }
