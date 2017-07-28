@@ -3,34 +3,63 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Autos de lujo</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<meta name="description" content="Autos de lujo en Colombia, vende tu autos de lujo, alquila tu auto de lujo, permuta tu auto de lujo, compra tu auto de lujo" />
 	<meta name="keywords" content="autos, carros, vehiculos, lujo, autos de lujo, carros de lujo, vehiculos de lujo, vende tu auto de lujo, alquila tu auto de lujo, compra tu auto de lujo, permuta tu auto de lujo" />
 	<meta name="author" content="ANT" />
-	<link rel="shortcut icon" href="images/favicon.png">
+	
+    <link rel="shortcut icon" href="images/favicon.png">
+    
+    <link rel="stylesheet" type="text/css" href="css/tucan-gallery4.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" >
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    
+    <script src="js/tucan-gallery4.js" type="text/javascript"></script>
+
 	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+<<<<<<< HEAD
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" >
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
 	<link rel="stylesheet" type="text/css" href="css/style-ant.css" />
+=======
+
+    <link rel="stylesheet" type="text/css" href="css/style-tucan.css">
+	
+>>>>>>> 8bc8a73e15710f4b33e0050366d799908c45b711
 	<link rel="stylesheet" type="text/css" href="css/ant-animation.css">
 	<link rel="stylesheet" type="text/css" href="css/style-gallery.css" />
 	<link rel="stylesheet" type="text/css" href="css/ant-category.css" />
 	<link rel="stylesheet" type="text/css" href="css/ant-hori-transition.css" />
+<<<<<<< HEAD
 
+=======
+    <link rel="stylesheet" type="text/css" href="css/style-aseg-finan.css" />
+    <script src="js/prefixfree.min.js" type="text/javascript"></script>
+>>>>>>> 8bc8a73e15710f4b33e0050366d799908c45b711
 </head>
 <body>
-    <header>
-        <div class="logo-autoslujo">
-            <img src="images/logo.png" alt="autos de lujo">
-        </div>
+    <header class=".container-fluid">
+        <nav class="top-nav row col-md-12">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div class="logo-autoslujo col-md-5 col-sm-3">
+                <a href="#" class="col-md-12">
+                    <img src="images/logo.png" alt="autos de lujo">
+                </a>
+                
+            </div>
+        </nav>          
         <nav>
             <a href="#">VENTA</a> 
             <a href="##">PERMUTA</a>
             <a href="###">ALQUILER</a>
             <a href="####">COMPRA</a>
             <a href="####">CONTACTENOS</a>
-        </nav>
-       
+        </nav>      
         <div class="container-slide">
             <div class="img-slide">
                 <div class="img-slide-1">
@@ -48,66 +77,109 @@
                 <div class="txt-slide-3"><a href="">Financiamiento <br> & <br>Aseguramiento</a></div>
             </div>
         </div>
+<<<<<<< HEAD
          <div class="btn-servicios">
             <a href="#"></a>
         </div>
+=======
+>>>>>>> 8bc8a73e15710f4b33e0050366d799908c45b711
     </header>
-    <section>
-        
+    <section>   
         <article class="ant-cat-art1" id="art3">
-            <div class="ant-cat-img1" id="section1">
-                <img src="images/category/1.png" id="section1" alt="">
-                <span>vende</span>
-            </div>
-            <div class="ant-cat-img2">
-                <img src="images/category/2.png" id="section1" alt="">  
-                <span>compra</span> 
-            </div>
-            <div class="ant-cat-img3">
-                <img src="images/category/3.png" id="section1" alt="">  
-                <span>alquila</span>
-            </div>
-            <div class="ant-cat-img4">
-                <img src="images/category/4.png" id="section1" alt="">  
-                <span>permuta</span>    
+            <div class="container-fluid">                
+                <div class="tg4-div-content1 row" id="tg4-content1">
+                    <div class="tg4-div-img1 col-md-6 col-sm-6 col-xs-12" id="tg4Img1">
+                        <img src="images/category/1.png" alt="">
+                        <span>VENDE</span>
+                    </div>
+                    <div class="tg4-div-img2 col-md-6 col-sm-6 col-xs-12" id="tg4Img2">
+                        <img src="images/category/2.png" alt="">
+                        <span>COMPRA</span>
+                    </div>
+                    <div class="tg4-div-img3 col-md-6 col-sm-6 col-xs-12" id="tg4Img3">
+                        <img src="images/category/3.png" alt="">
+                        <span>ALQUILA</span>
+                    </div>
+                    <div class="tg4-div-img4 col-md-6 col-sm-6 col-xs-12" id="tg4Img4">
+                        <img src="images/category/4.png" alt="">
+                        <span>PERMUTA</span>
+                    </div>
+                </div>
+                <div class="tg4-div-content2" id="tg4-content2">
+                    <div class="row">
+                        <div class="tg4-div-img5 col-md-6 col-sm-6 col-xs-12 no-float">
+                            <a href="{{url('vehicles')}}">
+                                <img id="tg4-img-5" src="" alt="">
+                                <span id="tg4-span-5"></span>
+                            </a>
+                        </div>
+                        <div class="tg4-div-txt col-md-6 col-sm-6 col-xs-12 no-float" id="tg4-div-txt">
+                            <h2 id="tg4-h2-txt"></h2>
+                            <p id="tg4-p-txt"></p>
+                            <a id="tg4-a-txt" href="{{url('vehicles')}}"></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="tg4-div-img6 col-md-4 col-sm-4 col-xs-12" id="tg4-div-img6">
+                            <img id="tg4-img-img6" src="" alt="">
+                            <span id="tg4-span-img6"></span>
+                        </div>
+                        <div class="tg4-div-img7 col-md-4 col-sm-4 col-xs-12" id="tg4-div-img7">
+                            <img id="tg4-img-img7" src="" alt="">
+                            <span id="tg4-span-img7"></span>
+                        </div>
+                        <div class="tg4-div-img8 col-md-4 col-sm-4 col-xs-12" id="tg4-div-img8">
+                            <img id="tg4-img-img8" src="" alt="">
+                            <span id="tg4-span-img8"></span>
+                        </div>                        
+                    </div>
+                </div>
             </div>
         </article>
-        <div class="row">
-            <div class="col-md-6 Aseguradoras-financieras">
-                <div class="logo-bancos">
-                    <img src="images/iconos-fina-aseg/1.png" alt="">
+        <!--aqui inicia sección de financiera y aseguradoras-->
+        <article class="row">
+            <div class="col-md-12">
+                <div class="col-md-6 financiadoras">
+                     <div class="col-md-4 logo-bancos">
+                            <img src="images/iconos-fina-aseg/1.png" alt="">
+                        </div>
+                        <div class="col-md-8 text-aseguradoras">
+                            <h2>LOREM IPSUM DOLOR</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, explicabo eius? Deserunt aliquam eveniet dignissimos a, asperiores fugit quos porro earum nobis quidem qui, voluptas impedit, deleniti omnis ullam repellat!</p>   
+                        </div>
+                        <div class="col-md-12 logos-aseguradoras">
+                            <img src="images/logos-financiadoras/1.png" alt="">
+                            <img src="images/logos-financiadoras/6.png" alt="">
+                            <img src="images/logos-financiadoras/9.png" alt="">
+                            <img src="images/logos-financiadoras/4.png" alt="">
+                            <img src="images/logos-financiadoras/8.png" alt="">
+                            <img src="images/logos-financiadoras/2.png" alt="">
+                            <img src="images/logos-financiadoras/7.png" alt="">
+                            <img src="images/logos-financiadoras/5.png" alt="">
+                            <img src="images/logos-financiadoras/3.png" alt="">
+                        </div>    
                 </div>
-                <div>
-                    <h2>Aseguradoras</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, explicabo eius? Deserunt aliquam eveniet dignissimos a, asperiores fugit quos porro earum nobis quidem qui, voluptas impedit, deleniti omnis ullam repellat!</p>   
+                
+                <div class="col-md-6 Aseguradoras">
+                     <div class=" col-md-4 logo-bancos">
+                            <img src="images/iconos-fina-aseg/2.png" alt="">
+                        </div>
+                        <div class="col-md-8 text-aseguradoras">
+                            <h2>LOREM IPSUM DOLOR</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, explicabo eius? Deserunt aliquam eveniet dignissimos a, asperiores fugit quos porro earum nobis quidem qui, voluptas impedit, deleniti omnis ullam repellat!</p>   
+                        </div>
+                        <div class="col-md-12 logos-aseguradoras">
+                            <img src="images/logos-aseguradoras/1.png" alt="">
+                            <img src="images/logos-aseguradoras/2.png" alt="">
+                            <img src="images/logos-aseguradoras/3.png" alt="">
+                            <img src="images/logos-aseguradoras/4.png" alt="">
+                            <img src="images/logos-aseguradoras/5.png" alt="">
+                        </div>    
                 </div>
-                <div class="logos-aseguradoras">
-                    <img src="images/logos-aseguradoras/1.png" alt="">
-                    <img src="images/logos-aseguradoras/2.png" alt="">
-                    <img src="images/logos-aseguradoras/3.png" alt="">
-                    <img src="images/logos-aseguradoras/4.png" alt="">
-                    <img src="images/logos-aseguradoras/5.png" alt="">
-                </div> 
             </div>
-            <div class="col-md-6 Aseguradoras-financieras">
-                <div class="logo-bancos">
-                    <img src="images/iconos-fina-aseg/2.png" alt="">
-                </div>
-                <div>
-                    <h2>LOREM IPSUM DOLOR</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, explicabo eius? Deserunt aliquam eveniet dignissimos a, asperiores fugit quos porro earum nobis quidem qui, voluptas impedit, deleniti omnis ullam repellat!</p>   
-                </div>
-                <div class="logos-aseguradoras">
-                    <img src="images/logos-aseguradoras/1.png" alt="">
-                    <img src="images/logos-aseguradoras/2.png" alt="">
-                    <img src="images/logos-aseguradoras/3.png" alt="">
-                    <img src="images/logos-aseguradoras/4.png" alt="">
-                    <img src="images/logos-aseguradoras/5.png" alt="">
-                </div>          
-            </div>
-            
         </article>
-
+        <!--aqui termina sección de financiera y aseguradoras-->
+        <!--Inicio gallery slide mouse hover -->
         <article class="content-gallery">
             <div id="hs_container" class="hs_container">
                 <div class="hs_area hs_area1">
@@ -128,6 +200,7 @@
                 
             </div>
         </article>
+<<<<<<< HEAD
     <script src="js/jquery.min.js" type="text/javascript"></script>
     <script src="js/prefixfree.min.js" type="text/javascript"></script>
     <script src="js/section.js" type="text/javascript"></script>
@@ -135,6 +208,15 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="js/animation-gallery.js"></script>
+=======
+        <script src="js/section.js" type="text/javascript"></script>
+        <!--inicio javascript gallery-->
+            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+            <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+            <script type="text/javascript" src="js/animation-gallery.js"></script>
+        <!-- fin javascript gallery-->   
+         <!--Fin gallery slide mouse hover -->
+>>>>>>> 8bc8a73e15710f4b33e0050366d799908c45b711
         <article class="ant-art-slide">
             <div>
                 <img src="images/logos-autos/1.png" alt="">
@@ -152,6 +234,37 @@
                 <img src="images/logos-autos/13.png" alt="">
             </div>          
         </article>
+        <aside>
+            <div class="col-md-12 contacto">
+                <div class="col-md-6 contacto-descripcion">
+                    <h2>LOREM IPSUM</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <div class="col-md-6 contacto-formulario">
+                    <h2>¿TIENES ALGUNA DUDA?</h2>
+                    <form class="form-inline">
+                        <label class="sr-only" for="inlineFormInput">Name</label>
+                        <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="Jane Doe">
+                        <div class="form-group">
+                            <label class="control-label" for="Motivo">Motivo de Contacto</label>
+                            <select name="Motivo" class="form-control">
+                                <option value="Consulta General">Consulta General</option>
+                                <option value="Realizar Pedido">Realizar Pedido</option>
+                                <option value="Informe un problema">Informe un problema</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </aside>
     </section>
     <footer>
         <span></span>

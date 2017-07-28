@@ -4,6 +4,8 @@
 /*@ sourceURL=css/ant-hori-transition.css */
 /*# sourceURL=css/ant-hori-transition.css */
 /*@ sourceURL=css/ant-hori-transition.css */
+/*# sourceURL=css/ant-hori-transition.css */
+/*@ sourceURL=css/ant-hori-transition.css */
 .ant-art-slide{
 	margin: 2rem 0;
 	width: 100%;
@@ -17,7 +19,7 @@
 }
 .ant-art-slide img{
 	position: absolute;
-	left: -10rem;
+	left: -20rem;
 	width: 10%;
 	animation-name: animationImage;
 	animation-duration: 26s;

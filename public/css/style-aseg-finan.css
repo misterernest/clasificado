@@ -1,0 +1,43 @@
+.text-aseguradoras {
+	display: inline;
+	text-align: justify;
+}
+
+.text-aseguradoras h2{
+	display: inline-block;
+}
+.logo-bancos {
+	display: inline-block;
+}
+.logos-aseguradoras {
+	width: 677px;
+	margin-top: 20px;
+}
+.logos-aseguradoras img {
+	display: inline-block;
+	width: 18%;
+	margin-left: 4px;
+
+}
+.financiadoras {
+	padding: 2%;
+	border-right: 1px solid #ccc;
+}
+.Aseguradoras {
+	padding: 2%;
+}
+.contacto {
+	background: #cfd8dc;
+}
+.contacto h2 {
+	text-align: center;
+	color: #455a64;
+}
+.contacto p {
+	text-align: justify;
+	padding: 4%;
+	color: #546e7a;
+}
+.contacto-descripcion {
+	border-right: 1px solid #fff;
+}

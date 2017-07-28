@@ -26,6 +26,7 @@ class VehiclesController extends Controller
     $rules = [
       'name_user'             =>  'required',
       'photo_main'            =>  'required|max:3072',
+      'description'           =>  'required',
       'g-recaptcha-response'  =>  'required',
       'photo_2'               =>  'max:3072',
       'photo_3'               =>  'max:3072',
@@ -50,6 +51,7 @@ class VehiclesController extends Controller
       'g-recaptcha-response.required'  =>  'El Captcha es obligatorio.',
       'cellphone.numeric'     =>  'El número de teléfono debe ser numérico.', 
       'email.required'        =>  'El email es requerido.', 
+      'description.required'  =>  'La descripción es obligatoria.', 
       'email.email'           =>  'Debe ingresar un email valido.', 
       'type_car.in'           =>  'Debes elegir un tipo de carro correcto.', 
       'opcion.in'             =>  'Debes elegir un tipo de Opción correcto.', 
