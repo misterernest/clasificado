@@ -100,7 +100,7 @@
                 <div class="tg4-div-content2" id="tg4-content2">
                     <div class="row">
                         <div class="tg4-div-img5 col-md-6 col-sm-6 col-xs-12 no-float">
-                            <a href="#form-sale">
+                            <a id="tg4-a-5">
                                 <img id="tg4-img-5" src="" alt="">
                                 <span id="tg4-span-5"></span>
                             </a>
@@ -108,7 +108,7 @@
                         <div class="tg4-div-txt col-md-6 col-sm-6 col-xs-12 no-float" id="tg4-div-txt">
                             <h2 id="tg4-h2-txt"></h2>
                             <p id="tg4-p-txt"></p>
-                            <a id="tg4-a-txt" href="#form-sale"></a>
+                            <a id="tg4-a-txt"></a>
                         </div>
                     </div>
                     <div class="row">
@@ -199,7 +199,7 @@
             <script type="text/javascript" src="js/animation-gallery.js"></script>
         <!-- fin javascript gallery-->   
          <!--Fin gallery slide mouse hover -->
-        <article class="ant-art-slide">
+        <article class="ant-art-slide" id="logos-autos">
             <div>
                 <img src="images/logos-autos/1.png" alt="">
                 <img src="images/logos-autos/2.png" alt="">
