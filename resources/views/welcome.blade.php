@@ -62,8 +62,7 @@
                 </div>
                 <div class="img-slide-3">
                 </div>
-                <div class="capa-slide">
-                </div>
+                
             </div>
             <div class="txt-slide">
                 <div class="txt-slide-1"><a href="">Es hora de <br> manejar tu <br>auto de lujo</a></div>

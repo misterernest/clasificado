@@ -38,7 +38,7 @@ header{
 	top: 0;
 	left: 0;
 	z-index: 10000;
-	background-color: rgba(0,0,0, 0.7);
+	background-color: rgba(0,0,0,1);
 	margin: 0;
 	text-align: center;
 	display: flex;
@@ -47,7 +47,10 @@ header{
 	align-items: flex-start;
 }
 .top-nav>div{
-	margin: auto;
+	margin: 1rem auto;
+}
+.top-nav>div>*{
+	margin: 1rem auto;
 }
 /*logo*/
 .logo-autoslujo{
@@ -64,7 +67,7 @@ header{
 	border-radius: 10%;
 	width: 15%;
 	position: absolute;
-	bottom: 9rem;
+	bottom: 5rem;
 	left: 2rem;
 	z-index: 2;
 	display: flex;
