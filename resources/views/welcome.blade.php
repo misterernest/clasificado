@@ -271,7 +271,7 @@
                 <article>
             
         <div class="title-form" id="form-sale">
-            FORMULARIO DE VENTA
+            FORMULARIO DE VENTA O PERMUTA
         </div>
         
 
