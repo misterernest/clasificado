@@ -32,7 +32,7 @@
 <body>
     <header class="container">
         <nav class="row top-nav">
-            <div class="logo-autoslujo col-md-2">
+            <div class="logo-autoslujo col-md-2 ">
                 <a href="#">
                     <img src="images/logo.png" alt="autos de lujo">
                 </a>
@@ -235,7 +235,7 @@
                 <div class="col-md-6 contacto-formulario">
 					<form class="form-inline" action="{{ route('send') }}" method="POST">
                         {{ csrf_field() }}
-						<div class="col-xs-12 "><h2>¿TIENES ALGUNA DUDA?</h2></div>
+						<div class="col-xs-12 "><h2>¿QUE AUTO QUIERES COMPRAR, PERMUTAR O VENDER? PIDELO AQUÍ!!</h2></div>
 						<div class="col-sm-4 ">
 							<input type="text" class="form-control input-contacto" id="inlineFormInput" placeholder="Nombre">
 						</div>
