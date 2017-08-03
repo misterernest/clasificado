@@ -47,7 +47,7 @@
                 </button>
             </div>
         </nav>          
-        <nav class="second-nav">
+        <nav class="second-nav hidden-xs">
             <a href="#art3">VENTA</a> 
             <a href="#art3">PERMUTA</a>
             <a href="#art3">ALQUILER</a>
@@ -131,11 +131,13 @@
         <!--aqui inicia sección de financiera y aseguradoras-->
         <article class="row">
             <div class="col-md-12">
+				<div class="row">
                 <div class="col-sm-6 financiadoras">
-						<div class="col-xs-4 logo-bancos financiadoras-img">
+					<div class="row">
+						<div class="col-xs-3 col-md-4 logo-bancos financiadoras-img">
                             <img src="images/iconos-fina-aseg/1.png" alt="">
                         </div>
-                        <div class="col-xs-8 text-aseguradoras">
+                        <div class="col-xs-9 col-md-8 text-aseguradoras">
                             <h2>ASEGURADORAS</h2>
                             <p>Se realiza la gestión de  todas las pólizas y seguros relacionados correspondientes para los autos de lujos de acuerdo  a la normativa del sector automotriz de lujo</p>   
                         </div>
@@ -149,14 +151,17 @@
                             <img src="images/logos-financiadoras/7.png" alt="">
                             <img src="images/logos-financiadoras/5.png" alt="">
                             <img src="images/logos-financiadoras/3.png" alt="">
-                        </div>    
+                        </div>  
+					</div> 
                 </div>
+				
                 
                 <div class="col-sm-6 Aseguradoras">
-						<div class=" col-xs-4 logo-bancos financiadoras-img">
+				<div class="row">
+						<div class=" col-xs-3 col-md-4 logo-bancos financiadoras-img">
                             <img src="images/iconos-fina-aseg/2.png" alt="">
                         </div>
-                        <div class="col-xs-8 text-aseguradoras">
+                        <div class="col-xs-9 col-md-8 text-aseguradoras">
                             <h2>FINANCIADORA</h2>
                             <p>Se realiza la gestión para conseguir el financiamiento y el crédito hasta el 100% del valor del vehículo, previo estudio con compañía de financiamiento.</p>   
                         </div>
@@ -168,6 +173,8 @@
                             <img src="images/logos-aseguradoras/5.png" alt="">
                         </div>    
                 </div>
+				</div> 
+				</div> 
             </div>
         </article>
         <!--aqui termina sección de financiera y aseguradoras-->
@@ -234,6 +241,7 @@
                 @endif
                 <div class="col-md-6 contacto-formulario">
 					<form class="form-inline" action="{{ route('send') }}" method="POST">
+					<div class="row" >
                         {{ csrf_field() }}
 						<div class="col-xs-12 "><h2>¿QUE AUTO QUIERES COMPRAR, PERMUTAR O VENDER? PIDELO AQUÍ!!</h2></div>
 						<div class="col-sm-4 ">
@@ -250,6 +258,7 @@
 						</div>
                         
 						<div class="col-xs-12 enviar"><button type="submit" class="btn btn-primary">Submit</button></div>
+					</div>
 					</form>
 
 				</div>
