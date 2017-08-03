@@ -32,12 +32,12 @@
 <body>
     <header class="container">
         <nav class="row top-nav">
-            <div class="logo-autoslujo col-md-2 ">
+            <div class="logo-autoslujo col-xs-4 col-sm-3 col-md-2 ">
                 <a href="#">
                     <img src="images/logo.png" alt="autos de lujo">
                 </a>
             </div>
-            <div class="social col-md-8">
+            <div class="social col-xs-6 col-sm-7 col-md-8">
                 <a href="https://www.facebook.com/search/top/?q=autosdelujo.com.co" target="_blank"><span class="fa fa-facebook-square" aria-hidden="true"></span></a>
                 <a href=""><span class="fa fa-instagram" aria-hidden="true"></span></a>
             </div>
