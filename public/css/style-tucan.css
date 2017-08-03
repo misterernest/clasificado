@@ -4,6 +4,10 @@
 /*@ sourceURL=css/style-tucan.css */
 /*# sourceURL=css/style-tucan.css */
 /*@ sourceURL=css/style-tucan.css */
+/*# sourceURL=css/style-tucan.css */
+/*@ sourceURL=css/style-tucan.css */
+/*# sourceURL=css/style-tucan.css */
+/*@ sourceURL=css/style-tucan.css */
 /*@ sourceURL=css/style-tucan.css */
 /*# sourceURL=css/style-tucan.css */
 /*@ sourceURL=css/style-tucan.css */
@@ -33,11 +37,17 @@ header{
 	position: fixed;
 	top: 0;
 	left: 0;
-	height: 10rem;
 	z-index: 10000;
 	background-color: rgba(0,0,0, 0.7);
 	margin: 0;
 	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+}
+.top-nav>div{
+	margin: auto;
 }
 /*logo*/
 .logo-autoslujo{

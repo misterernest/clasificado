@@ -38,8 +38,8 @@
                 </a>
             </div>
             <div class="social col-xs-6 col-sm-7 col-md-8">
-                <a href="https://www.facebook.com/search/top/?q=autosdelujo.com.co" target="_blank"><span class="fa fa-facebook-square" aria-hidden="true"></span></a>
-                <a href=""><span class="fa fa-instagram" aria-hidden="true"></span></a>
+                <a href="https://www.facebook.com/Autosdelujo.Colombia/" target="_blank"><span class="fa fa-facebook-square" aria-hidden="true"></span></a>
+                <a href="https://www.instagram.com/autosdelujo_colombia/?hl=es" target="_blank"><span  class="fa fa-instagram" aria-hidden="true"></span></a>
             </div>
             <div class="menu-ham col-md-2">
                 <button type="button" class="btn btn-default" aria-label="Left Align">
