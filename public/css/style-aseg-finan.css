@@ -26,9 +26,11 @@
 .financiadoras {
 	padding: 2%;
 	border-right: 1px solid #ccc;
+	margin-bottom:5px;
 }
 .Aseguradoras {
 	padding: 2%;
+	margin-bottom:5px;
 }
 .contacto {
 	background: #e5e5e5;
