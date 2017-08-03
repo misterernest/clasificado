@@ -224,21 +224,31 @@
                         Son AUTOS DE LUJOS financiados, listos para manejar, con todas las garantías y seguridad, se pueden comprar, vender o permutar por mayor o menor valor y que pueden ser de servicio público o particular.
                     </p>
                 </div>
+                @if ($errors->has()) 
+                    Revisa estos items, para enviar tu formulario
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                @endif
                 <div class="col-md-6 contacto-formulario">
-					<form class="form-inline">
+					<form class="form-inline" action="{{ route('send') }}" method="POST">
+                        {{ csrf_field() }}
 						<div class="col-xs-12 "><h2>¿TIENES ALGUNA DUDA?</h2></div>
 						<div class="col-sm-4 ">
 							<input type="text" class="form-control input-contacto" id="inlineFormInput" placeholder="Nombre">
 						</div>
 						<div class="col-sm-4 ">
-							<input type="email" class="form-control input-contacto" id="ejemplo_email_3" placeholder="Email">
+							<input type="email" name="email" class="form-control input-contacto" id="ejemplo_email_3" placeholder="Email">
 						</div>
 						<div class="col-sm-4 ">
-							<input type="text" class="form-control input-contacto" placeholder="Asunto">
+							<input type="text" name="subject" class="form-control input-contacto" placeholder="Asunto">
 						</div>
 						<div class="col-xs-12 mensaje-contacto">
-							<textarea class="form-control" rows="4"></textarea>
+							<textarea name="body" class="form-control" rows="4"></textarea>
 						</div>
+                        
 						<div class="col-xs-12 enviar"><button type="submit" class="btn btn-primary">Submit</button></div>
 					</form>
 
@@ -435,9 +445,9 @@
     </div>
     <script> $('.input-imagen').change(function() {
         $(this).next( 'label').children('span' ).css("color", "#00CC33");
-})</script>
-})</script>
-</article>
+    })
+    </script>
+    </article>
     </section>
     <footer>
         <span></span>
