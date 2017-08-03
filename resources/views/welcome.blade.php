@@ -75,6 +75,58 @@
         </div>
         
     </header>
+
+    <!--aqui inicia sección de financiera y aseguradoras-->
+        <article class="row">
+            <div class="col-md-12">
+                <div class="row">
+                <div class="col-sm-6 financiadoras">
+                    <div class="row">
+                        <div class="col-xs-3 col-md-4 logo-bancos financiadoras-img">
+                            <img src="images/iconos-fina-aseg/1.png" alt="">
+                        </div>
+                        <div class="col-xs-9 col-md-8 text-aseguradoras">
+                            <h2>FINANCIADORA</h2>
+                            <p>Se realiza la gestión para conseguir el financiamiento y el crédito hasta el 100% del valor del vehículo, previo estudio con compañía de financiamiento.</p> 
+                        </div>
+                        <div class="col-xs-12 logos-aseguradoras">
+                            <img src="images/logos-financiadoras/1.png" alt="">
+                            <img src="images/logos-financiadoras/6.png" alt="">
+                            <img src="images/logos-financiadoras/9.png" alt="">
+                            <img src="images/logos-financiadoras/4.png" alt="">
+                            <img src="images/logos-financiadoras/8.png" alt="">
+                            <img src="images/logos-financiadoras/2.png" alt="">
+                            <img src="images/logos-financiadoras/7.png" alt="">
+                            <img src="images/logos-financiadoras/5.png" alt="">
+                            <img src="images/logos-financiadoras/3.png" alt="">
+                        </div>  
+                    </div> 
+                </div>
+                
+                
+                <div class="col-sm-6 Aseguradoras">
+                <div class="row">
+                        <div class=" col-xs-3 col-md-4 logo-bancos financiadoras-img">
+                            <img src="images/iconos-fina-aseg/2.png" alt="">
+                        </div>
+                        <div class="col-xs-9 col-md-8 text-aseguradoras">
+                            <h2>ASEGURADORAS</h2>
+                            <p>Se realiza la gestión de  todas las pólizas y seguros relacionados correspondientes para los autos de lujos de acuerdo  a la normativa del sector automotriz de lujo</p>
+                        </div>
+                        <div class="col-xs-12 logos-aseguradoras">
+                            <img src="images/logos-aseguradoras/1.png" alt="">
+                            <img src="images/logos-aseguradoras/2.png" alt="">
+                            <img src="images/logos-aseguradoras/3.png" alt="">
+                            <img src="images/logos-aseguradoras/4.png" alt="">
+                            <img src="images/logos-aseguradoras/5.png" alt="">
+                        </div>    
+                </div>
+                </div> 
+                </div> 
+            </div>
+        </article>
+        <!--aqui termina sección de financiera y aseguradoras-->
+
     <section>   
         <article class="ant-cat-art1" id="art3">
             <div class="container-fluid">                
@@ -127,56 +179,25 @@
                 </div>
             </div>
         </article>
-        <!--aqui inicia sección de financiera y aseguradoras-->
-        <article class="row">
-            <div class="col-md-12">
-				<div class="row">
-                <div class="col-sm-6 financiadoras">
-					<div class="row">
-						<div class="col-xs-3 col-md-4 logo-bancos financiadoras-img">
-                            <img src="images/iconos-fina-aseg/1.png" alt="">
-                        </div>
-                        <div class="col-xs-9 col-md-8 text-aseguradoras">
-                            <h2>ASEGURADORAS</h2>
-                            <p>Se realiza la gestión de  todas las pólizas y seguros relacionados correspondientes para los autos de lujos de acuerdo  a la normativa del sector automotriz de lujo</p>   
-                        </div>
-                        <div class="col-xs-12 logos-aseguradoras">
-                            <img src="images/logos-financiadoras/1.png" alt="">
-                            <img src="images/logos-financiadoras/6.png" alt="">
-                            <img src="images/logos-financiadoras/9.png" alt="">
-                            <img src="images/logos-financiadoras/4.png" alt="">
-                            <img src="images/logos-financiadoras/8.png" alt="">
-                            <img src="images/logos-financiadoras/2.png" alt="">
-                            <img src="images/logos-financiadoras/7.png" alt="">
-                            <img src="images/logos-financiadoras/5.png" alt="">
-                            <img src="images/logos-financiadoras/3.png" alt="">
-                        </div>  
-					</div> 
-                </div>
-				
-                
-                <div class="col-sm-6 Aseguradoras">
-				<div class="row">
-						<div class=" col-xs-3 col-md-4 logo-bancos financiadoras-img">
-                            <img src="images/iconos-fina-aseg/2.png" alt="">
-                        </div>
-                        <div class="col-xs-9 col-md-8 text-aseguradoras">
-                            <h2>FINANCIADORA</h2>
-                            <p>Se realiza la gestión para conseguir el financiamiento y el crédito hasta el 100% del valor del vehículo, previo estudio con compañía de financiamiento.</p>   
-                        </div>
-                        <div class="col-xs-12 logos-aseguradoras">
-                            <img src="images/logos-aseguradoras/1.png" alt="">
-                            <img src="images/logos-aseguradoras/2.png" alt="">
-                            <img src="images/logos-aseguradoras/3.png" alt="">
-                            <img src="images/logos-aseguradoras/4.png" alt="">
-                            <img src="images/logos-aseguradoras/5.png" alt="">
-                        </div>    
-                </div>
-				</div> 
-				</div> 
-            </div>
+
+        <article class="ant-art-slide" id="logos-autos">
+            <div>
+                <img src="images/logos-autos/1.png" alt="">
+                <img src="images/logos-autos/2.png" alt="">
+                <img src="images/logos-autos/3.png" alt="">
+                <img src="images/logos-autos/4.png" alt="">
+                <img src="images/logos-autos/5.png" alt="">
+                <img src="images/logos-autos/6.png" alt="">
+                <img src="images/logos-autos/7.png" alt="">
+                <img src="images/logos-autos/8.png" alt="">
+                <img src="images/logos-autos/9.png" alt="">
+                <img src="images/logos-autos/10.png" alt="">
+                <img src="images/logos-autos/11.png" alt="">
+                <img src="images/logos-autos/12.png" alt="">
+                <img src="images/logos-autos/13.png" alt="">
+            </div>          
         </article>
-        <!--aqui termina sección de financiera y aseguradoras-->
+
         <!--Inicio gallery slide mouse hover -->
         <article class="content-gallery">
             <div id="hs_container" class="hs_container">
@@ -205,23 +226,7 @@
             <script type="text/javascript" src="js/animation-gallery.js"></script>
         <!-- fin javascript gallery-->   
          <!--Fin gallery slide mouse hover -->
-        <article class="ant-art-slide" id="logos-autos">
-            <div>
-                <img src="images/logos-autos/1.png" alt="">
-                <img src="images/logos-autos/2.png" alt="">
-                <img src="images/logos-autos/3.png" alt="">
-                <img src="images/logos-autos/4.png" alt="">
-                <img src="images/logos-autos/5.png" alt="">
-                <img src="images/logos-autos/6.png" alt="">
-                <img src="images/logos-autos/7.png" alt="">
-                <img src="images/logos-autos/8.png" alt="">
-                <img src="images/logos-autos/9.png" alt="">
-                <img src="images/logos-autos/10.png" alt="">
-                <img src="images/logos-autos/11.png" alt="">
-                <img src="images/logos-autos/12.png" alt="">
-                <img src="images/logos-autos/13.png" alt="">
-            </div>          
-        </article>
+        
         <aside>
             <div class="col-md-12 contacto" id="form-contact">
                 <div class="col-md-6 contacto-descripcion">
