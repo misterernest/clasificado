@@ -324,8 +324,8 @@
                             <div class="col-sm-4"><input class="form-control" type="" id="" name="value" placeholder="$ Costo" value="{{ old('value') }}" /></div>
                             <div class="col-sm-4"><input class="form-control" type="" id="" name="negociable" placeholder="negociable" value="{{ old('negociable') }}" /></div>
                             <div class="col-sm-4"><select  class="form-control" name="opcion">
-                               <option value="Comprar" {{ old('opcion') == 'Comprar' ? "selected='true'" : ""}}>Comprar</option> 
-                               <option value="Alquilar" {{ old('opcion') == 'Alquilar' ? "selected='true'" :"" }}>Alquilar</option>
+                               
+                               
                                <option value="Vender" {{ old('opcion') == 'Vender' ? "selected='true'" : ""}}>Vender</option>
                                <option value="Permutar" {{ old('opcion') == 'Permutar' ? "selected='true'" :"" }}>Permutar</option> 
                             </select></div>
