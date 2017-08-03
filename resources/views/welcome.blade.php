@@ -131,15 +131,15 @@
         <!--aqui inicia sección de financiera y aseguradoras-->
         <article class="row">
             <div class="col-md-12">
-                <div class="col-md-6 financiadoras">
-                     <div class="col-md-4 logo-bancos">
+                <div class="col-sm-6 financiadoras">
+						<div class="col-xs-4 logo-bancos financiadoras-img">
                             <img src="images/iconos-fina-aseg/1.png" alt="">
                         </div>
-                        <div class="col-md-8 text-aseguradoras">
+                        <div class="col-xs-8 text-aseguradoras">
                             <h2>ASEGURADORAS</h2>
                             <p>Se realiza la gestión de  todas las pólizas y seguros relacionados correspondientes para los autos de lujos de acuerdo  a la normativa del sector automotriz de lujo</p>   
                         </div>
-                        <div class="col-md-12 logos-aseguradoras">
+                        <div class="col-xs-12 logos-aseguradoras">
                             <img src="images/logos-financiadoras/1.png" alt="">
                             <img src="images/logos-financiadoras/6.png" alt="">
                             <img src="images/logos-financiadoras/9.png" alt="">
@@ -152,15 +152,15 @@
                         </div>    
                 </div>
                 
-                <div class="col-md-6 Aseguradoras">
-                     <div class=" col-md-4 logo-bancos">
+                <div class="col-sm-6 Aseguradoras">
+						<div class=" col-xs-4 logo-bancos financiadoras-img">
                             <img src="images/iconos-fina-aseg/2.png" alt="">
                         </div>
-                        <div class="col-md-8 text-aseguradoras">
+                        <div class="col-xs-8 text-aseguradoras">
                             <h2>FINANCIADORA</h2>
                             <p>Se realiza la gestión para conseguir el financiamiento y el crédito hasta el 100% del valor del vehículo, previo estudio con compañía de financiamiento.</p>   
                         </div>
-                        <div class="col-md-12 logos-aseguradoras">
+                        <div class="col-xs-12 logos-aseguradoras">
                             <img src="images/logos-aseguradoras/1.png" alt="">
                             <img src="images/logos-aseguradoras/2.png" alt="">
                             <img src="images/logos-aseguradoras/3.png" alt="">

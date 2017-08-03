@@ -13,9 +13,15 @@
 	margin-top: 20px;
 }
 .logos-aseguradoras img {
-	width: 100px;
+	height: 35px;
 	margin-left: 4px;
 	float:left;
+}
+.financiadoras-img{
+	display:flex;
+}
+.financiadoras-img img{
+	width:90%;
 }
 .financiadoras {
 	padding: 2%;
