@@ -4,13 +4,11 @@
 	<meta charset="UTF-8">
 	<title>Autos de lujo</title>
 	
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, Minimum-scale=1.0, Maximum-scale=1.0"> 
 	<meta name="description" content="Autos de lujo en Colombia, vende tu autos de lujo, alquila tu auto de lujo, permuta tu auto de lujo, compra tu auto de lujo" />
 	<meta name="keywords" content="autos, carros, vehiculos, lujo, autos de lujo, carros de lujo, vehiculos de lujo, vende tu auto de lujo, alquila tu auto de lujo, compra tu auto de lujo, permuta tu auto de lujo" />
 	<meta name="author" content="ANT" />
-	
-    <link rel="shortcut icon" href="images/favicon.png">
-    
+    <link rel="shortcut icon" href="images/favicon.png">    
     <link rel="stylesheet" type="text/css" href="css/tucan-gallery4.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" >
     <script src="js/jquery.min.js" type="text/javascript"></script>
@@ -54,7 +52,7 @@
             <a href="#art3">COMPRA</a>
             <a href="#form-contact">CONTACTENOS</a>
         </nav>      
-        <div class="container-slide">
+        <div class="container-slide" >
             <div class="img-slide">
                 <div class="img-slide-1">
                 </div>
@@ -64,10 +62,10 @@
                 </div>
                 
             </div>
-            <div class="txt-slide">
-                <div class="txt-slide-1"><a href="">Es hora de <br> manejar tu <br>auto de lujo</a></div>
-                <div class="txt-slide-2"><a href="">Compra y Venta<br> de  <br>autos de lujo</a></div>
-                <div class="txt-slide-3"><a href="">Financiamiento <br> & <br>Aseguramiento</a></div>
+            <div class="txt-slide col-md-12 col-sm-12 ">
+                <div class="txt-slide-1"><a href="">En esta pagina puedes encontrar el vehiculo que necesites, al mejor precio, financiado hasta el 100% y documentos al día, cotiza ya!!!</a></div>
+                <div class="txt-slide-2"><a href="">Si quieres vender o permutar lo puedes hacer ya, trabjamos con todas las financieras.</a></div>
+                <div class="txt-slide-3"><a href="">Puedes cotizar tu seguro todo riesgo SOAT a Domicilio</a></div>
             </div>
         </div>
         <div class="link-servicios">
