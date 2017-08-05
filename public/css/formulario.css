@@ -57,10 +57,24 @@ input, select{
   font-size:30px;
   margin:10px;
   float: left;
+  width:56px;
+  height:56px;
+  background-repeat:no-repeat;
+  background-size:100%;
+  background-position: center;
 }
 
 .btn-file.photo_main{
   font-size:80px;
   float: left;
+  width:106px;
+  height:128px;
+  background-repeat:no-repeat;
+  background-size:100%;
+  background-position: center;
+}
+
+.btn-file-preview:before {
+	content:"";
 }
 

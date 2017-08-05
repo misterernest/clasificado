@@ -455,7 +455,22 @@
         </form>
     </div>
     <script> $('.input-imagen').change(function() {
-        $(this).next( 'label').children('span' ).css("color", "#00CC33");
+		
+		var mispan = $(this).next( 'label').children('span' );
+		if (this.files[0] == null){
+			mispan.toggleClass( "btn-file-preview" , false);
+			mispan.css('background-image', '');
+		} else {
+			mispan.toggleClass( "btn-file-preview" , true);
+			var reader = new FileReader();
+			reader.onload = function (e) {
+				// get loaded data and render thumbnail.
+				mispan.css('background-image', 'url('+e.target.result+')');
+			};
+
+			// read the image file as a data URL.
+			reader.readAsDataURL(this.files[0]);
+		}
     })
     </script>
     </article>
