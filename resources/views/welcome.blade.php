@@ -62,10 +62,10 @@
                 </div>
                 
             </div>
-            <div class="txt-slide col-md-12 col-sm-12 ">
+            <div class="txt-slide col-md-5 col-sm-12 ">
                 <div class="txt-slide-1"><a href="">En esta pagina puedes encontrar el vehiculo que necesites, al mejor precio, financiado hasta el 100% y documentos al día, cotiza ya!!!</a></div>
-                <div class="txt-slide-2"><a href="">Si quieres vender o permutar lo puedes hacer ya, trabjamos con todas las financieras.</a></div>
-                <div class="txt-slide-3"><a href="">Puedes cotizar tu seguro todo riesgo SOAT a Domicilio</a></div>
+                <div class="txt-slide-2"><a href="">Si quieres vender o permutar lo puedes hacer ya. Trabjamos con todas las financieras.</a></div>
+                <div class="txt-slide-3"><a href="">Puedes cotizar tu seguro todo riesgo y SOAT a Domicilio</a></div>
             </div>
         </div>
         <div class="link-servicios">
@@ -197,7 +197,7 @@
         </article>
 
         <!--Inicio gallery slide mouse hover -->
-        <article class="content-gallery">
+        <article class="content-gallery hidden-xs">
             <div id="hs_container" class="hs_container">
                 <div class="hs_area hs_area1">
                     <img class="hs_visible" src="images/galeria/area1/1.jpg" alt=""/>
