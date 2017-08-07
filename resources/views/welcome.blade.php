@@ -28,7 +28,6 @@
     <script src="js/prefixfree.min.js" type="text/javascript"></script>
 </head>
 <body>
-    <header class="container-fluid">
         <nav class="row top-nav">
             <div class="logo-autoslujo col-xs-4 col-sm-3 col-md-2 ">
                 <a href="#">
@@ -45,6 +44,7 @@
                 </button>
             </div>
         </nav>          
+    <header class="container-fluid">
         <nav class="second-nav hidden-xs">
             <a href="#art3">VENTA</a> 
             <a href="#art3">PERMUTA</a>
@@ -62,7 +62,7 @@
                 </div>
                 
             </div>
-            <div class="txt-slide col-md-5 col-sm-12 ">
+            <div class="txt-slide col-md-5 col-sm-6 col-xs-12 ">
                 <div class="txt-slide-1"><a href="">En esta pagina puedes encontrar el vehiculo que necesites, al mejor precio, financiado hasta el 100% y documentos al día, cotiza ya!!!</a></div>
                 <div class="txt-slide-2"><a href="">Si quieres vender o permutar lo puedes hacer ya. Trabjamos con todas las financieras.</a></div>
                 <div class="txt-slide-3"><a href="">Puedes cotizar tu seguro todo riesgo y SOAT a Domicilio</a></div>
