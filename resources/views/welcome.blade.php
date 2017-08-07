@@ -476,8 +476,29 @@
     </script>
     </article>
     </section>
-    <footer>
-        <span></span>
+    <footer class="footer" >
+		<div class="row">
+			<div class="col-xs-3">
+				<span class="text-footer">Visitanos en:</span>
+				<div class="social-footer">
+					<a href="https://www.facebook.com/Autosdelujo.Colombia/" target="_blank"><span class="fa fa-facebook" aria-hidden="true"></span></a>
+					<a href="https://www.instagram.com/autosdelujo_colombia/?hl=es" target="_blank"><span  class="fa fa-instagram" aria-hidden="true"></span></a>
+					<a href="https://www.facebook.com/Autosdelujo.Colombia/" target="_blank"><span class="fa fa-google-plus-official" aria-hidden="true"></span></a>
+				</div>
+			</div>
+			<div class="col-xs-6 ">
+				<a href="#" ><span class="text-footer" >Nuestros Servicios</span></a>
+			</div>
+			<div class="col-xs-3 ">
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<span class="text-footer">TUCANLAB 2017 © Todos los derechos reservados </span>
+			</div>
+		</div>
+		
     </footer>
 </body>
 </html>
