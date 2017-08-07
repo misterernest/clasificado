@@ -10,25 +10,25 @@
 	<meta name="author" content="ANT" />
     <link rel="shortcut icon" href="images/favicon.png">    
     <link rel="stylesheet" type="text/css" href="css/tucan-gallery4.css" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="css/ant-animation.css">
     <script src="js/jquery.min.js" type="text/javascript"></script>
     
-    <script src="js/tucan-gallery4.js" type="text/javascript"></script>
+    <script src="js/tucan-tucan-first-nav.js" type="text/javascript"></script>
 
-	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" >
     <link rel="stylesheet" type="text/css" href="css/style-tucan.css">
-	<link rel="stylesheet" type="text/css" href="css/formulario.css" >
-	<link rel="stylesheet" type="text/css" href="css/ant-animation.css">
-	<link rel="stylesheet" type="text/css" href="css/style-gallery.css" />
-	<link rel="stylesheet" type="text/css" href="css/ant-category.css" />
+    <link rel="stylesheet" type="text/css" href="css/formulario.css" >
+    <link rel="stylesheet" type="text/css" href="css/style-gallery.css" />
+    <link rel="stylesheet" type="text/css" href="css/ant-category.css" />
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/ant-hori-transition.css" />
+    <link rel="stylesheet" type="text/css" href="css/ant-hori-transition.css" />
     <link rel="stylesheet" type="text/css" href="css/style-aseg-finan.css" />
     <script src="js/prefixfree.min.js" type="text/javascript"></script>
 </head>
 <body>
-    <header class="container">
+    <header class="container-fluid">
         <nav class="row top-nav">
             <div class="logo-autoslujo col-xs-4 col-sm-3 col-md-2 ">
                 <a href="#">
@@ -125,6 +125,7 @@
         </article>
         <!--aqui termina sección de financiera y aseguradoras-->
 
+    <script src="js/tucan-gallery4.js" type="text/javascript"></script>
     <section>   
         <article class="ant-cat-art1" id="art3">
             <div class="container-fluid">                

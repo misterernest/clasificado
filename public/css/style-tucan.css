@@ -2,15 +2,6 @@
 /*@ sourceURL=css/style-tucan.css */
 /*# sourceURL=css/style-tucan.css */
 /*@ sourceURL=css/style-tucan.css */
-/*# sourceURL=css/style-tucan.css */
-/*@ sourceURL=css/style-tucan.css */
-/*# sourceURL=css/style-tucan.css */
-/*@ sourceURL=css/style-tucan.css */
-/*# sourceURL=css/style-tucan.css */
-/*@ sourceURL=css/style-tucan.css */
-/*@ sourceURL=css/style-tucan.css */
-/*# sourceURL=css/style-tucan.css */
-/*@ sourceURL=css/style-tucan.css */
 /*Style-tucan*/
 /*Resetear style*/
 
@@ -35,8 +26,6 @@ header{
 /*nav*/
 .top-nav{
 	position: fixed;
-	top: 0;
-	left: 0;
 	z-index: 10000;
 	background-color: rgba(0,0,0,1);
 	margin: 0;
@@ -56,8 +45,6 @@ header{
 .logo-autoslujo{
 	position: relative;
 	z-index: 2;
-	margin: 0rem;	
-	height: 100%;
 }
 .logo-autoslujo img{
 	width: 100%;
@@ -86,4 +73,31 @@ header{
 .second-nav a:hover{
     color: #d2ab5d;
     border-bottom: 0.1rem solid #d2ab5d;
+}
+
+@media screen and (max-width: 980px) {
+	header{
+		height: 600px;
+	}
+	html{
+		font-size: 8px;
+	}
+}
+@media screen and (max-width: 800px) {
+	header{
+		height: 500px;
+	}
+	html{
+		font-size: 8px;
+	}
+}
+@media screen and (max-width: 768px) {
+	header{
+		height: 400px;
+	}
+}
+@media screen and (max-width: 360px) {
+	header{
+		height: 200px;
+	}
 }
