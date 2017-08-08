@@ -86,6 +86,7 @@ header{
 	font-family: roboto;
 	border-bottom: 0.1rem solid #fff;
 	transition: color 0.5s ease;
+	width: 100%;
 }
 .second-nav a:hover{
     color: #d2ab5d;
@@ -127,28 +128,4 @@ header{
 	html{
 		font-size: 5.5px;
 	}
-}
-/*footer*/
-.footer{
-	background-color: rgba(0,0,0,1);
-	margin: 0;
-	text-align: center;
-	justify-content: center;
-}
-
-.footer div{
-	margin-top: 10px;
-}
-
-.social-footer span {
-    color: #fff;
-    font-size: 4rem;
-    text-align: center;
-    margin-left: 1rem;
-}
-
-.text-footer {
-    color: #fff;
-    font-size: 2rem;
-    text-align: center;
 }

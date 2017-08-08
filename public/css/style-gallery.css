@@ -4,20 +4,22 @@
 /*@ sourceURL=css/style-gallery.css */
 /*# sourceURL=css/style-gallery.css */
 /*@ sourceURL=css/style-gallery.css */
+/*# sourceURL=css/style-gallery.css */
+/*@ sourceURL=css/style-gallery.css */
 .content-gallery {
 	width: inherit;
 	height: 50rem;
     position: relative;
     margin: 0px auto;
-    border: 1px solid #00f;
+    border: 1px solid #bbb;
 }
 .hs_container{
 	background-color: #fff;
 	position:relative;
 	width:100%;
 	height:31rem;
-	-webkit-box-shadow:1px 1px 3px #222;
-	box-shadow:1px 1px 3px #222;
+	-webkit-box-shadow:1px 1px 3px #fff;
+	box-shadow:1px 1px 3px #fff;
 }
 .hs_container .hs_area{
 	position:absolute;
@@ -54,25 +56,28 @@
 }
 .hs_area2{
 	width:50%;
-	height:246px;
+	height:24.5rem;
 	top:0px;
 	left:50%;
 }
 .hs_area3{
 	width:50%;
 	height:254px;
-	top:248px;
+	top:24.6rem;
 	left:50%;
 }
-.hs_area4{
-	width:21.3%;
-	height:210px;
-	top:500px;
-	left:0px;
+
+
+@media screen and (max-width: 1280px) {
+	.hs_area3{
+		top:23.4rem;
+	}
 }
-.hs_area5{
-	width:78.5%;
-	height:210px;
-	top:500px;
-	left:21.5%;
+@media screen and (max-width: 980px) {
+	.content-gallery {
+		height: 35rem;
+	}
+	.hs_area3{
+		top:17.7rem;
+	}
 }
