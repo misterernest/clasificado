@@ -46,10 +46,10 @@
     </nav>          
     <header class="container-fluid">
         <nav class="second-nav hidden-xs">
-            <a href="#art3">VENTA</a> 
-            <a href="#art3">PERMUTA</a>
-            <a href="#art3">ALQUILER</a>
-            <a href="#art3">COMPRA</a>
+            <a href="#logos-aseguradoras">VENTA</a> 
+            <a href="#logos-aseguradoras">PERMUTA</a>
+            <a href="#logos-aseguradoras">ALQUILER</a>
+            <a href="#logos-aseguradoras">COMPRA</a>
             <a href="#form-contact">CONTACTENOS</a>
         </nav>      
         <div class="container-slide" >
@@ -63,13 +63,13 @@
                 
             </div>
             <div class="txt-slide col-md-5 col-sm-6 col-xs-12 ">
-                <div class="txt-slide-1"><a href="">En esta pagina puedes encontrar el vehiculo que necesites, al mejor precio, financiado hasta el 100% y documentos al día, cotiza ya!!!</a></div>
-                <div class="txt-slide-2"><a href="">Si quieres vender o permutar lo puedes hacer ya. Trabjamos con todas las financieras.</a></div>
-                <div class="txt-slide-3"><a href="">Puedes cotizar tu seguro todo riesgo y SOAT a Domicilio</a></div>
+                <div class="txt-slide-1"><a href="#art3">En esta pagina puedes encontrar el vehiculo que necesites, al mejor precio, financiado hasta el 100% y documentos al día, cotiza ya!!!</a></div>
+                <div class="txt-slide-2"><a href="#art3">Si quieres vender o permutar lo puedes hacer ya. Trabjamos con todas las financieras.</a></div>
+                <div class="txt-slide-3"><a href="#art3">Puedes cotizar tu seguro todo riesgo y SOAT a Domicilio</a></div>
             </div>
         </div>
         <div class="link-servicios">
-            <a href="#art3">Conoce nuestros servicios</a>
+            <a href="#logos-aseguradoras">Desplaza para continuar. <span class="fa fa-arrow-down" aria-hidden="true"></a>
         </div>
         
     </header>
@@ -84,22 +84,22 @@
                 <div class="col-sm-6 financiadoras">
                     <div class="row">
                         <div class="col-xs-3 col-md-4 logo-bancos financiadoras-img">
-                            <img src="images/iconos-fina-aseg/1.png" alt="">
+                            <img src="images/iconos-fina-aseg/1.png" alt="Financia tu carro">
                         </div>
                         <div class="col-xs-9 col-md-8 text-aseguradoras">
                             <h2>FINANCIADORA</h2>
                             <p>Se realiza la gestión para conseguir el financiamiento y el crédito hasta el 100% del valor del vehículo, previo estudio con compañía de financiamiento.</p> 
                         </div>
                         <div class="col-xs-12 logos-aseguradoras">
-                            <img src="images/logos-financiadoras/1.png" alt="">
-                            <img src="images/logos-financiadoras/6.png" alt="">
-                            <img src="images/logos-financiadoras/9.png" alt="">
-                            <img src="images/logos-financiadoras/4.png" alt="">
-                            <img src="images/logos-financiadoras/8.png" alt="">
-                            <img src="images/logos-financiadoras/2.png" alt="">
-                            <img src="images/logos-financiadoras/7.png" alt="">
-                            <img src="images/logos-financiadoras/5.png" alt="">
-                            <img src="images/logos-financiadoras/3.png" alt="">
+                            <img src="images/logos-financiadoras/1.png" alt="Financia tu carro">
+                            <img src="images/logos-financiadoras/6.png" alt="Financia tu carro">
+                            <img src="images/logos-financiadoras/9.png" alt="Financia tu carro">
+                            <img src="images/logos-financiadoras/4.png" alt="Financia tu carro">
+                            <img src="images/logos-financiadoras/8.png" alt="Financia tu carro">
+                            <img src="images/logos-financiadoras/2.png" alt="Financia tu carro">
+                            <img src="images/logos-financiadoras/7.png" alt="Financia tu carro">
+                            <img src="images/logos-financiadoras/5.png" alt="Financia tu carro">
+                            <img src="images/logos-financiadoras/3.png" alt="Financia tu carro">
                         </div>  
                     </div> 
                 </div>
@@ -108,18 +108,18 @@
                 <div class="col-sm-6 Aseguradoras">
                 <div class="row">
                         <div class=" col-xs-3 col-md-4 logo-bancos financiadoras-img">
-                            <img src="images/iconos-fina-aseg/2.png" alt="">
+                            <img src="images/iconos-fina-aseg/2.png" alt="Asegura tu carro">
                         </div>
                         <div class="col-xs-9 col-md-8 text-aseguradoras">
                             <h2>ASEGURADORAS</h2>
                             <p>Se realiza la gestión de  todas las pólizas y seguros relacionados correspondientes para los autos de lujos de acuerdo  a la normativa del sector automotriz de lujo</p>
                         </div>
-                        <div class="col-xs-12 logos-aseguradoras">
-                            <img src="images/logos-aseguradoras/1.png" alt="">
-                            <img src="images/logos-aseguradoras/2.png" alt="">
-                            <img src="images/logos-aseguradoras/3.png" alt="">
-                            <img src="images/logos-aseguradoras/4.png" alt="">
-                            <img src="images/logos-aseguradoras/5.png" alt="">
+                        <div class="col-xs-12 logos-aseguradoras" id="logos-aseguradoras">
+                            <img src="images/logos-aseguradoras/1.png" alt="Asegura tu carro">
+                            <img src="images/logos-aseguradoras/2.png" alt="Asegura tu carro">
+                            <img src="images/logos-aseguradoras/3.png" alt="Asegura tu carro">
+                            <img src="images/logos-aseguradoras/4.png" alt="Asegura tu carro">
+                            <img src="images/logos-aseguradoras/5.png" alt="Asegura tu carro" >
                         </div>    
                 </div>
                 </div> 
@@ -134,19 +134,19 @@
             <div class="container-fluid">                
                 <div class="tg4-div-content1 row" id="tg4-content1">
                     <div class="tg4-div-img1 col-md-6 col-sm-6 col-xs-12" id="tg4Img1">
-                        <img src="images/category/1.png" alt="">
+                        <img src="images/category/1.png" alt="Vende tu carro">
                         <span>VENDE</span>
                     </div>
                     <div class="tg4-div-img2 col-md-6 col-sm-6 col-xs-12" id="tg4Img2">
-                        <img src="images/category/2.png" alt="">
+                        <img src="images/category/2.png" alt="Compra un carro">
                         <span>COMPRA</span>
                     </div>
                     <div class="tg4-div-img3 col-md-6 col-sm-6 col-xs-12" id="tg4Img3">
-                        <img src="images/category/3.png" alt="">
+                        <img src="images/category/3.png" alt="Alquila tu carro">
                         <span>ALQUILA</span>
                     </div>
                     <div class="tg4-div-img4 col-md-6 col-sm-6 col-xs-12" id="tg4Img4">
-                        <img src="images/category/4.png" alt="">
+                        <img src="images/category/4.png" alt="Permuta tu carro">
                         <span>PERMUTA</span>
                     </div>
                 </div>
@@ -154,7 +154,7 @@
                     <div class="row">
                         <div class="tg4-div-img5 col-md-6 col-sm-6 col-xs-12">
                             <a id="tg4-a-5">
-                                <img id="tg4-img-5" src="" alt="">
+                                <img id="tg4-img-5" src="" alt="Compra carro">
                                 <span id="tg4-span-5"></span>
                             </a>
                         </div>
@@ -166,15 +166,15 @@
                     </div>
                     <div class="row">
                         <div class="tg4-div-img6 col-md-4 col-sm-4 col-xs-12" id="tg4-div-img6">
-                            <img id="tg4-img-img6" src="" alt="">
+                            <img id="tg4-img-img6" src="" alt="Compra carro">
                             <span id="tg4-span-img6"></span>
                         </div>
                         <div class="tg4-div-img7 col-md-4 col-sm-4 col-xs-12" id="tg4-div-img7">
-                            <img id="tg4-img-img7" src="" alt="">
+                            <img id="tg4-img-img7" src="" alt="Compra carro">
                             <span id="tg4-span-img7"></span>
                         </div>
                         <div class="tg4-div-img8 col-md-4 col-sm-4 col-xs-12" id="tg4-div-img8">
-                            <img id="tg4-img-img8" src="" alt="">
+                            <img id="tg4-img-img8" src="" alt="Compra carro">
                             <span id="tg4-span-img8"></span>
                         </div>                        
                     </div>
@@ -184,19 +184,19 @@
 
         <article class="ant-art-slide" id="logos-autos">
             <div>
-                <img src="images/logos-autos/1.png" alt="">
-                <img src="images/logos-autos/2.png" alt="">
-                <img src="images/logos-autos/3.png" alt="">
-                <img src="images/logos-autos/4.png" alt="">
-                <img src="images/logos-autos/5.png" alt="">
-                <img src="images/logos-autos/6.png" alt="">
-                <img src="images/logos-autos/7.png" alt="">
-                <img src="images/logos-autos/8.png" alt="">
-                <img src="images/logos-autos/9.png" alt="">
-                <img src="images/logos-autos/10.png" alt="">
-                <img src="images/logos-autos/11.png" alt="">
-                <img src="images/logos-autos/12.png" alt="">
-                <img src="images/logos-autos/13.png" alt="">
+                <img src="images/logos-autos/1.png" alt="Marcas de carro">
+                <img src="images/logos-autos/2.png" alt="Marcas de carro">
+                <img src="images/logos-autos/3.png" alt="Marcas de carro">
+                <img src="images/logos-autos/4.png" alt="Marcas de carro">
+                <img src="images/logos-autos/5.png" alt="Marcas de carro">
+                <img src="images/logos-autos/6.png" alt="Marcas de carro">
+                <img src="images/logos-autos/7.png" alt="Marcas de carro">
+                <img src="images/logos-autos/8.png" alt="Marcas de carro">
+                <img src="images/logos-autos/9.png" alt="Marcas de carro">
+                <img src="images/logos-autos/10.png" alt="Marcas de carro">
+                <img src="images/logos-autos/11.png" alt="Marcas de carro">
+                <img src="images/logos-autos/12.png" alt="Marcas de carro">
+                <img src="images/logos-autos/13.png" alt="Marcas de carro">
             </div>          
         </article>
 
@@ -204,19 +204,19 @@
         <article class="content-gallery hidden-xs">
             <div id="hs_container" class="hs_container">
                 <div class="hs_area hs_area1">
-                    <img class="hs_visible" src="images/galeria/area1/1.jpg" alt=""/>
-                    <img src="images/galeria/area1/2.jpg" alt=""/>
-                    <img src="images/galeria/area1/3.jpg" alt=""/>
+                    <img class="hs_visible" src="images/galeria/area1/1.jpg" alt="Consigue tu carro"/>
+                    <img src="images/galeria/area1/2.jpg" alt="Consigue tu carro"/>
+                    <img src="images/galeria/area1/3.jpg" alt="Consigue tu carro"/>
                 </div>
                 <div class="hs_area hs_area2">
-                    <img class="hs_visible" src="images/galeria/area2/1.jpg" alt=""/>
-                    <img src="images/galeria/area2/2.jpg" alt=""/>
-                    <img src="images/galeria/area2/3.jpg" alt=""/>
+                    <img class="hs_visible" src="images/galeria/area2/1.jpg" alt="Consigue tu carro"/>
+                    <img src="images/galeria/area2/2.jpg" alt="Consigue tu carro"/>
+                    <img src="images/galeria/area2/3.jpg" alt="Consigue tu carro"/>
                 </div>
-                <div class="hs_area hs_area3">
-                    <img class="hs_visible" src="images/galeria/area3/1.jpg" alt=""/>
-                    <img src="images/galeria/area3/2.jpg" alt=""/>
-                    <img src="images/galeria/area3/3.jpg" alt=""/>
+                <div class="hs_area hs_area3" id="hs_area hs_area3">
+                    <img class="hs_visible" src="images/galeria/area3/1.jpg" alt="Consigue tu carro"/>
+                    <img src="images/galeria/area3/2.jpg" alt="Consigue tu carro"/>
+                    <img src="images/galeria/area3/3.jpg" alt="Consigue tu carro"/>
                 </div>
                 
             </div>
@@ -263,7 +263,7 @@
 							<textarea name="body" class="form-control" rows="4"></textarea>
 						</div>
                         
-						<div class="col-xs-12 enviar"><button type="submit" class="btn btn-primary">Submit</button></div>
+						<div class="col-xs-12 enviar" id="button-contacto"><button type="submit" class="btn btn-primary">Enviar</button></div>
 					</div>
 					</form>
 

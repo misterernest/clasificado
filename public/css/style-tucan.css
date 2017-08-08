@@ -12,6 +12,14 @@
 /*@ sourceURL=css/style-tucan.css */
 /*# sourceURL=css/style-tucan.css */
 /*@ sourceURL=css/style-tucan.css */
+/*# sourceURL=css/style-tucan.css */
+/*@ sourceURL=css/style-tucan.css */
+/*# sourceURL=css/style-tucan.css */
+/*@ sourceURL=css/style-tucan.css */
+/*# sourceURL=css/style-tucan.css */
+/*@ sourceURL=css/style-tucan.css */
+/*# sourceURL=css/style-tucan.css */
+/*@ sourceURL=css/style-tucan.css */
 /*Style-tucan*/
 /*Resetear style*/
 *{
@@ -65,6 +73,20 @@ header{
 }
 .logo-autoslujo img{
 	width: 100%;
+}
+.link-servicios{
+	background-color: rgba(0,0,0,1);
+	width: 20%;
+	font-size: 2rem;
+	position: absolute;
+	bottom: 15%;
+	left: 40%;
+	z-index: 10;
+	text-align: center;
+}
+.link-servicios>a{
+	color: rgba(255,255,255,1);
+	font-size: 1.5rem;
 }
 .second-nav{
 	background-color: rgba(0,0,0,0.5);
