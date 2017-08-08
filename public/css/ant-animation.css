@@ -8,9 +8,12 @@
 /*@ sourceURL=css/ant-animation.css */
 /*# sourceURL=css/ant-animation.css */
 /*@ sourceURL=css/ant-animation.css */
+/*# sourceURL=css/ant-animation.css */
+/*@ sourceURL=css/ant-animation.css */
 container-slide{
 	z-index: 0;
 }
+/*hola*/
 
 .container-slide, div[class^="img-slide"], .container-slide img{
 	width: 100%;
@@ -29,17 +32,17 @@ div[class^="img-slide"]{
 	background-color: #fff;
 }
 .img-slide-1{
-	background-image: url("../images/slides/1.png");
+	background-image: url("http://localhost:8000/css/../images/slides/1.png");
 	opacity: 0;
 	        animation: imageAnimation 24s linear 0s infinite ;
 }
 .img-slide-2{
-	background-image: url("../images/slides/2.png");
+	background-image: url("http://localhost:8000/css/../images/slides/2.png");
 	opacity: 0;
 	        animation: imageAnimation 24s linear 8s infinite ;
 }
 .img-slide-3{
-	background-image: url("../images/slides/3.png");
+	background-image: url("http://localhost:8000/css/../images/slides/3.png");
 	opacity: 0;
 	        animation: imageAnimation 24s linear 16s infinite;
 }
