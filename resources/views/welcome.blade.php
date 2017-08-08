@@ -68,7 +68,7 @@
                 <div class="txt-slide-3"><a href="#art3">Puedes cotizar tu seguro todo riesgo y SOAT a Domicilio</a></div>
             </div>
         </div>
-        <div class="link-servicios">
+        <div class="link-servicios hidden-xs">
             <a href="#logos-aseguradoras">Desplaza para continuar. <span class="fa fa-arrow-down" aria-hidden="true"></a>
         </div>
         
