@@ -134,6 +134,10 @@ header{
 	justify-content: center;
 }
 
+.footer div{
+	margin-top: 10px;
+}
+
 .social-footer span {
     color: #fff;
     font-size: 4rem;

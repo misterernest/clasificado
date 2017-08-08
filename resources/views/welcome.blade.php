@@ -487,10 +487,11 @@
 				</div>
 			</div>
 			<div class="col-xs-6 ">
-				<a href="#" ><span class="text-footer" >Nuestros Servicios</span></a>
+				<a href="#" ><span class="text-footer" ><br/>Nuestros Servicios<br/></span></a>
 			</div>
 			<div class="col-xs-3 ">
-				
+				<span class="text-footer" >Contacto<br/></span>
+				<a href="mailto:info@autosdelujo.com.co" ><span class="text-footer">info@autosdelujo.com.co</span></a>
 			</div>
 		</div>
 		<div class="row">
