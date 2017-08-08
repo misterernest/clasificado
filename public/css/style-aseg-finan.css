@@ -1,10 +1,19 @@
+/*# sourceURL=css/style-aseg-finan.css */
+/*@ sourceURL=css/style-aseg-finan.css */
 .text-aseguradoras {
 	display: inline;
 	text-align: justify;
+	padding: 0.5rem;
 }
-
+h2{
+	font-size:3.5rem;
+}
+p{
+	font-size: 2rem;
+}
 .text-aseguradoras h2{
 	display: inline-block;
+	text-align: center;
 }
 .logo-bancos {
 	display: inline-block;

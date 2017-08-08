@@ -14,7 +14,10 @@
 /*@ sourceURL=css/style-tucan.css */
 /*Style-tucan*/
 /*Resetear style*/
-
+*{
+	margin: 0 auto;
+	box-sizing: border-box;
+}
 a:link{
 	text-decoration: none;
 }
@@ -68,7 +71,7 @@ header{
 	border-radius: 10%;
 	width: 15%;
 	position: absolute;
-	bottom: 5rem;
+	bottom: 15%;
 	left: 2rem;
 	z-index: 2;
 	display: flex;
@@ -122,10 +125,9 @@ header{
 		height: 230px;
 	}
 	html{
-		font-size: 5px;
+		font-size: 5.5px;
 	}
 }
-
 /*footer*/
 .footer{
 	background-color: rgba(0,0,0,1);
