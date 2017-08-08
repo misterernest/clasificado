@@ -478,7 +478,7 @@
     </section>
     <footer class="footer" >
 		<div class="row">
-			<div class="col-xs-3">
+			<div class="col-sm-3 col-xs-12">
 				<span class="text-footer">Visitanos en:</span>
 				<div class="social-footer">
 					<a href="https://www.facebook.com/Autosdelujo.Colombia/" target="_blank"><span class="fa fa-facebook" aria-hidden="true"></span></a>
@@ -486,10 +486,10 @@
 					<a href="https://www.facebook.com/Autosdelujo.Colombia/" target="_blank"><span class="fa fa-google-plus-official" aria-hidden="true"></span></a>
 				</div>
 			</div>
-			<div class="col-xs-6 ">
+			<div class="col-sm-6 col-xs-12">
 				<a href="#" ><span class="text-footer" ><br/>Nuestros Servicios<br/></span></a>
 			</div>
-			<div class="col-xs-3 ">
+			<div class="col-sm-3 col-xs-12">
 				<span class="text-footer" >Contacto<br/></span>
 				<a href="mailto:info@autosdelujo.com.co" ><span class="text-footer">info@autosdelujo.com.co</span></a>
 			</div>
