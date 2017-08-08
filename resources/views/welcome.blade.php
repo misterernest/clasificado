@@ -237,7 +237,12 @@
                         Son AUTOS DE LUJOS financiados, listos para manejar, con todas las garantías y seguridad, se pueden comprar, vender o permutar por mayor o menor valor y que pueden ser de servicio público o particular.
                     </p>
                 </div>
-                @if ($errors->has()) 
+                <div class="col-md-6 contacto-formulario">
+                    <form class="form-inline" action="{{ route('send') }}" method="POST">
+                    <div class="row" >
+                        {{ csrf_field() }}
+                        <div class="col-xs-12 "><h2>¿QUE AUTO QUIERES COMPRAR, PERMUTAR O VENDER? PIDELO AQUÍ!!</h2></div>
+                @if ($errors->has() && Session::has('form-contact')) 
                     Revisa estos items, para enviar tu formulario
                     <ul>
                         @foreach ($errors->all() as $error)
@@ -245,19 +250,19 @@
                         @endforeach
                     </ul>
                 @endif
-                <div class="col-md-6 contacto-formulario">
-					<form class="form-inline" action="{{ route('send') }}" method="POST">
-					<div class="row" >
-                        {{ csrf_field() }}
-						<div class="col-xs-12 "><h2>¿QUE AUTO QUIERES COMPRAR, PERMUTAR O VENDER? PIDELO AQUÍ!!</h2></div>
-						<div class="col-sm-4 ">
-							<input type="text" class="form-control input-contacto" id="inlineFormInput" placeholder="Nombre">
+                        <div class="col-md-4 col-sm-6">
+							<input type="text" class="form-control input-contacto" id="inlineFormInput" placeholder="Nombre" name="name" value="{{ old('name') }}">
 						</div>
-						<div class="col-sm-4 ">
-							<input type="email" name="email" class="form-control input-contacto" id="ejemplo_email_3" placeholder="Email">
+						<div class="col-md-4 col-sm-6">
+							<input type="email" name="email" class="form-control input-contacto" id="ejemplo_email_3" placeholder="Email" value="{{ old('email') }}">
 						</div>
-						<div class="col-sm-4 ">
-							<input type="text" name="subject" class="form-control input-contacto" placeholder="Asunto">
+                    </div>
+                    <div class="row" >
+                        <div class="col-md-4 col-sm-6">
+                            <input type="text" class="form-control input-contacto" placeholder="telefono movil" name="movil" value="{{ old('movil') }}">
+                        </div>
+						<div class="col-md-4 col-sm-6">
+							<input type="text" name="subject" class="form-control input-contacto" placeholder="Asunto" value="{{ old('subject') }}">
 						</div>
 						<div class="col-xs-12 mensaje-contacto">
 							<textarea name="body" class="form-control" rows="4"></textarea>
@@ -285,7 +290,7 @@
         {{ Session::get('error-messages') }}
     @endif
 
-    @if ($errors->has())
+    @if ($errors->has() && !Session::has('form-contact'))
         <ul>
             @foreach ($errors->all() as $error)
                 <li>{{ $error }}</li>

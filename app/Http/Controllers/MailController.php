@@ -36,7 +36,7 @@ class MailController extends Controller
         $val = \Validator::make($request->all(), $rules, $messages);
 
         if ($val->fails()) {
-            return redirect()->back()->withInput()->withErrors($val->errors());
+            return redirect('/#form-contact')->withInput()->withErrors($val->errors())->with('form-contact', 1);
         }
 
         $data = $request->all();

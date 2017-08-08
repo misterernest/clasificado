@@ -77,13 +77,13 @@ class VehiclesController extends Controller
     // Se valida que el formulario haya sido diligensiado exitosamente
     if ($val->fails()) 
     {
-      return redirect()->back()->withInput()->withErrors($val->errors());
+      return redirect('/#button-contacto')->withInput()->withErrors($val->errors());
     }
 
     // Validar que se envie al menos 1 imagen
     if (count($request->file()) == 0) 
     {
-      return redirect()->back()->with('error-messages', 'Debes subir al menos una imagen')->withInput();
+      return redirect('/#button-contacto')->with('error-messages', 'Debes subir al menos una imagen')->withInput();
     }
 
     $nameFileFields = ['photo_main', 'photo_2', 'photo_3', 'photo_4', 
@@ -125,7 +125,7 @@ class VehiclesController extends Controller
             break;
           
           default:
-            return redirect()->back()->with('error-messages', 'El archivo ' . $image->getClientOriginalName() . ' no es imagen' );
+            return redirect('/#button-contacto')->with('error-messages', 'El archivo ' . $image->getClientOriginalName() . ' no es imagen' );
             break;
         }
       
@@ -156,7 +156,7 @@ class VehiclesController extends Controller
         //     $message->to($request->email, $request->name);
         // });
 
-        return redirect()->back()->with('success-messages', 'Clasificado ingresado exitosamente');
+        return redirect('/#button-contacto')->with('success-messages', 'Clasificado ingresado exitosamente');
       }
       // Sino se inserta el registro en la base de datos se eliminan las imagenes que se habían almacenado 
       else 
@@ -172,7 +172,7 @@ class VehiclesController extends Controller
         {
           rmdir($publicPath . $dir);
         }
-        return redirect()->back()->with('error-messages', 'Hubo un error guardando la información en la base de datos.<br/>Intentalo de nuevo.');
+        return redirect('/#button-contacto')->with('error-messages', 'Hubo un error guardando la información en la base de datos.<br/>Intentalo de nuevo.');
       }
     }
   }
