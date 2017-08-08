@@ -28,22 +28,22 @@
     <script src="js/prefixfree.min.js" type="text/javascript"></script>
 </head>
 <body>
-        <nav class="row top-nav">
-            <div class="logo-autoslujo col-xs-4 col-sm-3 col-md-2 ">
-                <a href="#">
-                    <img src="images/logo.png" alt="autos de lujo">
-                </a>
-            </div>
-            <div class="social col-xs-6 col-sm-7 col-md-8">
-                <a href="https://www.facebook.com/Autosdelujo.Colombia/" target="_blank"><span class="fa fa-facebook-square" aria-hidden="true"></span></a>
-                <a href="https://www.instagram.com/autosdelujo_colombia/?hl=es" target="_blank"><span  class="fa fa-instagram" aria-hidden="true"></span></a>
-            </div>
-            <div class="menu-ham col-md-2">
-                <button type="button" class="btn btn-default" aria-label="Left Align">
-                    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-                </button>
-            </div>
-        </nav>          
+    <nav class="row top-nav">
+        <div class="logo-autoslujo col-xs-4 col-sm-3 col-md-2 ">
+            <a href="#">
+                <img src="images/logo.png" alt="autos de lujo">
+            </a>
+        </div>
+        <div class="social col-xs-6 col-sm-7 col-md-8">
+            <a href="https://www.facebook.com/Autosdelujo.Colombia/" target="_blank"><span class="fa fa-facebook-square" aria-hidden="true"></span></a>
+            <a href="https://www.instagram.com/autosdelujo_colombia/?hl=es" target="_blank"><span  class="fa fa-instagram" aria-hidden="true"></span></a>
+        </div>
+        <div class="menu-ham col-md-2">
+            <button type="button" class="btn btn-default" aria-label="Left Align">
+                <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+            </button>
+        </div>
+    </nav>          
     <header class="container-fluid">
         <nav class="second-nav hidden-xs">
             <a href="#art3">VENTA</a> 
@@ -73,6 +73,9 @@
         </div>
         
     </header>
+    <aside>
+        
+    </aside>
 
     <!--aqui inicia sección de financiera y aseguradoras-->
         <article class="row">
@@ -149,13 +152,13 @@
                 </div>
                 <div class="tg4-div-content2" id="tg4-content2">
                     <div class="row">
-                        <div class="tg4-div-img5 col-md-6 col-sm-6 col-xs-12 no-float">
+                        <div class="tg4-div-img5 col-md-6 col-sm-6 col-xs-12">
                             <a id="tg4-a-5">
                                 <img id="tg4-img-5" src="" alt="">
                                 <span id="tg4-span-5"></span>
                             </a>
                         </div>
-                        <div class="tg4-div-txt col-md-6 col-sm-6 col-xs-12 no-float" id="tg4-div-txt">
+                        <div class="tg4-div-txt col-md-6 col-sm-6 col-xs-12" id="tg4-div-txt">
                             <h2 id="tg4-h2-txt"></h2>
                             <p id="tg4-p-txt"></p>
                             <a id="tg4-a-txt"></a>

@@ -93,6 +93,31 @@ header{
     border-bottom: 0.1rem solid #d2ab5d;
 }
 
+/*footer*/
+.footer{
+	background-color: rgba(0,0,0,1);
+	margin: 0;
+	text-align: center;
+	justify-content: center;
+}
+
+.footer div{
+	margin-top: 10px;
+}
+
+.social-footer span {
+    color: #fff;
+    font-size: 4rem;
+    text-align: center;
+    margin-left: 1rem;
+}
+
+.text-footer {
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+}
+
 @media screen and (max-width: 980px) {
 	header{
 		height: 600px;
@@ -128,29 +153,4 @@ header{
 	html{
 		font-size: 5.5px;
 	}
-}
-
-/*footer*/
-.footer{
-	background-color: rgba(0,0,0,1);
-	margin: 0;
-	text-align: center;
-	justify-content: center;
-}
-
-.footer div{
-	margin-top: 10px;
-}
-
-.social-footer span {
-    color: #fff;
-    font-size: 4rem;
-    text-align: center;
-    margin-left: 1rem;
-}
-
-.text-footer {
-    color: #fff;
-    font-size: 2rem;
-    text-align: center;
 }
