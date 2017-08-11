@@ -20,6 +20,10 @@
 /*@ sourceURL=css/style-tucan.css */
 /*# sourceURL=css/style-tucan.css */
 /*@ sourceURL=css/style-tucan.css */
+/*# sourceURL=css/style-tucan.css */
+/*@ sourceURL=css/style-tucan.css */
+/*# sourceURL=css/style-tucan.css */
+/*@ sourceURL=css/style-tucan.css */
 /*Style-tucan*/
 /*Resetear style*/
 *{
@@ -28,6 +32,9 @@
 }
 a:link{
 	text-decoration: none;
+}
+li{
+	list-style-type:none;
 }
 .social, .menu-ham{
 	margin-top: 2rem;
@@ -139,7 +146,14 @@ header{
     font-size: 2rem;
     text-align: center;
 }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
 
+input[type=number] { -moz-appearance:textfield; }
+/*Inicio media query*/
 @media screen and (max-width: 980px) {
 	header{
 		height: 600px;

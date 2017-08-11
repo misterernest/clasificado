@@ -1,6 +1,6 @@
-@if (Session::has('error-messages'))
+/*@if (Session::has('error-messages'))
 	{{ Session::get('error-messages') }}
-@endif
+@endif*/
 
 @forelse ($vehicles as $vehicle)
 	

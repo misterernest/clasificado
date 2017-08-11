@@ -18,18 +18,20 @@ class MailController extends Controller
     {
 
         $rules = [
-            'email'                 =>  'required|email', 
+            'name'                  =>  'required', 
+            'email_contact'         =>  'required|email', 
+            'movil'                 =>  'required|numeric', 
             'subject'               =>  'required', 
-            'body'                  =>  'required', 
-            'g-recaptcha-response'  =>  'required', 
+            'body'                  =>  'required' 
         ];
 
         $messages = [
-            'email.required'        =>  'El email es requerido.', 
-            'email.email'           =>  'Debes ingresar un email valido.', 
+            'email_contact.required'        =>  'El email es requerido.', 
+            'email_contact.email'           =>  'Debes ingresar un email valido.', 
             'subject.required'      =>  'Debes ingresar un asunto.', 
             'body.required'         =>  'Debes ingresar un mensaje.', 
-            'g-recaptcha-response.required'  =>  'El Captcha es obligatorio.', 
+            'g-recaptcha-response.required'  =>  'El Captcha es obligatorio.',
+            'movil.numeric'                 =>  'El telefono debe ser numerico para contactarte'
 
         ];
 
@@ -44,15 +46,16 @@ class MailController extends Controller
         \Mail::send('emails.message', $data, function($message) use ($request) 
         {
             // Remitente
-            $message->from($request->email, $request->name);
+            $message->from($request->email_contact, $request->name);
 
             // Asunto
             $message->subject($request->subject);
+
 
             // Receptor
             $message->to(env('CONTACT_MAIL'), env('CONTACT_NAME'));
         });
 
-        return view('emails.success');
+        return redirect('/#form-contact')->withErrors($val->errors())->with('form-contact', 1);
     }
 }

@@ -243,8 +243,8 @@
                         {{ csrf_field() }}
                         <div class="col-xs-12 "><h2>¿QUE AUTO QUIERES COMPRAR, PERMUTAR O VENDER? PIDELO AQUÍ!!</h2></div>
                 @if ($errors->has() && Session::has('form-contact')) 
-                    Revisa estos items, para enviar tu formulario
-                    <ul>
+                    <div class="alert alert-danger">Revisa estos items, para enviar tu formulario</div>
+                    <ul class="alert alert-danger">
                         @foreach ($errors->all() as $error)
                             <li>{{ $error }}</li>
                         @endforeach
@@ -254,18 +254,18 @@
 							<input type="text" class="form-control input-contacto" id="inlineFormInput" placeholder="Nombre" name="name" value="{{ old('name') }}">
 						</div>
 						<div class="col-md-4 col-sm-6">
-							<input type="email" name="email" class="form-control input-contacto" id="ejemplo_email_3" placeholder="Email" value="{{ old('email') }}">
+							<input required type="email" name="email_contact" class="form-control input-contacto" id="ejemplo_email_3" placeholder="Email*" value="{{ old('email-contact') }}">
 						</div>
                     </div>
                     <div class="row" >
                         <div class="col-md-4 col-sm-6">
-                            <input type="text" class="form-control input-contacto" placeholder="telefono movil" name="movil" value="{{ old('movil') }}">
+                            <input type="number" class="form-control input-contacto" placeholder="telefono movil" name="movil" value="{{ old('movil') }}">
                         </div>
 						<div class="col-md-4 col-sm-6">
 							<input type="text" name="subject" class="form-control input-contacto" placeholder="Asunto" value="{{ old('subject') }}">
 						</div>
 						<div class="col-xs-12 mensaje-contacto">
-							<textarea name="body" class="form-control" rows="4"></textarea>
+							<textarea name="body" class="form-control" rows="4" required></textarea>
 						</div>
                         
 						<div class="col-xs-12 enviar" id="button-contacto"><button type="submit" class="btn btn-primary">Enviar</button></div>
@@ -280,23 +280,6 @@
         <div class="title-form" id="form-sale">
             FORMULARIO DE VENTA O PERMUTA
         </div>
-        
-
-    @if (Session::has('success-messages'))
-        {{ Session::get('success-messages') }}
-    @endif
-
-    @if (Session::has('error-messages'))
-        {{ Session::get('error-messages') }}
-    @endif
-
-    @if ($errors->has() && !Session::has('form-contact'))
-        <ul>
-            @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
-            @endforeach
-        </ul>
-    @endif
 
     <div>
         <form method="POST" action="{{url('vehicles/store')}}" enctype="multipart/form-data">
@@ -305,66 +288,116 @@
                 <div class="row">
                     <div class="  col-md-6">
                         <div class="row row-form form-group">
-                            <div class="col-xs-12"><label>Datos personales*</label></div>
-                            <div class="col-sm-4"><input class="form-control" type="text" id="name_user" name="name_user" placeholder="Nombre" value="{{ old('name_user') }}" /></div>
-                            <div class="col-sm-4"><input class="form-control" type="text" id="email" name="email" placeholder="Correo electronico" value="{{ old('email') }}" /></div>
-                            <div class="col-sm-4"><input class="form-control" type="text" id="cellpone" name="cellphone" placeholder="Telefono celular" value="{{ old('cellphone') }}" /></div>
+                            <div class="col-xs-12">
+                                <label for="name_user">Datos personales*</label>
+                            </div>
+                            <div class="col-sm-4">
+                                <input class="form-control" type="text" id="name_user" name="name_user" placeholder="Nombre*" value="{{ old('name_user') }}" required />
+                            </div>
+                            <div class="col-sm-4">
+                                <input class="form-control" type="email" id="email" name="email" placeholder="Correo electronico*" value="{{ old('email') }}" required />
+                            </div>
+                            <div class="col-sm-4">
+                                <input class="form-control" type="number" id="cellpone" name="cellphone" placeholder="Telefono celular" value="{{ old('cellphone') }}" required />
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class=" col-md-6 divisor-line">
                         <div class="row row-form">
-                            <div class="col-md-12"><label>Datos Generales del Vehiculo</label></div>
-                            <div class="col-sm-4"><input class="form-control" type="" id="" name="brand" placeholder="Marca" value="{{ old('brand') }}"/></div>
-                            <div class="col-sm-4"><input class="form-control" type="" id="" name="year" placeholder="Modelo" value="{{ old('year') }}"/></div>
-                            <div class="col-sm-4"><input class="form-control" type="" id="" name="country_origin" placeholder="Pais de origen" value="{{ old('country_origin') }}" /></div>
-                            <div class="col-sm-4"><input class="form-control" type="" id="" name="color" placeholder="Color" value="{{ old('color') }}" /></div>
-                            <div class="col-sm-4"><input class="form-control" type="" id="" name="placa" placeholder="Placa" value="{{ old('placa') }}" /></div>
-                            <div class="col-sm-4"><input class="form-control" type="" id="" name="ref_car" placeholder="Serie del carro" value="{{ old('ref_car') }}" /></div>
-                            <div class="col-sm-4"><select  class="form-control" name="type_car">
-                               <option value="Sedan" {{ old('type_car') == 'Sedan' ? "selected='true'" : "" }}>Sedan</option> 
-                               <option value="Deportivo" {{ old('type_car') == 'Deportivo' ? "selected='true'" : "" }}>Deportivo</option> 
-                               <option value="Camioneta" {{ old('type_car') == 'Camioneta' ? "selected='true'" : "" }}>Camioneta</option>
-                               <option value="Clásico" {{ old('type_car') == 'Clásico' ? "selected='true'" : "" }}>Clásico</option> 
-                            </select></div>
-                            <div class="col-sm-4"><input class="form-control" type="" id="" name="value" placeholder="$ Costo" value="{{ old('value') }}" /></div>
-                            <div class="col-sm-4"><input class="form-control" type="" id="" name="negociable" placeholder="negociable" value="{{ old('negociable') }}" /></div>
-                            <div class="col-sm-4"><select  class="form-control" name="opcion">
-                               
-                               
-                               <option value="Vender" {{ old('opcion') == 'Vender' ? "selected='true'" : ""}}>Vender</option>
-                               <option value="Permutar" {{ old('opcion') == 'Permutar' ? "selected='true'" :"" }}>Permutar</option> 
-                            </select></div>
+                            <div class="col-md-12">
+                                <label>Datos Generales del Vehiculo</label>
+                            </div>
+                            <div class="col-sm-4">
+                                <input class="form-control" type="" id="" name="brand" placeholder="Marca" value="{{ old('brand') }}"/>
+                            </div>
+                            <div class="col-sm-4">
+                                <input class="form-control" type="" id="" name="year" placeholder="Modelo" value="{{ old('year') }}"/>
+                            </div>
+                            <div class="col-sm-4">
+                                <input class="form-control" type="" id="" name="country_origin" placeholder="Pais de origen" value="{{ old('country_origin') }}" />
+                            </div>
+                            <div class="col-sm-4">
+                                <input class="form-control" type="" id="" name="color" placeholder="Color" value="{{ old('color') }}" />
+                            </div>
+                            <div class="col-sm-4">
+                                <input class="form-control" type="" id="" name="placa" placeholder="Placa" value="{{ old('placa') }}" />
+                            </div>
+                            <div class="col-sm-4">
+                                <input class="form-control" type="" id="" name="ref_car" placeholder="Serie del carro" value="{{ old('ref_car') }}" />
+                            </div>
+                            <div class="col-sm-4">
+                                <select  class="form-control" name="type_car">
+                                    <option value="Sedan" {{ old('type_car') == 'Sedan' ? "selected='true'" : "" }}>Sedan</option> 
+                                    <option value="Deportivo" {{ old('type_car') == 'Deportivo' ? "selected='true'" : "" }}>Deportivo</option> 
+                                    <option value="Camioneta" {{ old('type_car') == 'Camioneta' ? "selected='true'" : "" }}>Camioneta</option>
+                                    <option value="Clásico" {{ old('type_car') == 'Clásico' ? "selected='true'" : "" }}>Clásico</option> 
+                                </select>  
+                            </div>
+                            <div class="col-sm-4">
+                                <input class="form-control" type="" id="" name="value" placeholder="$ Costo" value="{{ old('value') }}" />
+                            </div>
+                            <div class="col-sm-4">
+                                <input class="form-control" type="" id="" name="negociable" placeholder="negociable" value="{{ old('negociable') }}" />
+                            </div>
+                            <div class="col-sm-4">
+                                <select  class="form-control" name="opcion">
+                                    <option value="Vender" {{ old('opcion') == 'Vender' ? "selected='true'" : ""}}>Vender</option>
+                                    <option value="Permutar" {{ old('opcion') == 'Permutar' ? "selected='true'" :"" }}>Permutar</option>
+                                </select>
+                            </div>
                             
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-6">
                         <div class="row row-form">
-                            <div class="col-xs-12"><label>Ingresa fotos del vehículo*</label></div>
+                            <div class="col-xs-12">
+                                <label>Ingresa fotos del vehículo*</label>
+                            </div>
                             <div class="col-xs-12 col-md-12">
-                                <input class="form-control input-imagen" type="file" id="photo_main" name="photo_main" value="{{ old('photo_main') }}" />
+                                <input  class="form-control input-imagen" type="file" id="photo_main" name="photo_main" value="{{ old('photo_main') }}" />
                                 <label class="custom-file-upload" for="photo_main"><span class="btn btn-default btn-file photo_main glyphicon glyphicon-camera"></span></label>
                                 <input class="form-control input-imagen" type="file" id="photo_2" name="photo_2" value="{{ old('photo_2') }}" />
-                                <label class="custom-file-upload" for="photo_2"><span class="btn btn-default btn-file glyphicon glyphicon-camera"></span></label>
+                                <label class="custom-file-upload" for="photo_2">
+                                    <span class="btn btn-default btn-file glyphicon glyphicon-camera"></span>
+                                </label>
                                 <input class="form-control input-imagen" type="file" id="photo_3" name="photo_3" value="{{ old('photo_3') }}" />
-                                <label class="custom-file-upload" for="photo_3"><span class="btn btn-default btn-file glyphicon glyphicon-camera"></span></label>
+                                <label class="custom-file-upload" for="photo_3">
+                                    <span class="btn btn-default btn-file glyphicon glyphicon-camera"></span>
+                                </label>
                                 <input class="form-control input-imagen" type="file" id="photo_4" name="photo_4" value="{{ old('photo_4') }}" />
-                                <label class="custom-file-upload" for="photo_4"><span class="btn btn-default btn-file glyphicon glyphicon-camera"></span></label>
+                                <label class="custom-file-upload" for="photo_4">
+                                    <span class="btn btn-default btn-file glyphicon glyphicon-camera"></span>
+                                </label>
                                 <input class="form-control input-imagen" type="file" id="photo_5" name="photo_5" value="{{ old('photo_5') }}" />
-                                <label class="custom-file-upload" for="photo_5"><span class="btn btn-default btn-file glyphicon glyphicon-camera"></span></label>
+                                <label class="custom-file-upload" for="photo_5">
+                                    <span class="btn btn-default btn-file glyphicon glyphicon-camera"></span>
+                                </label>
                                 <input class="form-control input-imagen" type="file" id="photo_6" name="photo_6" value="{{ old('photo_6') }}" />
-                                <label class="custom-file-upload" for="photo_6"><span class="btn btn-default btn-file glyphicon glyphicon-camera"></span></label>
+                                <label class="custom-file-upload" for="photo_6">
+                                    <span class="btn btn-default btn-file glyphicon glyphicon-camera"></span>
+                                </label>
                                 <input class="form-control input-imagen" type="file" id="photo_7" name="photo_7" value="{{ old('photo_7') }}" />
-                                <label class="custom-file-upload" for="photo_7"><span class="btn btn-default btn-file glyphicon glyphicon-camera"></span></label>
+                                <label class="custom-file-upload" for="photo_7">
+                                    <span class="btn btn-default btn-file glyphicon glyphicon-camera"></span>
+                                </label>
                                 <input class="form-control input-imagen" type="file" id="photo_8" name="photo_8" value="{{ old('photo_8') }}" />
-                                <label class="custom-file-upload" for="photo_8"><span class="btn btn-default btn-file glyphicon glyphicon-camera"></span></label>
+                                <label class="custom-file-upload" for="photo_8">
+                                    <span class="btn btn-default btn-file glyphicon glyphicon-camera"></span>
+                                </label>
                                 <input class="form-control input-imagen" type="file" id="photo_9" name="photo_9" value="{{ old('photo_5') }}" />
-                                <label class="custom-file-upload" for="photo_9"><span class="btn btn-default btn-file glyphicon glyphicon-camera"></span></label>
+                                <label class="custom-file-upload" for="photo_9">
+                                    <span class="btn btn-default btn-file glyphicon glyphicon-camera"></span>
+                                </label>
                                 <input class="form-control input-imagen" type="file" id="photo_10" name="photo_10" value="{{ old('photo_6') }}" />
-                                <label class="custom-file-upload" for="photo_10"><span class="btn btn-default btn-file glyphicon glyphicon-camera"></span></label>
+                                <label class="custom-file-upload" for="photo_10">
+                                    <span class="btn btn-default btn-file glyphicon glyphicon-camera"></span>
+                                </label>
                                 <input class="form-control input-imagen" type="file" id="photo_11" name="photo_11" value="{{ old('photo_7') }}" />
-                                <label class="custom-file-upload" for="photo_11"><span class="btn btn-default btn-file glyphicon glyphicon-camera"></span></label>
+                                <label class="custom-file-upload" for="photo_11">
+                                    <span class="btn btn-default btn-file glyphicon glyphicon-camera"></span>
+                                </label>
                             </div>
                         </div>
                     </div>
@@ -429,8 +462,8 @@
                             <div class="col-md-6">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <label>Descipcion del vehiculo</label>  
-                                        <textarea name="description" class="form-control" rows="5" id="comment"></textarea>
+                                        <label>Descipcion del vehiculo*</label>  
+                                        <textarea name="description" class="form-control" rows="5" id="comment" required></textarea>
                                     </div>  
                                 </div>
                             </div>
@@ -452,9 +485,24 @@
                         </div>
                     </div>
                 </div>
+                 @if (Session::has('success-messages'))
+                    {{ Session::get('success-messages') }}
+                @endif
+
+                @if (Session::has('error-messages'))
+                    {{ Session::get('error-messages') }}
+                @endif
+
+                @if ($errors->has() && !Session::has('form-contact'))
+                    <ul class="alert alert-danger">
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                @endif
                 <div class="row">
                     <div class="col-xs-12"> 
-                        <input class="form-control bt-submit" type="submit" value="Submit">
+                        <input id="submit-vehicle" class="form-control bt-submit" type="submit" value="Submit">
                     </div>
                 </div>
                         
