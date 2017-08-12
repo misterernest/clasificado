@@ -56,6 +56,6 @@ class MailController extends Controller
             $message->to(env('CONTACT_MAIL'), env('CONTACT_NAME'));
         });
 
-        return redirect('/#form-contact')->withErrors($val->errors())->with('form-contact', 1);
+        return redirect('/#form-contact')->with('success-messages-contact', 'Mensaje enviado correctamente');
     }
 }

@@ -11,11 +11,6 @@ use App\Http\Controllers\Controller;
 class VehiclesController extends Controller
 {
 
-  public function __construct() 
-  {
-    $this->middleware('auth', ['only' => ['getAllvehicles', 'getDetail']]);
-  }
-
   public function getIndex() 
   {
     return view('pages.formulario');
@@ -23,6 +18,7 @@ class VehiclesController extends Controller
 
   public function postStore(Request $request) 
   {
+
     $rules = [
       'name_user'             =>  'required',
       'photo_main'            =>  'required|max:3072',
@@ -144,22 +140,7 @@ class VehiclesController extends Controller
       // Se valida que el registro se inserte correctamente
       if (Vehicle::create($dataForm)) 
       {
-
-        // $data = ['brand' => $request->brand, 'transmission' => $request->transmission, 'value' => $request->value];
-
-        // \Mail::send('emails.alert', $data, function($message) use ($request) 
-        // {
-        //     // Remitente
-        //     $message->from(env('CONTACT_MAIL'), env('CONTACT_NAME'));
-
-        //     // Asunto
-        //     $message->subject("Autos de Lujo. Auto registrado!");
-
-        //     // Receptor
-        //     $message->to($request->email, $request->name);
-        // });
-
-        return redirect('/#button-contacto')->with('success-messages', 'Vehiculo ingresado exitosamente');
+        return redirect('/#submit-vehicle')->with('success-messages', 'Vehiculo ingresado exitosamente');
       }
       // Sino se inserta el registro en la base de datos se eliminan las imagenes que se habían almacenado 
       else 

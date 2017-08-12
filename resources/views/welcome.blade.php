@@ -267,6 +267,12 @@
                         @endforeach
                     </ul>
                 @endif
+
+                @if (Session::has('success-messages-contact'))
+                    <div class="alert alert-success">
+                    {{ Session::get('success-messages-contact') }}
+                    </div>
+                @endif
                         <div class="col-md-4 col-sm-6">
 							<input type="text" class="form-control input-contacto" id="inlineFormInput" placeholder="Nombre" name="name" value="{{ old('name') }}">
 						</div>
@@ -300,7 +306,7 @@
 
     <div>
         <form method="POST" action="{{url('vehicles/store')}}" enctype="multipart/form-data">
-            {{ csrf_field() }}
+            <input type="hidden" name="_token" value="{{ csrf_token() }}"></input>
             <div class="container-fluid">
                 <div class="row">
                     <div class="  col-md-6">
@@ -503,7 +509,9 @@
                     </div>
                 </div>
                  @if (Session::has('success-messages'))
+                    <div class="alert alert-success">
                     {{ Session::get('success-messages') }}
+                    </div>
                 @endif
 
                 @if (Session::has('error-messages'))
