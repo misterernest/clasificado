@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Autos de lujo</title>
-	
+    <link rel="stylesheet" type="text/css" href="css/ant-animation.css">
+    <meta charset="UTF-8">
+    <title>Autos de lujo</title>
+    
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, Minimum-scale=1.0, Maximum-scale=1.0"> 
-	<meta name="description" content="Autos de lujo en Colombia, vende tu autos de lujo, alquila tu auto de lujo, permuta tu auto de lujo, compra tu auto de lujo" />
-	<meta name="keywords" content="autos, carros, vehiculos, lujo, autos de lujo, carros de lujo, vehiculos de lujo, vende tu auto de lujo, alquila tu auto de lujo, compra tu auto de lujo, permuta tu auto de lujo" />
-	<meta name="author" content="ANT" />
+    <meta name="description" content="Autos de lujo en Colombia, vende tu autos de lujo, alquila tu auto de lujo, permuta tu auto de lujo, compra tu auto de lujo" />
+    <meta name="keywords" content="autos, carros, vehiculos, lujo, autos de lujo, carros de lujo, vehiculos de lujo, vende tu auto de lujo, alquila tu auto de lujo, compra tu auto de lujo, permuta tu auto de lujo" />
+    <meta name="author" content="ANT" />
     <link rel="shortcut icon" href="images/favicon.png">    
     <link rel="stylesheet" type="text/css" href="css/tucan-gallery4.css" />
-    <link rel="stylesheet" type="text/css" href="css/ant-animation.css">
     <script src="js/jquery.min.js" type="text/javascript"></script>
     
     <script src="js/tucan-tucan-first-nav.js" type="text/javascript"></script>
@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/ant-hori-transition.css" />
     <link rel="stylesheet" type="text/css" href="css/style-aseg-finan.css" />
+    <link rel="stylesheet" type="text/css" href="css/recaptcha-tucan.css" />
     <script src="js/prefixfree.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -255,24 +256,31 @@
                     </p>
                 </div>
                 <div class="col-md-6 contacto-formulario">
-                    <form class="form-inline" action="{{ route('send') }}" method="POST">
                     <div class="row" >
+                        <div class="col-xs-12"><h2>¿QUE AUTO QUIERES COMPRAR, PERMUTAR O VENDER? PIDELO AQUÍ!!</h2></div>
+                    @if ($errors->has() && Session::has('form-contact')) 
+                        <div class="col-xs-12 alert alert-danger">
+                            Revisa estos items, para enviar tu formulario
+                        </div>
+                        <div>   
+                            <ul class="col-xs-12 alert alert-danger">
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+                    @if (Session::has('success-messages-contact'))
+                        <div>  
+                            <ul class="col-xs-12 alert alert-success">
+                                <li>
+                                    {{ Session::get('success-messages-contact') }}
+                                </li>
+                            </ul>
+                        </div>
+                    @endif
+                    <form class="form-inline" action="{{ route('send') }}" method="POST">
                         {{ csrf_field() }}
-                        <div class="col-xs-12 "><h2>¿QUE AUTO QUIERES COMPRAR, PERMUTAR O VENDER? PIDELO AQUÍ!!</h2></div>
-                @if ($errors->has() && Session::has('form-contact')) 
-                    <div class="alert alert-danger">Revisa estos items, para enviar tu formulario</div>
-                    <ul class="alert alert-danger">
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                @endif
-
-                @if (Session::has('success-messages-contact'))
-                    <div class="alert alert-success">
-                    {{ Session::get('success-messages-contact') }}
-                    </div>
-                @endif
                         <div class="col-md-4 col-sm-6">
 							<input type="text" class="form-control input-contacto" id="inlineFormInput" placeholder="Nombre" name="name" value="{{ old('name') }}">
 						</div>
