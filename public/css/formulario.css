@@ -4,6 +4,8 @@
 /*@ sourceURL=css/formulario.css */
 /*# sourceURL=css/formulario.css */
 /*@ sourceURL=css/formulario.css */
+/*# sourceURL=css/formulario.css */
+/*@ sourceURL=css/formulario.css */
 .title-form{
   width: 100%;
   background-color: #000;
@@ -22,7 +24,7 @@
 }
 
 .div-captcha{
-	padding-left: 30px;
+	padding-left: 0px;
 }
 
 .bt-submit{

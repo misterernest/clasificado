@@ -13,8 +13,6 @@
     <link rel="stylesheet" type="text/css" href="css/tucan-gallery4.css" />
     <script src="js/jquery.min.js" type="text/javascript"></script>
     
-    <script src="js/tucan-tucan-first-nav.js" type="text/javascript"></script>
-
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" >
@@ -25,7 +23,6 @@
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/ant-hori-transition.css" />
     <link rel="stylesheet" type="text/css" href="css/style-aseg-finan.css" />
-    <link rel="stylesheet" type="text/css" href="css/recaptcha-tucan.css" />
     <script src="js/prefixfree.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -281,25 +278,30 @@
                     @endif
                     <form class="form-inline" action="{{ route('send') }}" method="POST">
                         {{ csrf_field() }}
-                        <div class="col-md-4 col-sm-6">
+                        <div class="col-md-4 col-sm-12 col-xs-12">
 							<input type="text" class="form-control input-contacto" id="inlineFormInput" placeholder="Nombre" name="name" value="{{ old('name') }}">
 						</div>
-						<div class="col-md-4 col-sm-6">
+						<div class="col-md-4 col-sm-12 col-xs-12">
 							<input required type="email" name="email_contact" class="form-control input-contacto" id="ejemplo_email_3" placeholder="Email*" value="{{ old('email-contact') }}">
 						</div>
                     </div>
                     <div class="row" >
-                        <div class="col-md-4 col-sm-6">
+                        <div class="col-md-4 col-sm-12 col-xs-12">
                             <input type="number" class="form-control input-contacto" placeholder="telefono movil" name="movil" value="{{ old('movil') }}">
                         </div>
-						<div class="col-md-4 col-sm-6">
+						<div class="col-md-4 col-sm-12 col-xs-12">
 							<input type="text" name="subject" class="form-control input-contacto" placeholder="Asunto" value="{{ old('subject') }}">
 						</div>
-						<div class="col-xs-12 mensaje-contacto">
+						<div class="col-md-12 col-sm-12 col-xs-12 mensaje-contacto">
 							<textarea name="body" class="form-control" rows="4" required></textarea>
 						</div>
+                        <script type="text/javascript" src="js/recaptcha-tucan.js"></script>
+                        <div class="col-md-12 col-sm-12 col-xs-12 mensaje-contacto">
+                            <input type="text" class="form-control input-contacto" id="ebcaptchainput"/>
+                        </div>
                         
-						<div class="col-xs-12 enviar" id="button-contacto"><button type="submit" class="btn btn-primary">Enviar</button></div>
+                        
+                        <div class="col-xs-12 enviar" id="button-contacto"><button id="enviar-contacto" type="submit" class="btn btn-primary">Enviar</button></div>
 					</div>
 					</form>
 
