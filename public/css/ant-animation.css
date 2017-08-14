@@ -1,10 +1,21 @@
 /*# sourceURL=css/ant-animation.css */
 /*@ sourceURL=css/ant-animation.css */
+/*# sourceURL=css/ant-animation.css */
+/*@ sourceURL=css/ant-animation.css */
+/*# sourceURL=css/ant-animation.css */
+/*@ sourceURL=css/ant-animation.css */
+/*# sourceURL=css/ant-animation.css */
+/*@ sourceURL=css/ant-animation.css */
+/*# sourceURL=css/ant-animation.css */
+/*@ sourceURL=css/ant-animation.css */
+/*# sourceURL=css/ant-animation.css */
+/*@ sourceURL=css/ant-animation.css */
 container-slide{
 	z-index: 0;
 }
+/*hola*/
 
-.container-slide, div[class^="img-slide"], .container-slide img, .capa-slide{
+.container-slide, div[class^="img-slide"], .container-slide img{
 	width: 100%;
 	position: absolute;
 	top: 0;
@@ -15,105 +26,81 @@ div[class^="img-slide"]{
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: scroll;
-	        background-size: cover;
+	background-size: cover;
 }
 .img-slide{
-	background-color: #000;
+	background-color: #fff;
 }
 .img-slide-1{
-	background-image: url("http://localhost:8000/css/../images/slides/1.png");
+	background-image: url("../images/slides/1.png");
 	opacity: 0;
-	        animation: imageAnimation 18s linear 0s infinite ;
+	        animation: imageAnimation 24s linear 0s infinite ;
 }
 .img-slide-2{
-	background-image: url("http://localhost:8000/css/../images/slides/2.png");
+	background-image: url("../images/slides/2.png");
 	opacity: 0;
-	        animation: imageAnimation 18s linear 6s infinite ;
+	        animation: imageAnimation 24s linear 8s infinite ;
 }
 .img-slide-3{
-	background-image: url("http://localhost:8000/css/../images/slides/3.png");
+	background-image: url("../images/slides/3.png");
 	opacity: 0;
-	        animation: imageAnimation 18s linear 12s infinite;
+	        animation: imageAnimation 24s linear 16s infinite;
 }
-.capa-slide{
-	z-index: 1;
-	background-color: #000;
-	opacity: 0.2;
+.txt-slide{
+	float: right !important;
 }
 div[class^="txt-slide-"]{
+	border-radius: 1rem;
+	background-color: rgba(0,0,0,0.7);
+	padding: 3rem;
 	position: absolute;
-	top: 28%;
-	left: 30%;
-	font-size: 700%;
-	text-align: justify;
+	top: 20rem;
+	right: 2rem;
 	z-index: 1;
-	opacity: 0;
-	line-height: 95px
 }
 div[class^="txt-slide-"] a{
-	text-align: justify;
 	font-family: "Anton";
 	color: #fff;
-	
-	font-size: 5rem;
+	font-size: 3rem;
 	text-transform: uppercase;
 }
+
 .txt-slide-1{
-	        animation: txtAnimation 18s linear 0s infinite ;
+	opacity: 0;
+	animation: txtAnimation 24s linear 0s infinite ;
 }
 .txt-slide-2{
-	        animation: txtAnimation 18s linear 6s infinite ;
+	opacity: 0;
+	animation: txtAnimation 24s linear 8s infinite ;
 }
 .txt-slide-3{
-	        animation: txtAnimation 18s linear 12s infinite ;
+	opacity: 0;
+	animation: txtAnimation 24s linear 16s infinite ;
 }
 /*keyframe - Animation */
-@-webkit-keyframes imageAnimation{
-	0% { opacity: 0;
-		        animation-timing-function: ease-in;
-	}
-	8% { opacity: 1;
-		        animation-timing-function: ease-out;
-	}
-	17% { opacity: 1;
-		        animation-timing-function: ease-out;
-	}
-	40%{ opacity: 0;}
-	100%{ opacity: 0;}
-}
+
 @keyframes imageAnimation{
 	0% { opacity: 0;
-		        animation-timing-function: ease-in;
+		animation-timing-function: ease-in;
 	}
-	8% { opacity: 1;
-		        animation-timing-function: ease-out;
+	4% { opacity: 1;
+		animation-timing-function: ease-out;
 	}
-	17% { opacity: 1;
-		        animation-timing-function: ease-out;
+	30% { opacity: 1;
+		animation-timing-function: ease-out;
 	}
 	40%{ opacity: 0;}
 	100%{ opacity: 0;}
 }
 
-@-webkit-keyframes txtAnimation{
-	0% { opacity: 0;
-        z-index: 0; }
-    8% { opacity: 1;
-        z-index: 2; }
-    20% { opacity: 1;
-        z-index: 2;}
-    26% { opacity: 0; 
-        z-index:0;}
-    100% { opacity: 0;
-        z-index: 0;
-}}
+
 
 @keyframes txtAnimation{
 	0% { opacity: 0;
         z-index: 0; }
-    8% { opacity: 1;
+    5% { opacity: 1;
         z-index: 2; }
-    20% { opacity: 1;
+    23% { opacity: 1;
         z-index: 2;}
     26% { opacity: 0; 
         z-index:0;}
@@ -123,4 +110,25 @@ div[class^="txt-slide-"] a{
 .btn-servicios {
 	z-index: 2;
 	text-align: center;
+}
+
+/*responsive*/
+@media screen and (max-width: 980px) {
+	
+}
+@media screen and (max-width: 800px) {
+	
+}
+@media screen and (max-width: 768px) {
+	
+}
+@media screen and (max-width: 360px) {
+	.txt-slide{
+		position: relative;
+		bottom: 0px;
+	
+	}
+	div[class^="txt-slide-"]{
+	right: 0rem;
+	}
 }

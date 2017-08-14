@@ -1,29 +1,33 @@
-//Variables de comprar
+//Variables de Vender
 var img_comprar = "images/category/1.png";
 var txt_h2_comprar="VENDER";
 var txt_p_comprar = "Si estás interesado en vender tu auto o camioneta de lujo, te ofrecemos una gran experiencia de más de 25 años comercializando en el sector automotriz Colombiano, Logrando la consecución de los  clientes para carros de lujo y haciendo realidad las negociaciones.";
 var txt_a_comprar = "VENDER AHORA";
-var const_array_div1=[img_comprar, txt_h2_comprar, txt_p_comprar, txt_a_comprar];
-//Variables de vender
+var href_a_comprar = "#button-contacto";
+var const_array_div1=[img_comprar, txt_h2_comprar, txt_p_comprar, txt_a_comprar, href_a_comprar];
+//Variables de Comprar
 var img_vender = "images/category/2.png";
 var txt_h2_vender="COMPRAR";
 var txt_p_vender = "Si estás interesado en adquirir o comprar un auto o camioneta de lujo, está es tu oportunidad de conseguirlo. Se identifica el carro de lujo según especificaciones soñadas, además se realiza toda la gestión de financiamiento y aseguramiento de los vehículos.";
 var txt_a_vender = "COMPRAR AHORA";
-var const_array_div2=[img_vender, txt_h2_vender, txt_p_vender, txt_a_vender];
+var href_a_vender = "#form-contact";
+var const_array_div2=[img_vender, txt_h2_vender, txt_p_vender, txt_a_vender, href_a_vender];
 
 //Variables de ALQUILA
 var img_alquilar = "images/category/3.png";
 var txt_h2_alquilar="ALQUILAR";
 var txt_p_alquilar = "Un auto de lujo de alquiler promete una experiencia inolvidable de vida, donde vivirás la experiencia de estatus & prestigio con el máximo confort y los mayores estándares de seguridad.";
 var txt_a_alquilar = "ALQUILAR AHORA";
-var const_array_div3=[img_alquilar, txt_h2_alquilar, txt_p_alquilar, txt_a_alquilar];
+var href_a_alquilar = "#form-contact";
+var const_array_div3=[img_alquilar, txt_h2_alquilar, txt_p_alquilar, txt_a_alquilar, href_a_alquilar];
 
 //Variables de PERMUTA
 var img_permutar = "images/category/4.png";
 var txt_h2_permutar="PERMUTAR";
 var txt_p_permutar = "Si alguien quiere tu auto de lujo y te ofrece una oportunidad sin igual de cambio o si piensas que ya es hora de cambiarlo por otra experiencia de estatus & prestigio, Te ofrecemos la mejor oportunidad de lograrlo.";
 var txt_a_permutar = "PERMUTAR";
-var const_array_div4=[img_permutar, txt_h2_permutar, txt_p_permutar, txt_a_permutar];
+var href_a_permutar = "#button-contacto";
+var const_array_div4=[img_permutar, txt_h2_permutar, txt_p_permutar, txt_a_permutar, href_a_permutar];
 
 var array_div1 = [];
 var array_div2 = [];
@@ -109,6 +113,9 @@ doc.ready(function(){
 		$("#tg4-h2-txt").text(divMain[1]);
 		$("#tg4-p-txt").text(divMain[2]);
 		$("#tg4-a-txt").text(divMain[3]);
+		$("#tg4-a-5").attr("href", divMain[4]);
+		$("#tg4-a-txt").attr("href", divMain[4]);
+		
 	}
 //Cambia los div que estan de tercero
 	function changeSubDiv(divChange, img1, span1){

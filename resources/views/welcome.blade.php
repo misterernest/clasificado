@@ -4,57 +4,55 @@
 	<meta charset="UTF-8">
 	<title>Autos de lujo</title>
 	
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, Minimum-scale=1.0, Maximum-scale=1.0"> 
 	<meta name="description" content="Autos de lujo en Colombia, vende tu autos de lujo, alquila tu auto de lujo, permuta tu auto de lujo, compra tu auto de lujo" />
 	<meta name="keywords" content="autos, carros, vehiculos, lujo, autos de lujo, carros de lujo, vehiculos de lujo, vende tu auto de lujo, alquila tu auto de lujo, compra tu auto de lujo, permuta tu auto de lujo" />
 	<meta name="author" content="ANT" />
-	
-    <link rel="shortcut icon" href="images/favicon.png">
-    
+    <link rel="shortcut icon" href="images/favicon.png">    
     <link rel="stylesheet" type="text/css" href="css/tucan-gallery4.css" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="css/ant-animation.css">
     <script src="js/jquery.min.js" type="text/javascript"></script>
     
-    <script src="js/tucan-gallery4.js" type="text/javascript"></script>
+    <script src="js/tucan-tucan-first-nav.js" type="text/javascript"></script>
 
-	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" >
     <link rel="stylesheet" type="text/css" href="css/style-tucan.css">
-	<link rel="stylesheet" type="text/css" href="css/formulario.css" >
-	<link rel="stylesheet" type="text/css" href="css/ant-animation.css">
-	<link rel="stylesheet" type="text/css" href="css/style-gallery.css" />
-	<link rel="stylesheet" type="text/css" href="css/ant-category.css" />
+    <link rel="stylesheet" type="text/css" href="css/formulario.css" >
+    <link rel="stylesheet" type="text/css" href="css/style-gallery.css" />
+    <link rel="stylesheet" type="text/css" href="css/ant-category.css" />
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/ant-hori-transition.css" />
+    <link rel="stylesheet" type="text/css" href="css/ant-hori-transition.css" />
     <link rel="stylesheet" type="text/css" href="css/style-aseg-finan.css" />
     <script src="js/prefixfree.min.js" type="text/javascript"></script>
 </head>
 <body>
-    <header class="container">
-        <nav class="row top-nav">
-            <div class="logo-autoslujo col-md-2">
-                <a href="#">
-                    <img src="images/logo.png" alt="autos de lujo">
-                </a>
-            </div>
-            <div class="social col-md-8">
-                <a href="https://www.facebook.com/search/top/?q=autosdelujo.com.co" target="_blank"><span class="fa fa-facebook-square" aria-hidden="true"></span></a>
-                <a href=""><span class="fa fa-instagram" aria-hidden="true"></span></a>
-            </div>
-            <div class="menu-ham col-md-2">
-                <button type="button" class="btn btn-default" aria-label="Left Align">
-                    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-                </button>
-            </div>
-        </nav>          
-        <nav class="second-nav">
-            <a href="#art3">VENTA</a> 
-            <a href="#art3">PERMUTA</a>
-            <a href="#art3">ALQUILER</a>
-            <a href="#art3">COMPRA</a>
+    <nav class="row top-nav">
+        <div class="logo-autoslujo col-xs-4 col-sm-3 col-md-2 ">
+            <a href="#">
+                <img src="images/logo.png" alt="autos de lujo">
+            </a>
+        </div>
+        <div class="social col-xs-6 col-sm-7 col-md-8">
+            <a href="https://www.facebook.com/Autosdelujo.Colombia/" target="_blank"><span class="fa fa-facebook-square" aria-hidden="true"></span></a>
+            <a href="https://www.instagram.com/autosdelujo_colombia/?hl=es" target="_blank"><span  class="fa fa-instagram" aria-hidden="true"></span></a>
+        </div>
+        <div class="menu-ham col-md-2">
+            <button type="button" class="btn btn-default" aria-label="Left Align">
+                <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+            </button>
+        </div>
+    </nav>          
+    <header class="container-fluid">
+        <nav class="second-nav hidden-xs">
+            <a href="#logos-aseguradoras">VENTA</a> 
+            <a href="#logos-aseguradoras">PERMUTA</a>
+            <a href="#logos-aseguradoras">ALQUILER</a>
+            <a href="#logos-aseguradoras">COMPRA</a>
             <a href="#form-contact">CONTACTENOS</a>
         </nav>      
-        <div class="container-slide">
+        <div class="container-slide" >
             <div class="img-slide">
                 <div class="img-slide-1">
                 </div>
@@ -62,132 +60,163 @@
                 </div>
                 <div class="img-slide-3">
                 </div>
-                <div class="capa-slide">
-                </div>
+                
             </div>
-            <div class="txt-slide">
-                <div class="txt-slide-1"><a href="">Es hora de <br> manejar tu <br>auto de lujo</a></div>
-                <div class="txt-slide-2"><a href="">Compra y Venta<br> de  <br>autos de lujo</a></div>
-                <div class="txt-slide-3"><a href="">Financiamiento <br> & <br>Aseguramiento</a></div>
+            <div class="txt-slide col-md-5 col-sm-6 col-xs-12 ">
+                <div class="txt-slide-1"><a href="#art3">En esta pagina puedes encontrar el vehiculo que necesites, al mejor precio, financiado hasta el 100% y documentos al día, cotiza ya!!!</a></div>
+                <div class="txt-slide-2"><a href="#art3">Si quieres vender o permutar lo puedes hacer ya. Trabjamos con todas las financieras.</a></div>
+                <div class="txt-slide-3"><a href="#art3">Puedes cotizar tu seguro todo riesgo y SOAT a Domicilio</a></div>
             </div>
         </div>
-        <div class="link-servicios">
-            <a href="#art3">Conoce nuestros servicios</a>
+        <div class="link-servicios hidden-xs">
+            <a href="#logos-aseguradoras">Desplaza para continuar. <span class="fa fa-arrow-down" aria-hidden="true"></a>
         </div>
         
     </header>
+    <aside>
+        
+    </aside>
+
+    <!--aqui inicia sección de financiera y aseguradoras-->
+        <article class="row">
+            <div class="col-md-12">
+                <div class="row">
+                <div class="col-sm-6 financiadoras">
+                    <div class="row">
+                        <div class="col-xs-3 col-md-4 logo-bancos financiadoras-img">
+                            <img src="images/iconos-fina-aseg/1.png" alt="Financia tu carro">
+                        </div>
+                        <div class="col-xs-9 col-md-8 text-aseguradoras">
+                            <h2>FINANCIADORA</h2>
+                            <p>Se realiza la gestión para conseguir el financiamiento y el crédito hasta el 100% del valor del vehículo, previo estudio con compañía de financiamiento.</p> 
+                        </div>
+                        <div class="col-xs-12 logos-aseguradoras">
+                            <img src="images/logos-financiadoras/1.png" alt="Financia tu carro">
+                            <img src="images/logos-financiadoras/6.png" alt="Financia tu carro">
+                            <img src="images/logos-financiadoras/9.png" alt="Financia tu carro">
+                            <img src="images/logos-financiadoras/4.png" alt="Financia tu carro">
+                            <img src="images/logos-financiadoras/8.png" alt="Financia tu carro">
+                            <img src="images/logos-financiadoras/2.png" alt="Financia tu carro">
+                            <img src="images/logos-financiadoras/7.png" alt="Financia tu carro">
+                            <img src="images/logos-financiadoras/5.png" alt="Financia tu carro">
+                            <img src="images/logos-financiadoras/3.png" alt="Financia tu carro">
+                        </div>  
+                    </div> 
+                </div>
+                
+                
+                <div class="col-sm-6 Aseguradoras">
+                <div class="row">
+                        <div class=" col-xs-3 col-md-4 logo-bancos financiadoras-img">
+                            <img src="images/iconos-fina-aseg/2.png" alt="Asegura tu carro">
+                        </div>
+                        <div class="col-xs-9 col-md-8 text-aseguradoras">
+                            <h2>ASEGURADORAS</h2>
+                            <p>Se realiza la gestión de  todas las pólizas y seguros relacionados correspondientes para los autos de lujos de acuerdo  a la normativa del sector automotriz de lujo</p>
+                        </div>
+                        <div class="col-xs-12 logos-aseguradoras" id="logos-aseguradoras">
+                            <img src="images/logos-aseguradoras/1.png" alt="Asegura tu carro">
+                            <img src="images/logos-aseguradoras/2.png" alt="Asegura tu carro">
+                            <img src="images/logos-aseguradoras/3.png" alt="Asegura tu carro">
+                            <img src="images/logos-aseguradoras/4.png" alt="Asegura tu carro">
+                            <img src="images/logos-aseguradoras/5.png" alt="Asegura tu carro" >
+                        </div>    
+                </div>
+                </div> 
+                </div> 
+            </div>
+        </article>
+        <!--aqui termina sección de financiera y aseguradoras-->
+
+    <script src="js/tucan-gallery4.js" type="text/javascript"></script>
     <section>   
         <article class="ant-cat-art1" id="art3">
             <div class="container-fluid">                
                 <div class="tg4-div-content1 row" id="tg4-content1">
                     <div class="tg4-div-img1 col-md-6 col-sm-6 col-xs-12" id="tg4Img1">
-                        <img src="images/category/1.png" alt="">
+                        <img src="images/category/1.png" alt="Vende tu carro">
                         <span>VENDE</span>
                     </div>
                     <div class="tg4-div-img2 col-md-6 col-sm-6 col-xs-12" id="tg4Img2">
-                        <img src="images/category/2.png" alt="">
+                        <img src="images/category/2.png" alt="Compra un carro">
                         <span>COMPRA</span>
                     </div>
                     <div class="tg4-div-img3 col-md-6 col-sm-6 col-xs-12" id="tg4Img3">
-                        <img src="images/category/3.png" alt="">
+                        <img src="images/category/3.png" alt="Alquila tu carro">
                         <span>ALQUILA</span>
                     </div>
                     <div class="tg4-div-img4 col-md-6 col-sm-6 col-xs-12" id="tg4Img4">
-                        <img src="images/category/4.png" alt="">
+                        <img src="images/category/4.png" alt="Permuta tu carro">
                         <span>PERMUTA</span>
                     </div>
                 </div>
                 <div class="tg4-div-content2" id="tg4-content2">
                     <div class="row">
-                        <div class="tg4-div-img5 col-md-6 col-sm-6 col-xs-12 no-float">
-                            <a href="#form-sale">
-                                <img id="tg4-img-5" src="" alt="">
+                        <div class="tg4-div-img5 col-md-6 col-sm-6 col-xs-12">
+                            <a id="tg4-a-5">
+                                <img id="tg4-img-5" src="" alt="Compra carro">
                                 <span id="tg4-span-5"></span>
                             </a>
                         </div>
-                        <div class="tg4-div-txt col-md-6 col-sm-6 col-xs-12 no-float" id="tg4-div-txt">
+                        <div class="tg4-div-txt col-md-6 col-sm-6 col-xs-12" id="tg4-div-txt">
                             <h2 id="tg4-h2-txt"></h2>
                             <p id="tg4-p-txt"></p>
-                            <a id="tg4-a-txt" href="#form-sale"></a>
+                            <a id="tg4-a-txt"></a>
                         </div>
                     </div>
                     <div class="row">
                         <div class="tg4-div-img6 col-md-4 col-sm-4 col-xs-12" id="tg4-div-img6">
-                            <img id="tg4-img-img6" src="" alt="">
+                            <img id="tg4-img-img6" src="" alt="Compra carro">
                             <span id="tg4-span-img6"></span>
                         </div>
                         <div class="tg4-div-img7 col-md-4 col-sm-4 col-xs-12" id="tg4-div-img7">
-                            <img id="tg4-img-img7" src="" alt="">
+                            <img id="tg4-img-img7" src="" alt="Compra carro">
                             <span id="tg4-span-img7"></span>
                         </div>
                         <div class="tg4-div-img8 col-md-4 col-sm-4 col-xs-12" id="tg4-div-img8">
-                            <img id="tg4-img-img8" src="" alt="">
+                            <img id="tg4-img-img8" src="" alt="Compra carro">
                             <span id="tg4-span-img8"></span>
                         </div>                        
                     </div>
                 </div>
             </div>
         </article>
-        <!--aqui inicia sección de financiera y aseguradoras-->
-        <article class="row">
-            <div class="col-md-12">
-                <div class="col-md-6 financiadoras">
-                     <div class="col-md-4 logo-bancos">
-                            <img src="images/iconos-fina-aseg/1.png" alt="">
-                        </div>
-                        <div class="col-md-8 text-aseguradoras">
-                            <h2>ASEGURADORAS</h2>
-                            <p>Se realiza la gestión de  todas las pólizas y seguros relacionados correspondientes para los autos de lujos de acuerdo  a la normativa del sector automotriz de lujo</p>   
-                        </div>
-                        <div class="col-md-12 logos-aseguradoras">
-                            <img src="images/logos-financiadoras/1.png" alt="">
-                            <img src="images/logos-financiadoras/6.png" alt="">
-                            <img src="images/logos-financiadoras/9.png" alt="">
-                            <img src="images/logos-financiadoras/4.png" alt="">
-                            <img src="images/logos-financiadoras/8.png" alt="">
-                            <img src="images/logos-financiadoras/2.png" alt="">
-                            <img src="images/logos-financiadoras/7.png" alt="">
-                            <img src="images/logos-financiadoras/5.png" alt="">
-                            <img src="images/logos-financiadoras/3.png" alt="">
-                        </div>    
-                </div>
-                
-                <div class="col-md-6 Aseguradoras">
-                     <div class=" col-md-4 logo-bancos">
-                            <img src="images/iconos-fina-aseg/2.png" alt="">
-                        </div>
-                        <div class="col-md-8 text-aseguradoras">
-                            <h2>FINANCIADORA</h2>
-                            <p>Se realiza la gestión para conseguir el financiamiento y el crédito hasta el 100% del valor del vehículo, previo estudio con compañía de financiamiento.</p>   
-                        </div>
-                        <div class="col-md-12 logos-aseguradoras">
-                            <img src="images/logos-aseguradoras/1.png" alt="">
-                            <img src="images/logos-aseguradoras/2.png" alt="">
-                            <img src="images/logos-aseguradoras/3.png" alt="">
-                            <img src="images/logos-aseguradoras/4.png" alt="">
-                            <img src="images/logos-aseguradoras/5.png" alt="">
-                        </div>    
-                </div>
-            </div>
+
+        <article class="ant-art-slide" id="logos-autos">
+            <div>
+                <img src="images/logos-autos/1.png" alt="Marcas de carro">
+                <img src="images/logos-autos/2.png" alt="Marcas de carro">
+                <img src="images/logos-autos/3.png" alt="Marcas de carro">
+                <img src="images/logos-autos/4.png" alt="Marcas de carro">
+                <img src="images/logos-autos/5.png" alt="Marcas de carro">
+                <img src="images/logos-autos/6.png" alt="Marcas de carro">
+                <img src="images/logos-autos/7.png" alt="Marcas de carro">
+                <img src="images/logos-autos/8.png" alt="Marcas de carro">
+                <img src="images/logos-autos/9.png" alt="Marcas de carro">
+                <img src="images/logos-autos/10.png" alt="Marcas de carro">
+                <img src="images/logos-autos/11.png" alt="Marcas de carro">
+                <img src="images/logos-autos/12.png" alt="Marcas de carro">
+                <img src="images/logos-autos/13.png" alt="Marcas de carro">
+            </div>          
         </article>
-        <!--aqui termina sección de financiera y aseguradoras-->
+
         <!--Inicio gallery slide mouse hover -->
-        <article class="content-gallery">
+        <article class="content-gallery hidden-xs">
             <div id="hs_container" class="hs_container">
                 <div class="hs_area hs_area1">
-                    <img class="hs_visible" src="images/galeria/area1/1.jpg" alt=""/>
-                    <img src="images/galeria/area1/2.jpg" alt=""/>
-                    <img src="images/galeria/area1/3.jpg" alt=""/>
+                    <img class="hs_visible" src="images/galeria/area1/1.jpg" alt="Consigue tu carro"/>
+                    <img src="images/galeria/area1/2.jpg" alt="Consigue tu carro"/>
+                    <img src="images/galeria/area1/3.jpg" alt="Consigue tu carro"/>
                 </div>
                 <div class="hs_area hs_area2">
-                    <img class="hs_visible" src="images/galeria/area2/1.jpg" alt=""/>
-                    <img src="images/galeria/area2/2.jpg" alt=""/>
-                    <img src="images/galeria/area2/3.jpg" alt=""/>
+                    <img class="hs_visible" src="images/galeria/area2/1.jpg" alt="Consigue tu carro"/>
+                    <img src="images/galeria/area2/2.jpg" alt="Consigue tu carro"/>
+                    <img src="images/galeria/area2/3.jpg" alt="Consigue tu carro"/>
                 </div>
-                <div class="hs_area hs_area3">
-                    <img class="hs_visible" src="images/galeria/area3/1.jpg" alt=""/>
-                    <img src="images/galeria/area3/2.jpg" alt=""/>
-                    <img src="images/galeria/area3/3.jpg" alt=""/>
+                <div class="hs_area hs_area3" id="hs_area hs_area3">
+                    <img class="hs_visible" src="images/galeria/area3/1.jpg" alt="Consigue tu carro"/>
+                    <img src="images/galeria/area3/2.jpg" alt="Consigue tu carro"/>
+                    <img src="images/galeria/area3/3.jpg" alt="Consigue tu carro"/>
                 </div>
                 
             </div>
@@ -199,23 +228,7 @@
             <script type="text/javascript" src="js/animation-gallery.js"></script>
         <!-- fin javascript gallery-->   
          <!--Fin gallery slide mouse hover -->
-        <article class="ant-art-slide">
-            <div>
-                <img src="images/logos-autos/1.png" alt="">
-                <img src="images/logos-autos/2.png" alt="">
-                <img src="images/logos-autos/3.png" alt="">
-                <img src="images/logos-autos/4.png" alt="">
-                <img src="images/logos-autos/5.png" alt="">
-                <img src="images/logos-autos/6.png" alt="">
-                <img src="images/logos-autos/7.png" alt="">
-                <img src="images/logos-autos/8.png" alt="">
-                <img src="images/logos-autos/9.png" alt="">
-                <img src="images/logos-autos/10.png" alt="">
-                <img src="images/logos-autos/11.png" alt="">
-                <img src="images/logos-autos/12.png" alt="">
-                <img src="images/logos-autos/13.png" alt="">
-            </div>          
-        </article>
+        
         <aside>
             <div class="col-md-12 contacto" id="form-contact">
                 <div class="col-md-6 contacto-descripcion">
@@ -224,22 +237,34 @@
                         Son AUTOS DE LUJOS financiados, listos para manejar, con todas las garantías y seguridad, se pueden comprar, vender o permutar por mayor o menor valor y que pueden ser de servicio público o particular.
                     </p>
                 </div>
+                @if ($errors->has()) 
+                    Revisa estos items, para enviar tu formulario
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                @endif
                 <div class="col-md-6 contacto-formulario">
-					<form class="form-inline">
-						<div class="col-xs-12 "><h2>¿TIENES ALGUNA DUDA?</h2></div>
+					<form class="form-inline" action="{{ route('send') }}" method="POST">
+					<div class="row" >
+                        {{ csrf_field() }}
+						<div class="col-xs-12 "><h2>¿QUE AUTO QUIERES COMPRAR, PERMUTAR O VENDER? PIDELO AQUÍ!!</h2></div>
 						<div class="col-sm-4 ">
 							<input type="text" class="form-control input-contacto" id="inlineFormInput" placeholder="Nombre">
 						</div>
 						<div class="col-sm-4 ">
-							<input type="email" class="form-control input-contacto" id="ejemplo_email_3" placeholder="Email">
+							<input type="email" name="email" class="form-control input-contacto" id="ejemplo_email_3" placeholder="Email">
 						</div>
 						<div class="col-sm-4 ">
-							<input type="text" class="form-control input-contacto" placeholder="Asunto">
+							<input type="text" name="subject" class="form-control input-contacto" placeholder="Asunto">
 						</div>
 						<div class="col-xs-12 mensaje-contacto">
-							<textarea class="form-control" rows="4"></textarea>
+							<textarea name="body" class="form-control" rows="4"></textarea>
 						</div>
-						<div class="col-xs-12 enviar"><button type="submit" class="btn btn-primary">Submit</button></div>
+                        
+						<div class="col-xs-12 enviar" id="button-contacto"><button type="submit" class="btn btn-primary">Enviar</button></div>
+					</div>
 					</form>
 
 				</div>
@@ -248,7 +273,7 @@
                 <article>
             
         <div class="title-form" id="form-sale">
-            FORMULARIO DE VENTA
+            FORMULARIO DE VENTA O PERMUTA
         </div>
         
 
@@ -301,8 +326,8 @@
                             <div class="col-sm-4"><input class="form-control" type="" id="" name="value" placeholder="$ Costo" value="{{ old('value') }}" /></div>
                             <div class="col-sm-4"><input class="form-control" type="" id="" name="negociable" placeholder="negociable" value="{{ old('negociable') }}" /></div>
                             <div class="col-sm-4"><select  class="form-control" name="opcion">
-                               <option value="Comprar" {{ old('opcion') == 'Comprar' ? "selected='true'" : ""}}>Comprar</option> 
-                               <option value="Alquilar" {{ old('opcion') == 'Alquilar' ? "selected='true'" :"" }}>Alquilar</option>
+                               
+                               
                                <option value="Vender" {{ old('opcion') == 'Vender' ? "selected='true'" : ""}}>Vender</option>
                                <option value="Permutar" {{ old('opcion') == 'Permutar' ? "selected='true'" :"" }}>Permutar</option> 
                             </select></div>
@@ -434,13 +459,50 @@
         </form>
     </div>
     <script> $('.input-imagen').change(function() {
-        $(this).next( 'label').children('span' ).css("color", "#00CC33");
-})</script>
-})</script>
-</article>
+		
+		var mispan = $(this).next( 'label').children('span' );
+		if (this.files[0] == null){
+			mispan.toggleClass( "btn-file-preview" , false);
+			mispan.css('background-image', '');
+		} else {
+			mispan.toggleClass( "btn-file-preview" , true);
+			var reader = new FileReader();
+			reader.onload = function (e) {
+				// get loaded data and render thumbnail.
+				mispan.css('background-image', 'url('+e.target.result+')');
+			};
+
+			// read the image file as a data URL.
+			reader.readAsDataURL(this.files[0]);
+		}
+    })
+    </script>
+    </article>
     </section>
-    <footer>
-        <span></span>
+    <footer class="footer" >
+		<div class="row">
+			<div class="col-sm-3 col-xs-12">
+				<span class="text-footer">Visitanos en:</span>
+				<div class="social-footer">
+					<a href="https://www.facebook.com/Autosdelujo.Colombia/" target="_blank"><span class="fa fa-facebook" aria-hidden="true"></span></a>
+					<a href="https://www.instagram.com/autosdelujo_colombia/?hl=es" target="_blank"><span  class="fa fa-instagram" aria-hidden="true"></span></a>
+					<a href="https://www.facebook.com/Autosdelujo.Colombia/" target="_blank"><span class="fa fa-google-plus-official" aria-hidden="true"></span></a>
+				</div>
+			</div>
+			<div class="col-sm-6 col-xs-12">
+				<a href="#" ><span class="text-footer" ><br/>Nuestros Servicios<br/></span></a>
+			</div>
+			<div class="col-sm-3 col-xs-12">
+				<span class="text-footer" >Contacto<br/></span>
+				<a href="mailto:info@autosdelujo.com.co" ><span class="text-footer">info@autosdelujo.com.co</span></a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<span class="text-footer">TUCANLAB 2017 © Todos los derechos reservados </span>
+			</div>
+		</div>
+		
     </footer>
 </body>
 </html>

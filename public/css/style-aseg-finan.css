@@ -1,32 +1,48 @@
+/*# sourceURL=css/style-aseg-finan.css */
+/*@ sourceURL=css/style-aseg-finan.css */
+/*# sourceURL=css/style-aseg-finan.css */
+/*@ sourceURL=css/style-aseg-finan.css */
+/*# sourceURL=css/style-aseg-finan.css */
+/*@ sourceURL=css/style-aseg-finan.css */
 .text-aseguradoras {
 	display: inline;
 	text-align: justify;
 }
-
+h2{
+	font-size:3.5rem;
+}
+p{
+	font-size: 2rem;
+}
 .text-aseguradoras h2{
 	display: inline-block;
-}
-.logo-bancos {
-	display: inline-block;
+	text-align: center;
 }
 .logos-aseguradoras {
-	width: 677px;
-	margin-top: 20px;
+	margin-top: 1rem;
 }
 .logos-aseguradoras img {
-	display: inline-block;
-	width: 18%;
+	height: 35px;
 	margin-left: 4px;
-
+	float:left;
+}
+.financiadoras-img{
+  margin-top:3.5rem;
+}
+.financiadoras-img img{
+	width:90%;
 }
 .financiadoras {
 	padding: 2%;
 	border-right: 1px solid #ccc;
+	margin-bottom:5px;
 }
 .Aseguradoras {
 	padding: 2%;
+	margin-bottom:5px;
 }
 .contacto {
+	padding-top: 0.1rem;
 	background: #e5e5e5;
 }
 .contacto h2 {
@@ -35,7 +51,7 @@
 }
 .contacto p {
 	text-align: justify;
-	padding: 4%;
+	padding: 1rem;
 	color: #7f7f7f;
 }
 .contacto-descripcion {

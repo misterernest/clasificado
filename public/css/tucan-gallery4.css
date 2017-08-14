@@ -4,6 +4,10 @@
 /*@ sourceURL=css/tucan-gallery4.css */
 /*# sourceURL=css/tucan-gallery4.css */
 /*@ sourceURL=css/tucan-gallery4.css */
+/*# sourceURL=css/tucan-gallery4.css */
+/*@ sourceURL=css/tucan-gallery4.css */
+/*# sourceURL=css/tucan-gallery4.css */
+/*@ sourceURL=css/tucan-gallery4.css */
 
 [class^=.tg4-div-content]{
 	margin: 0 auto;
@@ -42,19 +46,22 @@
 	width: 33.333%;
 }
 .tg4-div-txt{
-	padding: 1rem 0;
 	font-family: ROBOTO;
 	background-color: #FFF;
 	width: 50%;
 	align-items: center;
+	position: relative;
+	height: 34.2rem;
+	background-color: rgb(237,237,237);
 }
-h2{
+.tg4-div-txt>h2{
 	font-family: anton;
-	font-size: 1px;
+	text-align: center
 }
-.tg4-div-txt p{
-	font-size: 2rem;
+.tg4-div-txt>p{
+	padding: 0.7rem;
 	font-family: ROBOTO;
+	text-align: justify;
 }
 .tg4-div-txt a{
 	padding: 0.7rem;
@@ -62,9 +69,52 @@ h2{
 	width: 40%;
 	text-decoration: none;
 	color: #B3B3B3;
-	align-self: flex-end;
 	margin: 5%;
 	font-family: anton;
 	text-align: center;
-	font-size: ;
+	font-size: 3rem;
+	position: absolute;
+	right: 1rem;
+	bottom: -0.5rem;
+}
+@media screen and (max-width: 1280px) {
+	.tg4-div-txt{
+		height: 32.4rem;
+	}
+}
+@media screen and (max-width: 980px) {
+	.tg4-div-txt{
+		height: 24.8rem;
+	}
+	
+}
+@media screen  and (max-width: 800px) {
+	.tg4-div-txt{
+		height: 25.8rem;
+	}
+	.tg4-div-txt{
+		height: 24.8rem;
+	}
+	.tg4-div-txt>h2, .tg4-div-txt a{
+		font-size: 2.3rem
+	}
+	.tg4-div-txt>p{
+		font-size: 1.5rem
+	}
+}
+@media screen and(max-width: 780px) {
+	.tg4-div-txt{
+		height: 24.3rem;
+	}
+}
+@media screen and (max-width: 360px) {
+	.tg4-div-txt{
+		height: 185px;
+	}
+	.tg4-div-txt>h2, .tg4-div-txt a{
+		font-size: 3.2rem
+	}
+	.tg4-div-txt>p{
+		font-size: 2rem
+	}
 }
