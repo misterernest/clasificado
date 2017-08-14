@@ -58,7 +58,10 @@ class CreateVehiclesTable extends Migration
             $table->string('photo_6');
             $table->string('photo_7');
             $table->string('photo_8');
-            $table->boolean('activo');
+            $table->string('photo_9');
+            $table->string('photo_10');
+            $table->string('photo_11');
+            $table->boolean('activo')->default('1');
             $table->timestamps();
         });
     }

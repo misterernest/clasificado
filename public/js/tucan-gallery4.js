@@ -10,7 +10,7 @@ var img_vender = "images/category/2.png";
 var txt_h2_vender="COMPRAR";
 var txt_p_vender = "Si estás interesado en adquirir o comprar un auto o camioneta de lujo, está es tu oportunidad de conseguirlo. Se identifica el carro de lujo según especificaciones soñadas, además se realiza toda la gestión de financiamiento y aseguramiento de los vehículos.";
 var txt_a_vender = "COMPRAR AHORA";
-var href_a_vender = "#form-contact";
+var href_a_vender = "/vehicles/allvehicles";
 var const_array_div2=[img_vender, txt_h2_vender, txt_p_vender, txt_a_vender, href_a_vender];
 
 //Variables de ALQUILA

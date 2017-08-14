@@ -50,7 +50,7 @@
     					  <li><a href="#logos-aseguradoras">VENTA</a></li>
     						<li><a href="#logos-aseguradoras">PERMUTA</a></li>
     						<li><a href="#logos-aseguradoras">ALQUILER</a></li>
-    						<li><a href="#logos-aseguradoras">COMPRA</a></li>
+    						<li><a href="/vehicles/allvehicles">COMPRA</a></li>
     						<li><a href="#form-contact">CONTACTENOS</a></li>
     					</ul>
     				  </nav>
