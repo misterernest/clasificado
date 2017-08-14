@@ -26,39 +26,38 @@
     <script src="js/prefixfree.min.js" type="text/javascript"></script>
 </head>
 <body>
-	<nav class="container-fluid">
-        <div class="row top-nav">
-            <div class="logo-autoslujo col-xs-4 col-sm-3 col-md-2 ">
-                <a href="http://www.autosdelujo.com.co">
-                    <img src="images/logo.png" alt="autos de lujo">
-                </a>
-            </div>
-            <div class="social col-xs-6 col-sm-7 col-md-8">
-                <a href="https://www.facebook.com/Autosdelujo.Colombia/" target="_blank"><span class="fa fa-facebook-square" aria-hidden="true"></span></a>
-                <a href="https://www.instagram.com/autosdelujo_colombia/?hl=es" target="_blank"><span  class="fa fa-instagram" aria-hidden="true"></span></a>
-            </div>
-            <div class=" menu-ham col-md-2 ">
-    			<div class="hidden-lg hidden-md hidden-sm">
-    				<div class="navbar-header">
-    				  <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="btn btn-default" aria-label="Left Align">
-    					<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-    				  </button>
-    				</div>
-    				<div class="navbar-inverse side-collapse in">
-    				  <nav role="navigation" class="navbar-collapse">
-    					<ul class="nav navbar-nav">
-    					  <li><a href="#logos-aseguradoras">VENTA</a></li>
-    						<li><a href="#logos-aseguradoras">PERMUTA</a></li>
-    						<li><a href="#logos-aseguradoras">ALQUILER</a></li>
-    						<li><a href="/vehicles/allvehicles">COMPRA</a></li>
-    						<li><a href="#form-contact">CONTACTENOS</a></li>
-    					</ul>
-    				  </nav>
-    				</div>
-    			</div>
-            </div>
-        </div>
- 	</nav>
+	<header class="container-fluid">
+	    <nav class="row top-nav">
+	        <div class="logo-autoslujo col-xs-4 col-sm-3 col-md-2 ">
+	                <a href="http://www.autosdelujo.com.co">
+	                <img src="images/logo.png" alt="autos de lujo">
+	            </a>
+	        </div>
+	        <div class="social col-xs-6 col-sm-2 col-md-4">
+	            <a href="https://www.facebook.com/Autosdelujo.Colombia/" target="_blank"><span class="fa fa-facebook-square" aria-hidden="true"></span></a>
+	            <a href="https://www.instagram.com/autosdelujo_colombia/?hl=es" target="_blank"><span  class="fa fa-instagram" aria-hidden="true"></span></a>
+	        </div>
+	        <div class="menu-ham col-xs-2 col-sm-7 col-md-6">
+				
+				<div class="navbar-header">
+				  <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="btn btn-default navbar-toggle pull-left" aria-label="Left Align">
+					<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+				  </button>
+				</div>
+				<div class="navbar-inverse side-collapse in">
+				  <nav role="navigation" class="navbar-collapse">
+					<ul class="nav navbar-nav nav-right">
+						<li><a href="#logos-aseguradoras">VENTA</a></li>
+						<li><a href="#logos-aseguradoras">PERMUTA</a></li>
+						<li><a href="#logos-aseguradoras">ALQUILER</a></li>
+						<li><a href="#logos-aseguradoras">COMPRA</a></li>
+						<li><a href="#form-contact">CONTACTENOS</a></li>
+					</ul>
+				  </nav>
+				</div>
+			</div>
+	    </nav>
+	</header>
     <header class="container-fluid">
         <nav class="second-nav hidden-xs">
             <a href="#logos-aseguradoras">VENTA</a> 
