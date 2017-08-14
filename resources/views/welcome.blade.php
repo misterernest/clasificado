@@ -57,8 +57,7 @@
 				</div>
 			</div>
 	    </nav>
-	</header>
-    <header class="container-fluid">
+	
         <nav class="second-nav hidden-xs">
             <a href="#logos-aseguradoras">VENTA</a> 
             <a href="#logos-aseguradoras">PERMUTA</a>
