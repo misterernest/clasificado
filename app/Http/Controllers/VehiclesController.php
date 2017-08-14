@@ -165,7 +165,7 @@ class VehiclesController extends Controller
   {
 
     $vehicles = Vehicle::all();
-    return view('pages.list', ['vehicles' => $vehicles]);    
+    return view('list', ['vehicles' => $vehicles]);    
   }
 
   public function getDetail($id) 
@@ -174,7 +174,7 @@ class VehiclesController extends Controller
 
     if ($vehicle != null) 
     {
-      return view('pages.detail', ['vehicle' => $vehicle]);
+      return view('detail', ['vehicle' => $vehicle]);
     } 
     else 
     {
