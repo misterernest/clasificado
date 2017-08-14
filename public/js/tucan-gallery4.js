@@ -10,7 +10,7 @@ var img_vender = "images/category/2.png";
 var txt_h2_vender="COMPRAR";
 var txt_p_vender = "Si estás interesado en adquirir o comprar un auto o camioneta de lujo, está es tu oportunidad de conseguirlo. Se identifica el carro de lujo según especificaciones soñadas, además se realiza toda la gestión de financiamiento y aseguramiento de los vehículos.";
 var txt_a_vender = "COMPRAR AHORA";
-var href_a_vender = "#form-contact";
+var href_a_vender = "/vehicles/allvehicles";
 var const_array_div2=[img_vender, txt_h2_vender, txt_p_vender, txt_a_vender, href_a_vender];
 
 //Variables de ALQUILA
@@ -37,6 +37,28 @@ var array_div4 = [];
 doc = $(document);
 
 doc.ready(function(){
+	//captcha de suma
+	$("#enviar-contacto").attr("disabled","disabled");
+    var ran1=0;
+    var ran2=0;
+    var rant=0;
+    ran1=Math.floor(Math.random()*10);
+    ran2=Math.floor(Math.random()*10);
+    rant=ran1+ran2;
+    $("#ebcaptchainput").attr("placeholder", "Cuanto es "+ran1+" + "+ran2);
+    $("#ebcaptchainput").keyup(function(e){
+        var nr=$(this).val();
+        if(nr==rant){
+            $("#enviar-contacto").removeAttr("disabled");
+        }
+        else{
+            $("#enviar-contacto").attr("disabled","disabled");
+        }
+    });
+    $("#enviar-contacto").click(function(){
+        $("#form1").submit();
+    });
+
 	//oculta y muestra los div de la segunda seccion en el orden que es
 	$("#tg4Img1").click(function(){
 		changeDiv(const_array_div1, const_array_div2, const_array_div3, const_array_div4);

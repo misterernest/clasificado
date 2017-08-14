@@ -1,0 +1,30 @@
+.container-captcha{
+	width: 302px; 
+	height:352px; 
+	border-style: none;
+}
+.box1{
+	position: relative;
+}
+.box2{
+	position: absolute;
+}
+
+.box3{
+	width: 250px; 
+	height: 80px; 
+	position: absolute; 
+	border-style: none;
+	bottom: 21px;
+	left: 25px;
+	margin: 0;
+	padding: 0;
+	right: 25px;
+}
+.box4{
+	resize: none;
+	border: 1px solid #c1c1c1;
+}
+..rc-anchor-normal{
+	
+}

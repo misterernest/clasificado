@@ -44,6 +44,4 @@ Route::post('login', 'Auth\AuthController@postLogin');
 
 Route::controller('vehicles', 'VehiclesController');
 
-Route::get('test', function(){
-	return view('test');
-});
+

@@ -10,6 +10,8 @@
 /*@ sourceURL=css/ant-animation.css */
 /*# sourceURL=css/ant-animation.css */
 /*@ sourceURL=css/ant-animation.css */
+/*# sourceURL=css/ant-animation.css */
+/*@ sourceURL=css/ant-animation.css */
 container-slide{
 	z-index: 0;
 }
@@ -86,7 +88,7 @@ div[class^="txt-slide-"] a{
 	4% { opacity: 1;
 		animation-timing-function: ease-out;
 	}
-	30% { opacity: 1;
+	35% { opacity: 1;
 		animation-timing-function: ease-out;
 	}
 	40%{ opacity: 0;}
@@ -100,9 +102,9 @@ div[class^="txt-slide-"] a{
         z-index: 0; }
     5% { opacity: 1;
         z-index: 2; }
-    23% { opacity: 1;
+    28% { opacity: 1;
         z-index: 2;}
-    26% { opacity: 0; 
+    32% { opacity: 0; 
         z-index:0;}
     100% { opacity: 0;
         z-index: 0;

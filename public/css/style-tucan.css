@@ -20,6 +20,10 @@
 /*@ sourceURL=css/style-tucan.css */
 /*# sourceURL=css/style-tucan.css */
 /*@ sourceURL=css/style-tucan.css */
+/*# sourceURL=css/style-tucan.css */
+/*@ sourceURL=css/style-tucan.css */
+/*# sourceURL=css/style-tucan.css */
+/*@ sourceURL=css/style-tucan.css */
 /*Style-tucan*/
 /*Resetear style*/
 *{
@@ -28,6 +32,9 @@
 }
 a:link{
 	text-decoration: none;
+}
+li{
+	list-style-type:none;
 }
 .social, .menu-ham{
 	margin-top: 2rem;
@@ -43,7 +50,6 @@ a:link{
 header{
 	height: 700px;
 	margin-top: 6rem;
-	position: relative;
 }
 
 /*nav*/
@@ -139,7 +145,14 @@ header{
     font-size: 2rem;
     text-align: center;
 }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
 
+input[type=number] { -moz-appearance:textfield; }
+/*Inicio media query*/
 @media screen and (max-width: 980px) {
 	header{
 		height: 600px;
@@ -175,4 +188,28 @@ header{
 	html{
 		font-size: 5.5px;
 	}
+}
+
+@media screen and (max-width: 768px) {
+  .side-collapse-container{
+	  width:100%;
+	  position:relative;
+	  left:0;
+	  transition:left .4s;
+  }
+  .side-collapse-container.out{
+	  left:200px;
+  }
+  .side-collapse {
+	  top:8rem;
+	  bottom:0;
+	  right:0;
+	  width:200px;
+	  position:fixed;
+	  overflow:hidden;
+	  transition:width .4s;
+  }
+  .side-collapse.in {
+	  width:0;
+  }
 }

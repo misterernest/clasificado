@@ -11,11 +11,6 @@ use App\Http\Controllers\Controller;
 class VehiclesController extends Controller
 {
 
-  public function __construct() 
-  {
-    $this->middleware('auth', ['only' => ['getAllvehicles', 'getDetail']]);
-  }
-
   public function getIndex() 
   {
     return view('pages.formulario');
@@ -23,6 +18,7 @@ class VehiclesController extends Controller
 
   public function postStore(Request $request) 
   {
+
     $rules = [
       'name_user'             =>  'required',
       'photo_main'            =>  'required|max:3072',
@@ -35,10 +31,10 @@ class VehiclesController extends Controller
       'photo_6'               =>  'max:3072',
       'photo_7'               =>  'max:3072',
       'photo_8'               =>  'max:3072',
-      'cellphone'             =>  'numeric',
+      'cellphone'             =>  'required|numeric',
       'email'                 =>  'required:email',
       'type_car'              =>  'in:Sedan,Deportivo,Camioneta,Clásico',
-      'opcion'                =>  'in:Comprar,Alquilar,Vender,Permutar',
+      'opcion'                =>  'in:Vender,Permutar',
       'transmission'          =>  'in:Automática,Manual,Mixta,Secuencial,Steptronic,Tiptronic',
       'combustible'           =>  'in:Diesel,Electrico,Gas,Secuencial,Gasolina,Hibrido',
       'brakes'                =>  'in:ABS,Disco',
@@ -50,6 +46,7 @@ class VehiclesController extends Controller
       'max'                   =>  'La :attribute no debe pesar más de 3 MegaBytes.',
       'g-recaptcha-response.required'  =>  'El Captcha es obligatorio.',
       'cellphone.numeric'     =>  'El número de teléfono debe ser numérico.', 
+      'cellphone.required'        =>  'El número de teléfono es obligatorio.', 
       'email.required'        =>  'El email es requerido.', 
       'description.required'  =>  'La descripción es obligatoria.', 
       'email.email'           =>  'Debe ingresar un email valido.', 
@@ -77,17 +74,17 @@ class VehiclesController extends Controller
     // Se valida que el formulario haya sido diligensiado exitosamente
     if ($val->fails()) 
     {
-      return redirect()->back()->withInput()->withErrors($val->errors());
+      return redirect('/#submit-vehicle')->withInput()->withErrors($val->errors());
     }
 
     // Validar que se envie al menos 1 imagen
     if (count($request->file()) == 0) 
     {
-      return redirect()->back()->with('error-messages', 'Debes subir al menos una imagen')->withInput();
+      return redirect('/#button-contacto')->with('error-messages', 'Debes subir al menos una imagen')->withInput();
     }
 
     $nameFileFields = ['photo_main', 'photo_2', 'photo_3', 'photo_4', 
-      'photo_5', 'photo_6', 'photo_7',  'photo_8',];
+      'photo_5', 'photo_6', 'photo_7',  'photo_8',  'photo_9',  'photo_10',  'photo_11',];
 
     $dataForm = $request->except($nameFileFields);
 
@@ -113,6 +110,8 @@ class VehiclesController extends Controller
         {
           case 'image/jpeg':
           case 'image/png':
+          case 'image/bmp':
+          case 'image/tif':
             
             if ($image->isValid()) 
             {
@@ -125,7 +124,7 @@ class VehiclesController extends Controller
             break;
           
           default:
-            return redirect()->back()->with('error-messages', 'El archivo ' . $image->getClientOriginalName() . ' no es imagen' );
+            return redirect('/#button-contacto')->with('error-messages', 'El archivo ' . $image->getClientOriginalName() . ' no es imagen' );
             break;
         }
       
@@ -141,22 +140,7 @@ class VehiclesController extends Controller
       // Se valida que el registro se inserte correctamente
       if (Vehicle::create($dataForm)) 
       {
-
-        // $data = ['brand' => $request->brand, 'transmission' => $request->transmission, 'value' => $request->value];
-
-        // \Mail::send('emails.alert', $data, function($message) use ($request) 
-        // {
-        //     // Remitente
-        //     $message->from(env('CONTACT_MAIL'), env('CONTACT_NAME'));
-
-        //     // Asunto
-        //     $message->subject("Autos de Lujo. Auto registrado!");
-
-        //     // Receptor
-        //     $message->to($request->email, $request->name);
-        // });
-
-        return redirect()->back()->with('success-messages', 'Clasificado ingresado exitosamente');
+        return redirect('/#submit-vehicle')->with('success-messages', 'Vehiculo ingresado exitosamente');
       }
       // Sino se inserta el registro en la base de datos se eliminan las imagenes que se habían almacenado 
       else 
@@ -172,7 +156,7 @@ class VehiclesController extends Controller
         {
           rmdir($publicPath . $dir);
         }
-        return redirect()->back()->with('error-messages', 'Hubo un error guardando la información en la base de datos.<br/>Intentalo de nuevo.');
+        return redirect('/#button-contacto')->with('error-messages', 'Hubo un error guardando la información en la base de datos.<br/>Intentalo de nuevo.');
       }
     }
   }
@@ -181,7 +165,7 @@ class VehiclesController extends Controller
   {
 
     $vehicles = Vehicle::all();
-    return view('pages.list', ['vehicles' => $vehicles]);    
+    return view('list', ['vehicles' => $vehicles]);    
   }
 
   public function getDetail($id) 
@@ -190,7 +174,7 @@ class VehiclesController extends Controller
 
     if ($vehicle != null) 
     {
-      return view('pages.detail', ['vehicle' => $vehicle]);
+      return view('detail', ['vehicle' => $vehicle]);
     } 
     else 
     {

@@ -1,0 +1,45 @@
+/*# sourceURL=../css/catalogo-tucan.css */
+/*@ sourceURL=../css/catalogo-tucan.css */
+*{
+	box-sizing: border-box;
+}
+section{
+	margin: 10rem auto;
+}
+.first-div{
+	padding: 0.5rem;
+}
+.cont-info{
+	background-color: rgb(229,229,229);
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.div-img{
+	height: 24rem;
+	max-width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+.div-img, .div-img img{
+	width: 100%;
+}
+
+.brand-car{
+	height: 3rem;
+	font-size: 2.5rem
+}
+.year-car{
+	font-size: 2rem;
+}
+.km-city-car{
+	font-size: 1.8rem;
+	background-color: #fff;
+}
+.value-car{
+	font-size: 3rem;
+}
+
+
