@@ -29,7 +29,7 @@
 	<header class="container-fluid">
 	    <nav class="row top-nav">
 	        <div class="logo-autoslujo col-xs-4 col-sm-3 col-md-2 ">
-	                <a href="http://www.autosdelujo.com.co">
+	                <a href="/">
 	                <img src="images/logo.png" alt="autos de lujo">
 	            </a>
 	        </div>
@@ -84,7 +84,6 @@
         <div class="link-servicios hidden-xs">
             <a href="#logos-aseguradoras">Desplaza para continuar. <span class="fa fa-arrow-down" aria-hidden="true"></a>
         </div>
-        
     </header>
     <aside>
         
