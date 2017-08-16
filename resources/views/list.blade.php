@@ -35,25 +35,24 @@
                 <a href="https://www.facebook.com/Autosdelujo.Colombia/" target="_blank"><span class="fa fa-facebook-square" aria-hidden="true"></span></a>
                 <a href="https://www.instagram.com/autosdelujo_colombia/?hl=es" target="_blank"><span  class="fa fa-instagram" aria-hidden="true"></span></a>
             </div>
-            <div class=" menu-ham col-md-2 ">
-    			<div class="hidden-lg hidden-md hidden-sm">
-    				<div class="navbar-header">
-    				  <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="btn btn-default" aria-label="Left Align">
-    					<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-    				  </button>
-    				</div>
-    				<div class="navbar-inverse side-collapse in">
-    				  <nav role="navigation" class="navbar-collapse">
-    					<ul class="nav navbar-nav">
-    					  <li><a href="http://www.autosdelujo.com.co/#logos-aseguradoras">VENTA</a></li>
-    						<li><a href="http://www.autosdelujo.com.co/vehicles/allvehicles">PERMUTA</a></li>
-    						<li><a href="http://www.autosdelujo.com.co/#form-contact">ALQUILER</a></li>
-    						<li><a href="#">COMPRA</a></li>
-    						<li><a href="http://www.autosdelujo.com.co/#form-contact">CONTACTENOS</a></li>
-    					</ul>
-    				  </nav>
-    				</div>
-    			</div>
+            <div class="menu-ham col-xs-2 col-sm-7 col-md-6">
+                
+                <div class="navbar-header">
+                  <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="btn btn-default navbar-toggle pull-left" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                  </button>
+                </div>
+                <div class="navbar-inverse side-collapse in">
+                  <nav role="navigation" class="navbar-collapse">
+                    <ul class="nav navbar-nav nav-right">
+                        <li><a href="#logos-aseguradoras">VENTA</a></li>
+                        <li><a href="#logos-aseguradoras">PERMUTA</a></li>
+                        <li><a href="#logos-aseguradoras">ALQUILER</a></li>
+                        <li><a href="#logos-aseguradoras">COMPRA</a></li>
+                        <li><a href="#form-contact">CONTACTENOS</a></li>
+                    </ul>
+                  </nav>
+                </div>
             </div>
         </div>
  	</nav>
