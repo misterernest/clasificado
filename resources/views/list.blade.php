@@ -45,11 +45,11 @@
                 <div class="navbar-inverse side-collapse in">
                   <nav role="navigation" class="navbar-collapse">
                     <ul class="nav navbar-nav nav-right">
-                        <li><a href="#logos-aseguradoras">VENTA</a></li>
-                        <li><a href="#logos-aseguradoras">PERMUTA</a></li>
-                        <li><a href="#logos-aseguradoras">ALQUILER</a></li>
-                        <li><a href="#logos-aseguradoras">COMPRA</a></li>
-                        <li><a href="#form-contact">CONTACTENOS</a></li>
+                        <li><a href="/#button-contacto">VENTA</a></li>
+                        <li><a href="/#button-contacto">PERMUTA</a></li>
+                        <li><a href="/#logos-aseguradoras">ALQUILER</a></li>
+                        <li><a href="/vehicles/allvehicles">COMPRA</a></li>
+                        <li><a href="/#form-contact">CONTACTENOS</a></li>
                     </ul>
                   </nav>
                 </div>
