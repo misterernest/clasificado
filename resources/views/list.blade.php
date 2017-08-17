@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" type="text/css" href="css/ant-animation.css">
     <meta charset="UTF-8">
     <title>Autos de lujo</title>
     
@@ -9,7 +8,7 @@
     <meta name="description" content="Autos de lujo en Colombia, vende tu autos de lujo, alquila tu auto de lujo, permuta tu auto de lujo, compra tu auto de lujo" />
     <meta name="keywords" content="autos, carros, vehiculos, lujo, autos de lujo, carros de lujo, vehiculos de lujo, vende tu auto de lujo, alquila tu auto de lujo, compra tu auto de lujo, permuta tu auto de lujo" />
     <meta name="author" content="ANT" />
-    <link rel="shortcut icon" href="images/favicon.png">    
+    <link rel="shortcut icon" href="../images/favicon.png">    
     <script src="../js/jquery.min.js" type="text/javascript"></script>
     
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">

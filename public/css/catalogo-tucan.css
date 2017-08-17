@@ -4,10 +4,10 @@
 	box-sizing: border-box;
 }
 header{
-	height: 5rem !important;
+	height: 3rem !important;
 }
 section{
-	margin: 10rem auto;
+	margin: 5rem auto;
 }
 .first-div{
 	padding: 0.5rem;
@@ -43,6 +43,13 @@ section{
 }
 .value-car{
 	font-size: 3rem;
+}
+
+/*Inicio media query*/
+@media screen and (max-width: 360px) {
+	section{
+	margin: 4rem auto;
+	}
 }
 
 
