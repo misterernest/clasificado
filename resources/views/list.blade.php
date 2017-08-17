@@ -17,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" >
     <link rel="stylesheet" type="text/css" href="../css/style-tucan.css">
     <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/catalogo-tucan.css">
     <script src="../js/prefixfree.min.js" type="text/javascript"></script>
 </head>
 <!--@if (Session::has('error-messages'))
