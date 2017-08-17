@@ -40,6 +40,7 @@ section{
 .km-city-car{
 	font-size: 1.8rem;
 	background-color: #fff;
+	border: 3px solid #E5E5E5;
 }
 .value-car{
 	font-size: 3rem;
