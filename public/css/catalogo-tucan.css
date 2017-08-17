@@ -3,6 +3,9 @@
 *{
 	box-sizing: border-box;
 }
+header{
+	height: 5rem !important;
+}
 section{
 	margin: 10rem auto;
 }
