@@ -164,7 +164,7 @@ class VehiclesController extends Controller
   public function getAllvehicles() 
   {
 
-    $vehicles = Vehicle::where('active', '1')->get();
+    $vehicles = Vehicle::where('activo', '1')->get();
 
     // $vehicles = Vehicles::all();
 
@@ -187,17 +187,20 @@ class VehiclesController extends Controller
 
   public function getDisablecar($id) 
   {
-    $vehicle = Vehicle::find($id);
+    if (\Auth::guest()) {
+      return redirect('/');
+    }else{
+      $vehicle = Vehicle::find($id);
+      if ($vehicle != null) 
+      {
+        $vehicle->update(['activo' => 0]);
 
-    if ($vehicle != null) 
-    {
-      $vehicle->update(['active' => 0]);
-
-      return redirect()->action("VehiclesController@getAllvehicles");
-    } 
-    else 
-    {
-      return redirect()->back()->with('error-messages', 'El vehiculo no existe'); 
+        return redirect()->action("VehiclesController@getAllvehicles");
+      } 
+      else 
+      {
+        return redirect()->back()->with('error-messages', 'El vehiculo no existe'); 
+      }        
     }
   }
 }
