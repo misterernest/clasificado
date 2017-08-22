@@ -63,6 +63,9 @@
     <section class="content-fluid">
         <div class="row">
             <article class="row col-md-6 img-car">
+            <div>
+                <h2 class="brand-car">{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!} {!! $vehicle->year !!}</h2>
+            </div>
                 <div class="col-sm-11">
                     <img src="../../{!! $vehicle->photo_main !!}" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
                 </div>
@@ -152,6 +155,7 @@
                     </div>
                     <form class="form-inline" action="{{ route('send') }}" method="POST">
                         {{ csrf_field() }}
+                        <input type="hidden" name="detail" value="detail">
                         <div class="col-md-4 col-sm-6 col-xs-12">
                             <input type="text" class="form-control input-contacto" id="inlineFormInput" placeholder="Nombre" name="name" value="{{ old('name') }}">
                         </div>
