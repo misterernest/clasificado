@@ -1,5 +1,9 @@
 /*# sourceURL=../css/catalogo-tucan.css */
 /*@ sourceURL=../css/catalogo-tucan.css */
+/*# sourceURL=../css/catalogo-tucan.css */
+/*@ sourceURL=../css/catalogo-tucan.css */
+/*# sourceURL=../css/catalogo-tucan.css */
+/*@ sourceURL=../css/catalogo-tucan.css */
 *{
 	box-sizing: border-box;
 }
@@ -44,6 +48,9 @@ section{
 }
 .value-car{
 	font-size: 3rem;
+}
+a, a:hover, a:focus{
+	color: #000;
 }
 
 /*Inicio media query*/

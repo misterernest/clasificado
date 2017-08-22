@@ -8,16 +8,16 @@
     <meta name="description" content="Autos de lujo en Colombia, vende tu autos de lujo, alquila tu auto de lujo, permuta tu auto de lujo, compra tu auto de lujo" />
     <meta name="keywords" content="autos, carros, vehiculos, lujo, autos de lujo, carros de lujo, vehiculos de lujo, vende tu auto de lujo, alquila tu auto de lujo, compra tu auto de lujo, permuta tu auto de lujo" />
     <meta name="author" content="ANT" />
-    <link rel="shortcut icon" href="../images/favicon.png">    
-    <script src="../js/jquery.min.js" type="text/javascript"></script>
+    <link rel="shortcut icon" href="../../images/favicon.png">    
+    <script src="../../js/jquery.min.js" type="text/javascript"></script>
     
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" >
-    <link rel="stylesheet" type="text/css" href="../css/style-tucan.css">
-    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/catalogo-tucan.css">
-    <script src="../js/prefixfree.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="../../css/style-tucan.css">
+    <link rel="stylesheet" href="../../font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/detail-tucan.css">
+    <script src="../../js/prefixfree.min.js" type="text/javascript"></script>
 </head>
 <!--@if (Session::has('error-messages'))
 	{{ Session::get('error-messages') }}
@@ -27,7 +27,7 @@
         <nav class="row top-nav">
             <div class="logo-autoslujo col-xs-4 col-sm-3 col-md-2 ">
                     <a href="/">
-                    <img src="../images/logo.png" alt="autos de lujo">
+                    <img src="../../images/logo.png" alt="autos de lujo">
                 </a>
             </div>
             <div class="social col-xs-6 col-sm-2 col-md-4">
@@ -55,37 +55,128 @@
             </div>
         </nav>     
     </header>
-
+    @if (Auth::guest())
+        <?php $log=true; ?>
+    @else
+        <?php $log=false; ?>
+    @endif
     <section class="content-fluid">
-        @forelse ($vehicles as $vehicle)
-            <article class="row">
-                <div class="col-md-3 col-sm-4 col-xs-6 first-div">
-                    <div class="cont-info">
-                    	<a href="#">	
-	                        <div class="div-img">
-	                	       <img src="../{!! $vehicle->photo_main !!}">
-	                        </div>
-	                    	<div class="brand-car">
-	                            {!! $vehicle->brand !!} {!! $vehicle->ref_car !!}
-	                        </div>
-	                        <div class="year-car">
-	                            {!! $vehicle->year !!}
-	                        </div>
-	                        <div class="km-city-car">
-	                            {!! number_format($vehicle->km) !!} km - {!! $vehicle->actual_city !!}
-	                        </div>
-	                    	<div class="value-car">
-	                            ${!! number_format($vehicle->value) !!}   
-	                        </div>
-                    	</a>
-                    </div>
-                	
+        <div class="row">
+            <article class="row col-md-6 img-car">
+                <div class="col-sm-11">
+                    <img src="../../{!! $vehicle->photo_main !!}" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
                 </div>
-            	
-            @empty           	
-            	<h3>No hay registros</h3>
-            @endforelse
+                <div class="row col-md-12">
+                    @if($vehicle->photo_main)
+                        <div class="col-md-1">
+                            <img src="../../{!! $vehicle->photo_main !!}" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
+                        </div>
+                    @endif
+                    @if($vehicle->photo_2)
+                        <div class="col-md-1">
+                            <img src="../../{!! $vehicle->photo_2 !!}" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
+                        </div>
+                    @endif
+                    @if($vehicle->photo_3)
+                        <div class="col-md-1">
+                            <img src="../../{!! $vehicle->photo_3 !!}" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
+                        </div>
+                    @endif
+                    @if($vehicle->photo_4)
+                        <div class="col-md-1">
+                            <img src="../../{!! $vehicle->photo_4 !!}" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
+                        </div>
+                    @endif
+                    @if($vehicle->photo_5)
+                        <div class="col-md-1">
+                            <img src="../../{!! $vehicle->photo_5 !!}" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
+                        </div>
+                    @endif
+                    @if($vehicle->photo_6)
+                        <div class="col-md-1">
+                            <img src="../../{!! $vehicle->photo_6 !!}" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
+                        </div>
+                    @endif
+                    @if($vehicle->photo_7)
+                        <div class="col-md-1">
+                            <img src="../../{!! $vehicle->photo_7 !!}" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
+                        </div>
+                    @endif
+                    @if($vehicle->photo_8)
+                        <div class="col-md-1">
+                            <img src="../../{!! $vehicle->photo_8 !!}" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
+                        </div>
+                    @endif
+                    @if($vehicle->photo_2)
+                        <div class="col-md-1">
+                            <img src="../../{!! $vehicle->photo_2 !!}" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
+                        </div>
+                    @endif
+                    @if($vehicle->photo_2)
+                        <div class="col-md-1">
+                            <img src="../../{!! $vehicle->photo_2 !!}" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
+                        </div>
+                    @endif
+                    @if($vehicle->photo_2)
+                        <div class="col-md-1">
+                            <img src="../../{!! $vehicle->photo_2 !!}" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
+                        </div>
+                    @endif
+                </div>       
             </article>
+            <aside class="row col-md-6 contacto">
+                <div class="row col-md-12 contacto-formulario">
+                    <div class="row" >
+                        <div class="col-xs-12"><h2>TE INTERESO ESTE CARRO? CONTACTANOS</h2></div>
+                    @if ($errors->has() && Session::has('form-contact')) 
+                        <div class="col-xs-12 alert alert-danger">
+                            Revisa estos items, para enviar contactarnos!
+                        </div>
+                        <div>   
+                            <ul class="col-xs-12 alert alert-danger">
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+                    @if (Session::has('success-messages-contact'))
+                        <div>  
+                            <ul class="col-xs-12 alert alert-success">
+                                <li>
+                                    {{ Session::get('success-messages-contact') }}
+                                </li>
+                            </ul>
+                        </div>
+                    @endif
+                    </div>
+                    <form class="form-inline" action="{{ route('send') }}" method="POST">
+                        {{ csrf_field() }}
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <input type="text" class="form-control input-contacto" id="inlineFormInput" placeholder="Nombre" name="name" value="{{ old('name') }}">
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <input required type="email" name="email_contact" class="form-control input-contacto" id="ejemplo_email_3" placeholder="Email*" value="{{ old('email-contact') }}">
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <input type="number" class="form-control input-contacto" placeholder="telefono movil" name="movil" value="{{ old('movil') }}">
+                        </div>
+                        <div class="row" >
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <input type="hidden" name="subject" class="form-control input-contacto"  placeholder="Asunto" value="{!! $vehicle->brand  !!}">
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12 mensaje-contacto">
+                                <textarea name="body" class="form-control" rows="4" required></textarea>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12 mensaje-contacto">
+                                <input type="text" class="form-control input-contacto" id="ebcaptchainput"/>
+                            </div>
+                            <div class="col-xs-12 enviar" id="button-contacto"><button id="enviar-contacto" type="submit" class="btn btn-primary">Enviar</button></div>
+                        </div>
+                    </form>
+                </div>
+            </aside>
+        </div>
     </section>
     <footer class="footer" >
         <div class="row">
@@ -125,14 +216,3 @@
     </script>
 </body>
 </html> 
-@if (Auth::guest())
-	$log=1
-@else
-	Si ha iniciado sesion
-@endif
-
-<div>
-	ID: {{ $vehicle->id }}
-	Nombre: {{ $vehicle->name }}
-	Email: {{ $vehicle->email }}
-</div>

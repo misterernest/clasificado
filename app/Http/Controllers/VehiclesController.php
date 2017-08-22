@@ -13,7 +13,7 @@ class VehiclesController extends Controller
 
   public function getIndex() 
   {
-    return view('pages.formulario');
+    return view('welcome');
   }
 
   public function postStore(Request $request) 
@@ -174,11 +174,11 @@ class VehiclesController extends Controller
 
     if ($vehicle != null) 
     {
-      return view('detail', ['vehicle' => $vehicle]);
+      return view('pages.detail', ['vehicle' => $vehicle]);
     } 
     else 
     {
       return redirect()->back()->with('error-messages', 'El vehiculo no existe');
     }
-  }
+  } 
 }

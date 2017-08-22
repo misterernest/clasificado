@@ -61,21 +61,23 @@
             <article class="row">
                 <div class="col-md-3 col-sm-4 col-xs-6 first-div">
                     <div class="cont-info">
-                        <div class="div-img">
-                	       <img src="../{!! $vehicle->photo_main !!}">
-                        </div>
-                    	<div class="brand-car">
-                            {!! $vehicle->brand !!} {!! $vehicle->ref_car !!}
-                        </div>
-                        <div class="year-car">
-                            {!! $vehicle->year !!}
-                        </div>
-                        <div class="km-city-car">
-                            {!! number_format($vehicle->km) !!} km - {!! $vehicle->actual_city !!}
-                        </div>
-                    	<div class="value-car">
-                            ${!! number_format($vehicle->value) !!}   
-                        </div>
+                        <a href="/vehicles/detail/{{ $vehicle->id }}">
+                            <div class="div-img">
+                    	           <img src="../{!! $vehicle->photo_main !!}">
+                            </div>
+                            <div class="brand-car">
+                                {!! $vehicle->brand !!} {!! $vehicle->ref_car !!}
+                            </div>
+                            <div class="year-car">
+                                {!! $vehicle->year !!}
+                            </div>
+                            <div class="km-city-car">
+                                {!! number_format($vehicle->km) !!} km - {!! $vehicle->actual_city !!}
+                            </div>
+                            <div class="value-car">
+                                ${!! number_format($vehicle->value) !!}   
+                            </div>
+                        </a>
                     </div>
                 	
                 </div>

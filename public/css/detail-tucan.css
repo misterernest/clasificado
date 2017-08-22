@@ -1,0 +1,21 @@
+/*# sourceURL=../../css/detail-tucan.css */
+/*@ sourceURL=../../css/detail-tucan.css */
+/*# sourceURL=../../css/detail-tucan.css */
+/*@ sourceURL=../../css/detail-tucan.css */
+/*# sourceURL=../../css/detail-tucan.css */
+/*@ sourceURL=../../css/detail-tucan.css */
+*{
+	box-sizing: border-box;
+}
+header{
+	height: 3rem !important;
+}
+section{
+	padding: 0rem 1rem 1rem 2rem;
+	margin: 5rem auto;
+}
+img{
+	width: 100%;
+	border: 1px solid rgb(229,229,229);
+	margin:1px 2px;
+}
