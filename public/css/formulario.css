@@ -1,3 +1,7 @@
+/*# sourceURL=../../css/formulario.css */
+/*@ sourceURL=../../css/formulario.css */
+/*# sourceURL=css/formulario.css */
+/*@ sourceURL=css/formulario.css */
 /*# sourceURL=css/formulario.css */
 /*@ sourceURL=css/formulario.css */
 /*# sourceURL=css/formulario.css */
@@ -18,8 +22,11 @@
   justify-content: space-around;
 
 }
+.btn-formulario{
+  background-color: #000;
+}
 .form-control{
-  margin: 10px;
+  margin: 4px;
   width:90%;
 }
 

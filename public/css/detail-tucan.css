@@ -4,6 +4,18 @@
 /*@ sourceURL=../../css/detail-tucan.css */
 /*# sourceURL=../../css/detail-tucan.css */
 /*@ sourceURL=../../css/detail-tucan.css */
+/*# sourceURL=../../css/detail-tucan.css */
+/*@ sourceURL=../../css/detail-tucan.css */
+/*# sourceURL=../../css/detail-tucan.css */
+/*@ sourceURL=../../css/detail-tucan.css */
+/*# sourceURL=../../css/detail-tucan.css */
+/*@ sourceURL=../../css/detail-tucan.css */
+/*# sourceURL=../../css/detail-tucan.css */
+/*@ sourceURL=../../css/detail-tucan.css */
+/*# sourceURL=../../css/detail-tucan.css */
+/*@ sourceURL=../../css/detail-tucan.css */
+/*# sourceURL=../../css/detail-tucan.css */
+/*@ sourceURL=../../css/detail-tucan.css */
 *{
 	box-sizing: border-box;
 }
@@ -11,14 +23,82 @@ header{
 	height: 3rem !important;
 }
 section{
-	padding: 0rem 1rem 1rem 2rem;
-	margin: 5rem auto;
+	margin: 0 auto;
+	width: 80%; 
 }
-img{
+article img{
 	width: 100%;
-	border: 1px solid rgb(229,229,229);
-	margin:1px 2px;
 }
-.brand-car{
+.div-mini-img img{
+	margin: 0.5rem 0;
+	border: 1px solid rgb(229,229,229);
+}
+.container-title{
+	border: 3px solid rgb(229,229,229);
+}
+.title-detail{
+	text-align: left;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: baseline;
+}
+h1, h2{
 	text-transform: uppercase;
+	margin: 0.4rem;
+	font-size: 4rem;
+	display: inline-block;
+}
+aside{
+  	 height: 55rem;
+}	
+.img-main>img{
+	width: 91.6%;
+}
+aside, .cont-img{
+	background-color: rgb(229,229,229);
+	
+}
+
+h4, .col-md-offset-4,.btn-formulario{
+	margin: 0.4rem;
+}
+.form-inline .form-control{
+	width: 83%;
+}
+.btn-formulario{
+  width: 83%;
+}
+
+
+/*Inicio media query*/
+@media screen and (max-width: 980px) {
+	.img-main>img{
+		width: 100%;
+	}
+	.cont-img{
+		background-color: rgba(255,255,255,0);
+	}
+	aside{
+		height: auto;
+  }
+	
+}
+@media screen and (max-width: 800px) {
+	.cont-img{
+		background-color: rgba(255,255,255,0);
+	}
+	
+}
+@media screen and (max-width: 768px) {
+	.cont-img{
+		background-color: rgba(255,255,255,0);
+	}
+}
+@media screen and (max-width: 360px) {	
+	.cont-img{
+		background-color: rgba(255,255,255,0);
+	}
+	header{
+		height: 6rem !important;
+	}
 }

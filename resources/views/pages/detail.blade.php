@@ -17,7 +17,10 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-tucan.css">
     <link rel="stylesheet" href="../../font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../css/detail-tucan.css">
+    <link rel="stylesheet" href="../../css/formulario.css">
     <script src="../../js/prefixfree.min.js" type="text/javascript"></script>
+    <script src="../../js/jquery.min.js" type="text/javascript"></script>
+    <script src="../../js/detail-tucan.js" type="text/javascript"></script>
 </head>
 <!--@if (Session::has('error-messages'))
 	{{ Session::get('error-messages') }}
@@ -55,88 +58,103 @@
             </div>
         </nav>     
     </header>
+    <!-- fin SECTION INICIO FOOTER-->
     @if (Auth::guest())
         <?php $log=true; ?>
     @else
         <?php $log=false; ?>
     @endif
-    <section class="content-fluid">
+    <section class="container-fluid">
         <div class="row">
-            <article class="row col-md-6 img-car">
-            <div>
-                <h2 class="brand-car">{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!} {!! $vehicle->year !!}</h2>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <a href="/vehicles/allvehicles#carro{{ $vehicle->id }}">Regresar al listado</a>
             </div>
-                <div class="col-sm-11">
-                    <img src="../../{!! $vehicle->photo_main !!}" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
+            <article class="col-md-12 col-sm-12 col-xs-12 container-title">
+                <div class="col-md-8 col-sm-12 col-xs-12 title-detail">
+                    <h1>{!! $vehicle->brand !!}</h1> <h2>{!! $vehicle->ref_car !!} {!! $vehicle->year !!}</h2>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <h2>${!! number_format($vehicle->value) !!}</h2>
+                </div>
+            </article>
+            <article class="row col-md-8 col-sm-12 col-xs-12 cont-img">
+                <div class="col-md-12">
+                    <div class="col-md-12 img-main">
+                        <img src="../../{!! $vehicle->photo_main !!}" id="img-main" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 div-mini-img">
+                        @if($vehicle->photo_main)
+                            <div class="col-md-1 col-sm-1 col-xs-2">
+                                <img src="../../{!! $vehicle->photo_main !!}" id="img1" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
+                            </div>
+                        @endif
+                        @if($vehicle->photo_2)
+                            <div class="col-md-1 col-sm-1 col-xs-2">
+                                <img src="../../{!! $vehicle->photo_2 !!}" id="img2" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
+                            </div>
+                        @endif
+                        @if($vehicle->photo_3)
+                            <div class="col-md-1 col-sm-1 col-xs-2">
+                                <img src="../../{!! $vehicle->photo_3 !!}" id="img3" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
+                            </div>
+                        @endif
+                        @if($vehicle->photo_4)
+                            <div class="col-md-1 col-sm-1 col-xs-2">
+                                <img src="../../{!! $vehicle->photo_4 !!}" id="img4" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
+                            </div>
+                        @endif
+                        @if($vehicle->photo_5)
+                            <div class="col-md-1 col-sm-1 col-xs-2">
+                                <img src="../../{!! $vehicle->photo_5 !!}" id="img5" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
+                            </div>
+                        @endif
+                        @if($vehicle->photo_6)
+                            <div class="col-md-1 col-sm-1 col-xs-2">
+                                <img src="../../{!! $vehicle->photo_6 !!}" id="img6" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
+                            </div>
+                        @endif
+                        @if($vehicle->photo_7)
+                            <div class="col-md-1 col-sm-1 col-xs-2">
+                                <img src="../../{!! $vehicle->photo_7 !!}" id="img7" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
+                            </div>
+                        @endif
+                        @if($vehicle->photo_8)
+                            <div class="col-md-1 col-sm-1 col-xs-2">
+                                <img src="../../{!! $vehicle->photo_8 !!}" id="img8" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
+                            </div>
+                        @endif
+                        @if($vehicle->photo_9)
+                            <div class="col-md-1 col-sm-1 col-xs-2">
+                                <img src="../../{!! $vehicle->photo_2 !!}" id="img9" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
+                            </div>
+                        @endif
+                        @if($vehicle->photo_10)
+                            <div class="col-md-1 col-sm-1 col-xs-2">
+                                <img src="../../{!! $vehicle->photo_2 !!}" id="img10" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
+                            </div>
+                        @endif
+                        @if($vehicle->photo_11)
+                            <div class="col-md-1 col-sm-1 col-xs-2">
+                                <img src="../../{!! $vehicle->photo_2 !!}" id="img11" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
+                            </div>
+                        @endif
+                    </div>
+                </div>
+            </article>
+            <aside class="row col-md-4 col-sm-12 col-xs-12">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <h4>TE INTERESO ESTE CARRO?</h3>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <h4>CONTACTANOS</h3>
                 </div>
                 <div class="row col-md-12">
-                    @if($vehicle->photo_main)
-                        <div class="col-md-1">
-                            <img src="../../{!! $vehicle->photo_main !!}" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
-                        </div>
-                    @endif
-                    @if($vehicle->photo_2)
-                        <div class="col-md-1">
-                            <img src="../../{!! $vehicle->photo_2 !!}" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
-                        </div>
-                    @endif
-                    @if($vehicle->photo_3)
-                        <div class="col-md-1">
-                            <img src="../../{!! $vehicle->photo_3 !!}" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
-                        </div>
-                    @endif
-                    @if($vehicle->photo_4)
-                        <div class="col-md-1">
-                            <img src="../../{!! $vehicle->photo_4 !!}" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
-                        </div>
-                    @endif
-                    @if($vehicle->photo_5)
-                        <div class="col-md-1">
-                            <img src="../../{!! $vehicle->photo_5 !!}" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
-                        </div>
-                    @endif
-                    @if($vehicle->photo_6)
-                        <div class="col-md-1">
-                            <img src="../../{!! $vehicle->photo_6 !!}" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
-                        </div>
-                    @endif
-                    @if($vehicle->photo_7)
-                        <div class="col-md-1">
-                            <img src="../../{!! $vehicle->photo_7 !!}" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
-                        </div>
-                    @endif
-                    @if($vehicle->photo_8)
-                        <div class="col-md-1">
-                            <img src="../../{!! $vehicle->photo_8 !!}" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
-                        </div>
-                    @endif
-                    @if($vehicle->photo_2)
-                        <div class="col-md-1">
-                            <img src="../../{!! $vehicle->photo_2 !!}" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
-                        </div>
-                    @endif
-                    @if($vehicle->photo_2)
-                        <div class="col-md-1">
-                            <img src="../../{!! $vehicle->photo_2 !!}" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
-                        </div>
-                    @endif
-                    @if($vehicle->photo_2)
-                        <div class="col-md-1">
-                            <img src="../../{!! $vehicle->photo_2 !!}" alt="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}">
-                        </div>
-                    @endif
-                </div>       
-            </article>
-            <aside class="row col-md-6 contacto">
-                <div class="row col-md-12 contacto-formulario">
-                    <div class="row" >
-                        <div class="col-xs-12"><h2>TE INTERESO ESTE CARRO? CONTACTANOS</h2></div>
                     @if ($errors->has()) 
-                        <div class="col-xs-12 alert alert-danger">
+                        <div class="col-md-12 alert alert-danger">
                             Revisa estos items, para enviar contactarnos!
                         </div>
                         <div>   
-                            <ul class="col-xs-12 alert alert-danger">
+                            <ul class="col-md-12 alert alert-danger">
                                 @foreach ($errors->all() as $error)
                                     <li>{{ $error }}</li>
                                 @endforeach
@@ -145,43 +163,45 @@
                     @endif
                     @if (Session::has('success-messages'))
                         <div>  
-                            <ul class="col-xs-12 alert alert-success">
+                            <ul class="col-md-12 alert alert-success">
                                 <li>
                                     {{ Session::get('success-messages') }}
                                 </li>
                             </ul>
                         </div>
                     @endif
-                    </div>
                     <form class="form-inline" action="{{ route('send') }}" method="POST">
                         {{ csrf_field() }}
-                        <input type="hidden" name="detail" value="detail">
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <input type="text" class="form-control input-contacto" id="inlineFormInput" placeholder="Nombre" name="name" value="{{ old('name') }}">
+                        <input type="hidden" name="detail" value="http:www.autosdelujo.com.co/vehicles/detail/{{ $vehicle->id }}" required >
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <input type="text" class="form-control input-contacto" id="inlineFormInput" placeholder="Nombre" name="name" value="{{ old('name') }}" required>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <input required type="email" name="email_contact" class="form-control input-contacto" id="ejemplo_email_3" placeholder="Email*" value="{{ old('email-contact') }}">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <input required type="email" name="email_contact" class="form-control input-contacto" id="ejemplo_email_3" placeholder="Email*" value="{{ old('email-contact') }}" required>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <input type="number" class="form-control input-contacto" placeholder="telefono movil" name="movil" value="{{ old('movil') }}">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <input type="number" class="form-control input-contacto" placeholder="telefono movil" name="movil" value="{{ old('movil') }}" required>
                         </div>
-                        <div class="row" >
-                            <div class="col-md-4 col-sm-6 col-xs-12">
-                                <input type="hidden" name="subject" class="form-control input-contacto"  placeholder="Asunto" value="{!! $vehicle->brand  !!}">
-                            </div>
-                            <div class="col-md-12 col-sm-12 col-xs-12 mensaje-contacto">
-                                <textarea name="body" class="form-control" rows="4" required></textarea>
-                            </div>
-                            <div class="col-md-12 col-sm-12 col-xs-12 mensaje-contacto">
-                                <input type="text" class="form-control input-contacto" id="ebcaptchainput"/>
-                            </div>
-                            <div class="col-xs-12 enviar" id="button-contacto"><button id="enviar-contacto" type="submit" class="btn btn-primary">Enviar</button></div>
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <input type="hidden" name="subject" class="form-control input-contacto"  placeholder="Asunto" value="{!! $vehicle->brand !!}-{!! $vehicle->ref_car !!}-{!! $vehicle->year !!}">
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <textarea name="body" class="form-control" rows="4" required></textarea>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            {!! Recaptcha::render() !!}
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 enviar" id="button-contacto">
+                            <button id="enviar-contacto" type="submit" class="btn btn-primary btn-formulario">Enviar</button>
                         </div>
                     </form>
                 </div>
             </aside>
         </div>
     </section>
+
+
+    <!-- fin SECTION INICIO FOOTER-->
     <footer class="footer" >
         <div class="row">
             <div class="col-sm-3 col-xs-12">

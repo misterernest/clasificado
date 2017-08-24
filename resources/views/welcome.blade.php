@@ -273,20 +273,22 @@
                             </ul>
                         </div>
                     @endif
+                    </div>
                     <form class="form-inline" action="{{ route('send') }}" method="POST">
                         {{ csrf_field() }}
-                        <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-12 col-xs-12">
 							<input type="text" class="form-control input-contacto" id="inlineFormInput" placeholder="Nombre" name="name" value="{{ old('name') }}">
 						</div>
-						<div class="col-md-4 col-sm-12 col-xs-12">
+						<div class="col-md-5 col-sm-12 col-xs-12">
 							<input required type="email" name="email_contact" class="form-control input-contacto" id="ejemplo_email_3" placeholder="Email*" value="{{ old('email-contact') }}">
 						</div>
                     </div>
                     <div class="row" >
-                        <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-5 col-sm-12 col-xs-12">
                             <input type="number" class="form-control input-contacto" placeholder="telefono movil" name="movil" value="{{ old('movil') }}">
                         </div>
-						<div class="col-md-4 col-sm-12 col-xs-12">
+						<div class="col-md-5 col-sm-12 col-xs-12">
 							<input type="text" name="subject" class="form-control input-contacto" placeholder="Asunto" value="{{ old('subject') }}">
 						</div>
 						<div class="col-md-12 col-sm-12 col-xs-12 mensaje-contacto">
@@ -533,12 +535,9 @@
                 @endif
                 <div class="row">
                     <div class="col-xs-12"> 
-                        <input id="submit-vehicle" class="form-control bt-submit" type="submit" value="Submit">
+                        <input id="submit-vehicle" class="btn btn-primary form-control bt-submit btn-formulario" type="submit" value="Enviar">
                     </div>
-                </div>
-                        
-                        
-                
+                </div>    
             </div>
         </form>
     </div>

@@ -59,7 +59,7 @@
     <section class="content-fluid">
         @forelse ($vehicles as $vehicle)
             <article class="row">
-                <div class="col-md-3 col-sm-4 col-xs-6 first-div">
+                <div class="col-md-3 col-sm-4 col-xs-6 first-div" id="carro{{ $vehicle->id }}">
                     <div class="cont-info">
                         <a href="/vehicles/detail/{{ $vehicle->id }}">
                             <div class="div-img">
