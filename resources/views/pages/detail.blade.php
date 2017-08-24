@@ -142,7 +142,7 @@
                 </div>
             </article>
             <aside class="row col-md-4 col-sm-12 col-xs-12">
-                <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="col-md-12 col-sm-12 col-xs-12 title1-form">
                     <h4>TE INTERESO ESTE CARRO?</h3>
                 </div>
                 <div class="col-md-12 col-sm-12 col-xs-12">

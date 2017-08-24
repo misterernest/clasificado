@@ -90,7 +90,7 @@
     </aside>
 
     <!--aqui inicia sección de financiera y aseguradoras-->
-        <article class="row">
+        <article class="row art-fin-aseg">
             <div class="col-md-12">
                 <div class="row">
                 <div class="col-sm-6 financiadoras">
@@ -99,7 +99,7 @@
                             <img src="images/iconos-fina-aseg/1.png" alt="Financia tu carro">
                         </div>
                         <div class="col-xs-9 col-md-8 text-aseguradoras">
-                            <h2>FINANCIADORA</h2>
+                            <h2>FINANCIAERA</h2>
                             <p>Se realiza la gestión para conseguir el financiamiento y el crédito hasta el 100% del valor del vehículo, previo estudio con compañía de financiamiento.</p> 
                         </div>
                         <div class="col-xs-12 logos-aseguradoras">
@@ -123,7 +123,7 @@
                             <img src="images/iconos-fina-aseg/2.png" alt="Asegura tu carro">
                         </div>
                         <div class="col-xs-9 col-md-8 text-aseguradoras">
-                            <h2>ASEGURADORAS</h2>
+                            <h2>COMPAÑIAS ASEGURADORAS</h2>
                             <p>Se realiza la gestión de  todas las pólizas y seguros relacionados correspondientes para los autos de lujos de acuerdo  a la normativa del sector automotriz de lujo</p>
                         </div>
                         <div class="col-xs-12 logos-aseguradoras" id="logos-aseguradoras">

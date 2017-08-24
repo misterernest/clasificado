@@ -16,6 +16,8 @@
 /*@ sourceURL=../../css/detail-tucan.css */
 /*# sourceURL=../../css/detail-tucan.css */
 /*@ sourceURL=../../css/detail-tucan.css */
+/*# sourceURL=../../css/detail-tucan.css */
+/*@ sourceURL=../../css/detail-tucan.css */
 *{
 	box-sizing: border-box;
 }
@@ -51,6 +53,9 @@ h1, h2{
 aside{
   	 height: 55rem;
 }	
+.title1-form{
+	padding-top: 1rem
+}
 .img-main>img{
 	width: 91.6%;
 }
