@@ -131,7 +131,7 @@
                 <div class="row col-md-12 contacto-formulario">
                     <div class="row" >
                         <div class="col-xs-12"><h2>TE INTERESO ESTE CARRO? CONTACTANOS</h2></div>
-                    @if ($errors->has() && Session::has('form-contact')) 
+                    @if ($errors->has()) 
                         <div class="col-xs-12 alert alert-danger">
                             Revisa estos items, para enviar contactarnos!
                         </div>
@@ -143,11 +143,11 @@
                             </ul>
                         </div>
                     @endif
-                    @if (Session::has('success-messages-contact'))
+                    @if (Session::has('success-messages'))
                         <div>  
                             <ul class="col-xs-12 alert alert-success">
                                 <li>
-                                    {{ Session::get('success-messages-contact') }}
+                                    {{ Session::get('success-messages') }}
                                 </li>
                             </ul>
                         </div>

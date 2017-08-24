@@ -32,7 +32,9 @@ class MailController extends Controller
             'subject.required'      =>  'Debes ingresar un asunto.', 
             'body.required'         =>  'Debes ingresar un mensaje.', 
             'g-recaptcha-response.required'  =>  'El Captcha es obligatorio.',
-            'movil.numeric'                 =>  'El telefono debe ser numerico para contactarte'
+            'movil.numeric'                 =>  'El telefono debe ser numerico para contactarte',
+            'movil.required'                 =>  'El telefono es requerido para contactarte',
+            'name.required'                 =>  'Tu nombre es requerido para poder contactarte'
         ];
 
         if ($request->has('detail')) 
