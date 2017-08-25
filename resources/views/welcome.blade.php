@@ -47,9 +47,9 @@
 				<div class="navbar-inverse side-collapse in">
 				  <nav role="navigation" class="navbar-collapse">
 					<ul class="nav navbar-nav nav-right">
-						<li><a href="#logos-aseguradoras">VENTA</a></li>
-						<li><a href="#logos-aseguradoras">PERMUTA</a></li>
-						<li><a href="#logos-aseguradoras">ALQUILER</a></li>
+						<li><a href="#button-contacto">VENTA</a></li>
+						<li><a href="#button-contacto">PERMUTA</a></li>
+						<li><a href="#form-contact">ALQUILER</a></li>
 						<li><a href="/vehicles/allvehicles">COMPRA</a></li>
 						<li><a href="#form-contact">CONTACTENOS</a></li>
 					</ul>
@@ -59,9 +59,9 @@
 	    </nav>
 	
         <nav class="second-nav hidden-xs">
-            <a href="#logos-aseguradoras">VENTA</a> 
-            <a href="#logos-aseguradoras">PERMUTA</a>
-            <a href="#logos-aseguradoras">ALQUILER</a>
+            <a href="#button-contacto">VENTA</a> 
+            <a href="#button-contacto">PERMUTA</a>
+            <a href="#form-contact">ALQUILER</a>
             <a href="/vehicles/allvehicles">COMPRA</a>
             <a href="#form-contact">CONTACTENOS</a>
         </nav>      
@@ -76,9 +76,9 @@
                 
             </div>
             <div class="txt-slide col-md-5 col-sm-6 col-xs-12 ">
-                <div class="txt-slide-1"><a href="#art3">En esta pagina puedes encontrar el vehiculo que necesites, al mejor precio, financiado hasta el 100% y documentos al día, cotiza ya!!!</a></div>
-                <div class="txt-slide-2"><a href="#art3">Si quieres vender o permutar lo puedes hacer ya. Trabjamos con todas las financieras.</a></div>
-                <div class="txt-slide-3"><a href="#art3">Puedes cotizar tu seguro todo riesgo y SOAT a Domicilio</a></div>
+                <div class="txt-slide-1"><a href="/vehicles/allvehicles">En esta pagina puedes encontrar el vehiculo que necesites, al mejor precio, financiado hasta el 100% y documentos al día, cotiza ya!!!</a></div>
+                <div class="txt-slide-2"><a href="#button-contacto">Si quieres vender o permutar lo puedes hacer ya. Trabjamos con todas las financieras.</a></div>
+                <div class="txt-slide-3"><a href="#form-contact">Buscamos inversionistas. Alta rentabilidad!!</a></div>
             </div>
         </div>
         <div class="link-servicios hidden-xs">
@@ -99,7 +99,7 @@
                             <img src="images/iconos-fina-aseg/1.png" alt="Financia tu carro">
                         </div>
                         <div class="col-xs-9 col-md-8 text-aseguradoras">
-                            <h2>FINANCIAERA</h2>
+                            <h2>FINANCIERAS</h2>
                             <p>Se realiza la gestión para conseguir el financiamiento y el crédito hasta el 100% del valor del vehículo, previo estudio con compañía de financiamiento.</p> 
                         </div>
                         <div class="col-xs-12 logos-aseguradoras">
