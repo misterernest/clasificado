@@ -78,7 +78,7 @@
             <div class="txt-slide col-md-5 col-sm-6 col-xs-12 ">
                 <div class="txt-slide-1"><a href="/vehicles/allvehicles">En esta pagina puedes encontrar el vehiculo que necesites, al mejor precio, financiado hasta el 100% y documentos al día, cotiza ya!!!</a></div>
                 <div class="txt-slide-2"><a href="#button-contacto">Si quieres vender o permutar lo puedes hacer ya. Trabjamos con todas las financieras.</a></div>
-                <div class="txt-slide-3"><a href="#form-contact">Buscamos inversionistas. Alta rentabilidad!!</a></div>
+                <div class="txt-slide-3"><a href="#form-contact">Buscamos inversionistas. Buena rentabilidad!!</a></div>
             </div>
         </div>
         <div class="link-servicios hidden-xs">
