@@ -317,9 +317,9 @@
             <input type="hidden" name="_token" value="{{ csrf_token() }}"></input>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="  col-md-6">
+                    <div class="col-md-6 col-sm-6 col-xs-12 divisor-line">
                         <div class="row row-form form-group">
-                            <div class="col-xs-12">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
                                 <label for="name_user">Datos personales*</label>
                             </div>
                             <div class="col-sm-4">
@@ -332,10 +332,11 @@
                                 <input class="form-control" type="number" id="cellpone" name="cellphone" placeholder="Telefono celular" value="{{ old('cellphone') }}" required />
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class=" col-md-6 divisor-line">
+                        <div class="row row-form">
+                            <div class="col-sm-12"><label>Ubicacion del vehículo</label></div>
+                            <div class="col-sm-4"><input class="form-control" type="" id="" name="actual_city" placeholder="Ciudad*" value="{{ old('actual_city') }}"/></div>
+                            <div class="col-sm-4"><input class="form-control" type="" id="" name="actual_region" placeholder="Departamento" value="{{ old('actual_region') }}"/></div>
+                        </div>
                         <div class="row row-form">
                             <div class="col-md-12">
                                 <label>Datos Generales del Vehiculo</label>
@@ -346,42 +347,26 @@
                             <div class="col-sm-4">
                                 <input class="form-control" type="" id="" name="year" placeholder="Modelo (año)" value="{{ old('year') }}"/>
                             </div>
-                            <div class="col-sm-4">
-                                <input class="form-control" type="" id="" name="country_origin" placeholder="Pais de origen" value="{{ old('country_origin') }}" />
-                            </div>
-                            <div class="col-sm-4">
-                                <input class="form-control" type="" id="" name="color" placeholder="Color" value="{{ old('color') }}" />
-                            </div>
-                            <div class="col-sm-4">
-                                <input class="form-control" type="" id="" name="placa" placeholder="Placa" value="{{ old('placa') }}" />
-                            </div>
+                            
+                            
+                            
                             <div class="col-sm-4">
                                 <input class="form-control" type="" id="" name="ref_car" placeholder="Serie del carro (ej. logan)" value="{{ old('ref_car') }}" />
                             </div>
-                            <div class="col-sm-4">
-                                <select  class="form-control" name="type_car">
-                                    <option value="Sedan" {{ old('type_car') == 'Sedan' ? "selected='true'" : "" }}>Sedan</option> 
-                                    <option value="Deportivo" {{ old('type_car') == 'Deportivo' ? "selected='true'" : "" }}>Deportivo</option> 
-                                    <option value="Camioneta" {{ old('type_car') == 'Camioneta' ? "selected='true'" : "" }}>Camioneta</option>
-                                    <option value="Clásico" {{ old('type_car') == 'Clásico' ? "selected='true'" : "" }}>Clásico</option> 
-                                </select>  
-                            </div>
+                            
                             <div class="col-sm-4">
                                 <input class="form-control" type="" id="" name="value" placeholder="$ Costo" value="{{ old('value') }}" />
                             </div>
-                            <div class="col-sm-4">
-                                <input class="form-control" type="" id="" name="negociable" placeholder="negociable" value="{{ old('negociable') }}" />
-                            </div>
+                            
                             <div class="col-sm-4">
                                 <select  class="form-control" name="opcion">
                                     <option value="Vender" {{ old('opcion') == 'Vender' ? "selected='true'" : ""}}>Vender</option>
                                     <option value="Permutar" {{ old('opcion') == 'Permutar' ? "selected='true'" :"" }}>Permutar</option>
                                 </select>
                             </div>
-                            
                         </div>
                     </div>
-                    <div class="col-xs-12 col-md-6">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="row row-form">
                             <div class="col-xs-12">
                                 <label>Ingresa fotos del vehículo*</label>
@@ -436,27 +421,7 @@
                 <div class="row">
                     <div class="col-md-6 divisor-line">
                         <div class="row row-form">
-                            <div class="col-sm-12"><label>Ubicacion del vehículo</label></div>
-                            <div class="col-sm-4"><input class="form-control" type="" id="" name="actual_city" placeholder="Ciudad" value="{{ old('actual_city') }}"/></div>
-                            <div class="col-sm-4"><input class="form-control" type="" id="" name="actual_region" placeholder="Departamento" value="{{ old('actual_region') }}"/></div>
-                            <div class="col-sm-4"><input class="form-control" type="" id="" name="neighborhood" placeholder="Barrio" value="{{ old('neighborhood') }}" /></div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 ">
-                        <div class="row row-form">
-                            <div class="col-md-12"><label>Seguridad del vehículo</label></div>
-                            <div class="col-xs-6"><input class="form-control" type="" id="" name="alarm" placeholder="Alarma" value="{{ old('alarm') }}" /></div>
-                            <div class="col-xs-6"><input class="form-control" type="" id="" name="insurance_policy" placeholder="Poliza de seguro" value="{{ old('insurance_policy') }}" /></div>
-                            <div class="col-xs-6"><input class="form-control" type="" id="" name="armored" placeholder="Blindado" value="{{ old('armored') }}" /></div>
-                            <div class="col-xs-6"><input class="form-control" type="" id="" name="satelite" placeholder="Rastreo satelital" value="{{ old('satelite') }}" /></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 divisor-line">
-                        <div class="row row-form">
-                            <div class="col-md-12"><label>Datos del vehículo</label></div>
-                            <div class="col-sm-4"><input class="form-control" type="" id="" name="motor" placeholder="Motor" value="{{ old('motor') }}" /></div>
+                            <div class="col-md-12"><label>Datos del vehículo (OPCIONAL)</label></div>
                             <div class="col-sm-4"><select  class="form-control" name="transmision">
                                <option value="Automática" {{ old('transmission') == 'Automática' ? "selected='true'" : "" }}>Automática</option>
                                <option value="Manual" {{ old('transmission') == 'Manual' ? "selected='true'" : "" }}>Manual</option>
@@ -474,41 +439,61 @@
                                <option value="Gasolina" {{ old('combustible') == 'Gasolina' ? "selected='true'" : ""}}>Gasolina</option>
                                <option value="Hibrido" {{ old('combustible') == 'Hibrido' ? "selected='true'" : ""}}>Hibrido</option>
                             </select></div>
-                            <div class="col-sm-4"><input class="form-control" type="" id="" name="number_cylinder" placeholder="N° de Cilindros" value="{{ old('number_cylinder') }}" /></div>
-                            <div class="col-sm-4"><input class="form-control" type="" id="" name="tapiz" placeholder="Tapizados" value="{{ old('tapiz') }}" /></div>
-                            <div class="col-sm-4"><select  class="form-control" name="brakes">
-                               <option value="ABS" {{ old('brakes') == 'ABS' ? "selected='true'" : ""}}>ABS</option>
-                               <option value="Disco" {{ old('brakes') == 'Disco' ? "selected='true'" : ""}}>Disco</option>
-                            </select></div>
-                            <div class="col-sm-4"><input class="form-control" type="" id="" name="color_tapiz" placeholder="Color de Tapizados" value="{{ old('color_tapiz') }}" /></div>
-                            <div class="col-sm-4"><input class="form-control" type="" id="" name="cool_air" placeholder="Aire acondicionado" value="{{ old('cool_air') }}" /></div>
-                            <div class="col-sm-4"><input class="form-control" type="" id="" name="audio_system" placeholder="Sistema de Audio" value="{{ old('audio_system') }}" /></div>
-                            <div class="col-sm-4"><input class="form-control" type="" id="" name="computer" placeholder="Computadora" value="{{ old('computer') }}" /></div>
-                            <div class="col-sm-4"><input class="form-control" type="" id="" name="accesories" placeholder="accesorios" value="{{ old('accesories') }}" /></div>
-                            <div class="col-sm-4"><input class="form-control" type="" id="" name="which_accesories" placeholder="Cuales" value="{{ old('which_accesories') }}" /></div>
+                            
+                            
+                            <div class="col-sm-4">
+                                <select  class="form-control" name="brakes">
+                                    <option value="N/A" {{ old('brakes') == 'N/A' ? "selected='true'" : ""}}>FRENOS</option>
+                                    <option value="ABS" {{ old('brakes') == 'ABS' ? "selected='true'" : ""}}>ABS</option>
+                                    <option value="Disco" {{ old('brakes') == 'Disco' ? "selected='true'" : ""}}>Disco</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-control">
+                                    <input class="input-check" type="checkbox" id="cool_air" name="cool_air" value="{{ old('cool_air') }}" />
+                                    <label for="cool_air" class="lb-input-check">Aire acondicionado</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-control">
+                                    <input class="input-check" type="checkbox" id="alarm" name="alarm" value="{{ old('alarm') }}" />
+                                    <label for="alarm" class="lb-input-check">Alarma</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-control">
+                                    <input class="input-check" type="checkbox" id="armored" name="armored" value="{{ old('armored') }}" />
+                                    <label for="armored" class="lb-input-check">Blindado</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-control">
+                                    <input class="input-check" type="checkbox" id="satelite" name="satelite" value="{{ old('satelite') }}" />
+                                    <label for="satelite" class="lb-input-check">Rastreo satelital</label>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>Descipcion del vehiculo (OPCIONAL)</label>  
+                                <textarea name="description" class="form-control" rows="5" id="comment"></textarea>
+                            </div>  
+                        </div>                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 divisor-line">
                     </div>
                     <div class="col-md-6">
                         <div class="row row-form">
                             <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <label>Descipcion del vehiculo*</label>  
-                                        <textarea name="description" class="form-control" rows="5" id="comment" required></textarea>
-                                    </div>  
-                                </div>
+                                
                             </div>
                         </div>
                     </div>  
-                </div>
-                <div class="row">
-                    <div class="col-md-6 divisor-line">
-                        <div class="row row-form">
-                            <div class="col-md-12"><label>Negocio</label></div>     
-                            <input class="form-control" type="" id="" name="financiacion" placeholder="Financiamiento" value="{{ old('financiacion') }}" />
-                        </div>
-                    </div>
-                </div>      
+                </div>    
                 <div class="row">
                     <div class="col-xs-12 col-md-6 ">   
                         <div class="div-captcha">
