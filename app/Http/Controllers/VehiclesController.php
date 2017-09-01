@@ -30,13 +30,16 @@ class VehiclesController extends Controller
       'photo_6'               =>  'max:3072',
       'photo_7'               =>  'max:3072',
       'photo_8'               =>  'max:3072',
+      'photo_9'               =>  'max:3072',
+      'photo_10'               =>  'max:3072',
       'cellphone'             =>  'required|numeric',
       'email'                 =>  'required:email',
       'type_car'              =>  'in:Sedan,Deportivo,Camioneta,Clásico',
       'opcion'                =>  'in:Vender,Permutar',
-      'transmission'          =>  'in:Automática,Manual,Mixta,Secuencial,Steptronic,Tiptronic',
-      'combustible'           =>  'in:Diesel,Electrico,Gas,Secuencial,Gasolina,Hibrido',
-      'brakes'                =>  'in:ABS,Disco',
+      'transmission'          =>  'in:N/D, Automática,Manual,Mixta,Secuencial,Steptronic,Tiptronic',
+      'combustible'           =>  'in:N/D,Diesel,Electrico,Gas,Secuencial,Gasolina,Hibrido',
+      'brakes'                =>  'in:N/D,ABS,Disco',
+      'year'                  =>  'numeric',
     ];
 
     $messages = [
@@ -65,6 +68,8 @@ class VehiclesController extends Controller
       'photo_6'     =>  '6° imagen', 
       'photo_7'     =>  '7° imagen', 
       'photo_8'     =>  '8° imagen', 
+      'photo_9'     =>  '9° imagen', 
+      'photo_10'     =>  '10° imagen',
     ];
 
     $val = \Validator::make($request->all(), $rules, $messages, $attributes);

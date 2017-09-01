@@ -320,7 +320,7 @@
                     <div class="col-md-6 col-sm-6 col-xs-12 divisor-line">
                         <div class="row row-form form-group">
                             <div class="col-md-12 col-sm-12 col-xs-12">
-                                <label for="name_user">Datos personales*</label>
+                                <label for="name_user">Datos personales(Obligatorios *)</label>
                             </div>
                             <div class="col-sm-4">
                                 <input class="form-control" type="text" id="name_user" name="name_user" placeholder="Nombre*" value="{{ old('name_user') }}" required />
@@ -329,12 +329,12 @@
                                 <input class="form-control" type="email" id="email" name="email" placeholder="Correo electronico*" value="{{ old('email') }}" required />
                             </div>
                             <div class="col-sm-4">
-                                <input class="form-control" type="number" id="cellpone" name="cellphone" placeholder="Telefono celular" value="{{ old('cellphone') }}" required />
+                                <input class="form-control" type="number" id="cellpone" name="cellphone" placeholder="Telefono celular*" value="{{ old('cellphone') }}" required />
                             </div>
                         </div>
                         <div class="row row-form">
                             <div class="col-sm-12"><label>Ubicacion del vehículo</label></div>
-                            <div class="col-sm-4"><input class="form-control" type="" id="" name="actual_city" placeholder="Ciudad*" value="{{ old('actual_city') }}"/></div>
+                            <div class="col-sm-4"><input class="form-control" type="" id="" name="actual_city" placeholder="Ciudad*" value="{{ old('actual_city') }}" required /></div>
                             <div class="col-sm-4"><input class="form-control" type="" id="" name="actual_region" placeholder="Departamento" value="{{ old('actual_region') }}"/></div>
                         </div>
                         <div class="row row-form">
@@ -342,10 +342,10 @@
                                 <label>Datos Generales del Vehiculo</label>
                             </div>
                             <div class="col-sm-4">
-                                <input class="form-control" type="" id="" name="brand" placeholder="Marca" value="{{ old('brand') }}"/>
+                                <input class="form-control" type="" id="" name="brand" placeholder="Marca*" value="{{ old('brand') }}" required />
                             </div>
                             <div class="col-sm-4">
-                                <input class="form-control" type="" id="" name="year" placeholder="Modelo (año)" value="{{ old('year') }}"/>
+                                <input class="form-control" type="number" id="" name="year" placeholder="Modelo (año)*" value="{{ old('year') }}" required />
                             </div>
                             
                             
@@ -355,7 +355,7 @@
                             </div>
                             
                             <div class="col-sm-4">
-                                <input class="form-control" type="" id="" name="value" placeholder="$ Costo" value="{{ old('value') }}" />
+                                <input class="form-control" type="" id="" name="value" placeholder="$ Costo*" value="{{ old('value') }}" required />
                             </div>
                             
                             <div class="col-sm-4">
@@ -369,7 +369,7 @@
                     <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="row row-form">
                             <div class="col-xs-12">
-                                <label>Ingresa fotos del vehículo*</label>
+                                <label>Ingresa fotos del vehículo(1 imagen mínimo)</label>
                             </div>
                             <div class="col-xs-12 col-md-12">
                                 <input  class="form-control input-imagen" type="file" id="photo_main" name="photo_main" value="{{ old('photo_main') }}" />
@@ -423,6 +423,7 @@
                         <div class="row row-form">
                             <div class="col-md-12"><label>Datos del vehículo (OPCIONAL)</label></div>
                             <div class="col-sm-4"><select  class="form-control" name="transmision">
+                               <option value="N/D" {{ old('transmission') == 'N/D' ? "selected='true'" : "" }}>Transimisión</option>
                                <option value="Automática" {{ old('transmission') == 'Automática' ? "selected='true'" : "" }}>Automática</option>
                                <option value="Manual" {{ old('transmission') == 'Manual' ? "selected='true'" : "" }}>Manual</option>
                                <option value="Mixta" {{ old('transmission') == 'Mixta' ? "selected='true'" : "" }}>Mixta</option>
@@ -433,6 +434,7 @@
                             <div class="col-sm-4"><input class="form-control" type="" id="" name="cylinder" placeholder="Cilindraje" value="{{ old('cylinder') }}" /></div>
                             <div class="col-sm-4"><input class="form-control" type="" id="" name="km" placeholder="Kilometraje" value="{{ old('km') }}" /></div>
                             <div class="col-sm-4"><select  class="form-control" name="combustible">
+                               <option value="N/D" {{ old('combustible') == 'N/D' ? "selected='true'" : ""}}>Combustible</option>
                                <option value="Diesel" {{ old('combustible') == 'Diesel' ? "selected='true'" : ""}}>Diesel</option>
                                <option value="Electrico" {{ old('combustible') == 'Electrico' ? "selected='true'" : ""}}>Electrico</option>
                                <option value="Gas" {{ old('combustible') == 'Gas' ? "selected='true'" : ""}}>Gas</option>
@@ -443,56 +445,45 @@
                             
                             <div class="col-sm-4">
                                 <select  class="form-control" name="brakes">
-                                    <option value="N/A" {{ old('brakes') == 'N/A' ? "selected='true'" : ""}}>FRENOS</option>
+                                    <option value="N/D" {{ old('brakes') == 'No especifica' ? "selected='true'" : ""}}>FRENOS</option>
                                     <option value="ABS" {{ old('brakes') == 'ABS' ? "selected='true'" : ""}}>ABS</option>
                                     <option value="Disco" {{ old('brakes') == 'Disco' ? "selected='true'" : ""}}>Disco</option>
                                 </select>
                             </div>
                             <div class="col-sm-4">
                                 <div class="form-control">
-                                    <input class="input-check" type="checkbox" id="cool_air" name="cool_air" value="{{ old('cool_air') }}" />
-                                    <label for="cool_air" class="lb-input-check">Aire acondicionado</label>
+                                    <input class="input-check" type="checkbox" id="cool_air" name="cool_air" value="1" @if(old('cool_air') == "1") checked @endif />
+                                    <label for="cool_air" class="lb-input-check" >Aire acondicionado</label>
                                 </div>
                             </div>
                             <div class="col-sm-4">
                                 <div class="form-control">
-                                    <input class="input-check" type="checkbox" id="alarm" name="alarm" value="{{ old('alarm') }}" />
+                                    <input class="input-check" type="checkbox" id="alarm" name="alarm" value="1" @if(old('alarm') == "1") checked @endif />
                                     <label for="alarm" class="lb-input-check">Alarma</label>
                                 </div>
                             </div>
                             <div class="col-sm-4">
                                 <div class="form-control">
-                                    <input class="input-check" type="checkbox" id="armored" name="armored" value="{{ old('armored') }}" />
+                                    <input class="input-check" type="checkbox" id="armored" name="armored" value="1" @if(old('armored') == "1") checked @endif />
                                     <label for="armored" class="lb-input-check">Blindado</label>
                                 </div>
                             </div>
                             <div class="col-sm-4">
                                 <div class="form-control">
-                                    <input class="input-check" type="checkbox" id="satelite" name="satelite" value="{{ old('satelite') }}" />
+                                    <input class="input-check" type="checkbox" id="satelite" name="satelite" value="1" @if(old('satelite') == "1") checked @endif />
                                     <label for="satelite" class="lb-input-check">Rastreo satelital</label>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 ">
-                        <div class="row">
+                        <div class="row row-form">
                             <div class="col-md-12">
-                                <label>Descipcion del vehiculo (OPCIONAL)</label>  
+                                <label>Descripción del vehiculo (OPCIONAL)</label>  
                                 <textarea name="description" class="form-control" rows="5" id="comment"></textarea>
                             </div>  
                         </div>                        
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 divisor-line">
-                    </div>
-                    <div class="col-md-6">
-                        <div class="row row-form">
-                            <div class="col-md-6">
-                                
-                            </div>
-                        </div>
-                    </div>  
                 </div>    
                 <div class="row">
                     <div class="col-xs-12 col-md-6 ">   
