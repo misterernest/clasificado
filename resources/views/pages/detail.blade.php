@@ -5,8 +5,8 @@
     <title>Autos de lujo</title>
     
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, Minimum-scale=1.0, Maximum-scale=1.0"> 
-    <meta name="description" content="Autos de lujo en Colombia, vende tu autos de lujo, alquila tu auto de lujo, permuta tu auto de lujo, compra tu auto de lujo" />
-    <meta name="keywords" content="autos, carros, vehiculos, lujo, autos de lujo, carros de lujo, vehiculos de lujo, vende tu auto de lujo, alquila tu auto de lujo, compra tu auto de lujo, permuta tu auto de lujo" />
+    <meta name="description" content="Autos de lujo en Colombia, vende tu autos de lujo, permuta tu auto de lujo, compra tu auto de lujo" />
+    <meta name="keywords" content="Compra de Auto, Venta de Auto, Carros Usados, Taxis de lujo, Financiamiento, Crédito, Pólizas, Autos de Lujo, Colombia, Vehículo, auto, carro" />
     <meta name="author" content="ANT" />
     <link rel="shortcut icon" href="../../images/favicon.png">    
     <script src="../../js/jquery.min.js" type="text/javascript"></script>

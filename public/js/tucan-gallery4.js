@@ -8,7 +8,7 @@ var const_array_div1=[img_comprar, txt_h2_comprar, txt_p_comprar, txt_a_comprar,
 //Variables de Comprar
 var img_vender = "images/category/2.png";
 var txt_h2_vender="COMPRAR";
-var txt_p_vender = "Si estás interesado en adquirir o comprar un auto o camioneta de lujo, está es tu oportunidad de conseguirlo. Se identifica el carro de lujo según especificaciones soñadas, además se realiza toda la gestión de financiamiento y aseguramiento de los vehículos.";
+var txt_p_vender = "Si estás interesado en vender tu auto o camioneta, te ofrecemos una gran experiencia de más de 25 años comercializando en el sector automotriz Colombiano, Logrando la consecución de los clientes para carros y haciendo realidad las negociaciones.";
 var txt_a_vender = "COMPRAR AHORA";
 var href_a_vender = "/vehicles/allvehicles";
 var const_array_div2=[img_vender, txt_h2_vender, txt_p_vender, txt_a_vender, href_a_vender];

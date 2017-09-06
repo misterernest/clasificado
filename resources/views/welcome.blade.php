@@ -6,8 +6,8 @@
     <title>Autos de lujo</title>
     
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, Minimum-scale=1.0, Maximum-scale=1.0"> 
-    <meta name="description" content="Autos de lujo en Colombia, vende tu autos de lujo, alquila tu auto de lujo, permuta tu auto de lujo, compra tu auto de lujo" />
-    <meta name="keywords" content="autos, carros, vehiculos, lujo, autos de lujo, carros de lujo, vehiculos de lujo, vende tu auto de lujo, alquila tu auto de lujo, compra tu auto de lujo, permuta tu auto de lujo" />
+    <meta name="description" content="Autos de lujo en Colombia, vende tu autos de lujo, permuta tu auto de lujo, compra tu auto de lujo" />
+    <meta name="keywords" content="Compra de Auto, Venta de Auto, Carros Usados, Taxis de lujo, Financiamiento, Crédito, Pólizas, Autos de Lujo, Colombia, Vehículo, auto, carro" />
     <meta name="author" content="ANT" />
     <link rel="shortcut icon" href="images/favicon.png">    
     <link rel="stylesheet" type="text/css" href="css/tucan-gallery4.css" />
@@ -76,8 +76,9 @@
                 
             </div>
             <div class="txt-slide col-md-5 col-sm-6 col-xs-12 ">
-                <div class="txt-slide-1"><a href="/vehicles/allvehicles">En esta pagina puedes encontrar el vehiculo que necesites, al mejor precio, financiado hasta el 100% y documentos al día, cotiza ya!!!</a></div>
-                <div class="txt-slide-2"><a href="#button-contacto">Si quieres vender o permutar lo puedes hacer ya. Trabjamos con todas las financieras.</a></div>
+                <div class="txt-slide-1"><a href="/vehicles/allvehicles">Encuentra el vehículo que necesites al mejor precio. Financiamiento hasta el 100%, con documentos al día. COTIZA YA!!!</a></div>
+                <div class="txt-slide-2"><a href="#button-contacto">Si quieres vender o permutar tu carro, lo puedes hacer ya. Trabajamos con todas las financieras
+</a></div>
                 <div class="txt-slide-3"><a href="#form-contact">Buscamos inversionistas. Buena rentabilidad!!</a></div>
             </div>
         </div>
@@ -100,7 +101,7 @@
                         </div>
                         <div class="col-xs-9 col-md-8 text-aseguradoras">
                             <h2>FINANCIERAS</h2>
-                            <p>Se realiza la gestión para conseguir el financiamiento y el crédito hasta el 100% del valor del vehículo, previo estudio con compañía de financiamiento.</p> 
+                            <p>Se realiza la gestión de todas las pólizas y seguros, de acuerdo a la normativa del sector automotriz en Colombia.</p> 
                         </div>
                         <div class="col-xs-12 logos-aseguradoras">
                             <img src="images/logos-financiadoras/1.png" alt="Financia tu carro">
